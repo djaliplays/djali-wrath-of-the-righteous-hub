@@ -57,12 +57,16 @@ Imagine a hypothetical game with:
 
 If a player gets **8x XP gain** from 32 to 160 monsters killed:
 
-- [With **no XP scaling**](), they would level up every **2 monsters** and heavily outpace regular leveling.
-- [If level-up costs **double each level**, and monster XP also **doubles every 16 kills**](), the solo player initially levels up faster but gradually slows down to match regular leveling. For example, if the first level-up requires 2 monsters, the second level-up will require 4, as monster XP remains constant until 16 kills. Over time, the leveling advantage diminishes as the escalating XP requirements catch up to the player's gain rate.
+- With **no XP scaling**, they would level up every **2 monsters** and heavily outpace regular leveling.
+    ![regular_and_1x](firstguide/r_1x.png)
+- If level-up costs **double each level**, and monster XP also **doubles every 16 kills**, the solo player initially levels up faster but gradually slows down to match regular leveling. For example, if the first level-up requires 2 monsters, the second level-up will require 4, as monster XP remains constant until 16 kills. Over time, the leveling advantage diminishes as the escalating XP requirements catch up to the player's gain rate.
+    ![main](firstguide/main.png)
 - In this scenario, this happens when we are consistently 3 levels above the intended level. At 3 levels higher, our XP requirements are $2^{3}$ = 8, which matches our boosted 8x XP gain. Meaning we now level up at regular pace.
 - When we add back in our companions at 161 monsters killed, we are now higher level **and** back to normal XP gain. This results in a sudden drop in XP progression, making XP gain significantly worse for a while until it approaches 'intended' level. With enough levels this might even result in getting back on the regular curve before the level cap as the extra experience from earlier becomes more and more insignificant.
-- We could recruit part of our companions at an earlier point, say [90 monsters killed](), this would result in a lower peak advantage but a more stable power level throughout the game.
-- Our hypothetical game could also have [different scaling factors](), but the concept is the same. 
+- We could recruit part of our companions at an earlier point, say 90 monsters killed, this would result in a lower peak advantage but a more stable power level throughout the game.
+    ![two-boost](firstguide/two_boost.png)
+- Our hypothetical game could also have different scaling factors, but the concept is the same. 
+    ![diff scaling](firstguide/diff.png)
 
 #### Key Takeaways:
 
@@ -361,4 +365,4 @@ Since the Other relies entirely on spellcasting (as far as I can tell, it's poss
 - **Magic Nullification is a weak mythic choice** – While situationally useful, losing all buffs makes it suboptimal for most encounters.  
 - **Nunchaku Weapon Proficiency is required** – To wield the Disruption Nunchaku, you must either:  
   - Take a **Monk level**, or  
-  - Spend a feat on **Exotic Weapon Proficiency: Nunchaku**.  
+  - Spend a feat on **Exotic Weapon Proficiency: Nunchaku**.

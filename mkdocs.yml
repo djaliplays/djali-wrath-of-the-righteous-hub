@@ -1,25 +1,53 @@
-site_name: Djali's WotR Hub 
+site_name: Djali's WotR Hub
 theme:
-  name: material
-  icon:
-    logo: fontawesome/solid/dice-d20
+    name: material
+    icon:
+        logo: fontawesome/solid/dice-d20
+    features:
+        #- content.tabs.link
 nav:
-  - Home: index.md
-  - Deep Dive Guides:
-    - Shared Experience: Guides/SharedXP/active_xp.md
-    - Shared Experience Addendum: Guides/SharedXP/wotr_graphs.md
-    - Feud of the Faithful: Guides/Feud/feud.md
+    - Home: index.md
+    - Deep Dive Guides:
+          - Vital Strike: Guides/VitalStrike/vital_strike.md
+          - Shared Experience: Guides/SharedXP/active_xp.md
+          - Shared Experience Addendum: Guides/SharedXP/wotr_graphs.md
+          - Feud of the Faithful: Guides/Feud/feud.md
+    - Youtube:
+          - Playtrough: Youtube/playtrough.md
+          - Deep Dives: Youtube/deep_dives.md
+exclude_docs: |
+    **/_includes/**
 plugins:
-  - search
+    - search
+    - include-markdown
+    - glightbox
+    - macros:
+          render_by_default: false
+
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - admonition
+    - pymdownx.tilde
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.tabbed:
+          alternate_style: true
+    - attr_list
+    - md_in_html
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
-  - stylesheets/pathfinder.css
-  - stylesheets/extra.css
+    - stylesheets/pathfinder.css
+    - stylesheets/admonition.css
+    - stylesheets/extra.css
+    - stylesheets/youtube.css
+
+extra_javascript:
+    - javascripts/mathjax.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#  - javascripts/tab-linking.js
+#  - javascripts/outer-tabs-link.js

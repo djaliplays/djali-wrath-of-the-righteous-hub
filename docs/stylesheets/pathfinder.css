@@ -4,28 +4,41 @@
 
 :root {
     /* Backgrounds */
-    --bgtan: #F7F2E5;
-    --bgtan2018: #F9EFD6;
-    --pagegold: #B89A67;
+    --bgtan: #f7f2e5;
+    --bgtan2018: #f9efd6;
+    --pagegold: #b89a67;
 
     /* Type */
-    --titlered: #58180D;
-    --titlegold: #C9AD6A;
-    --rulered: #9C2B1B;
-    --contourgray: #CACCBE;
+    --titlered: #58180d;
+    --titlegold: #c9ad6a;
+    --rulered: #9c2b1b;
+    --contourgray: #caccbe;
+    --inktext: #3b2f22;
 
     /* Trim */
-    --brgreen: #E8E6DC;
-    --phb-light-green: #E0E5C1;
-    --phb-light-cyan: #B5CEB8;
-    --phb-mauve: #DCCCC5;
-    --phb-tan: #E5D5AC;
-    --dmg-lavender: #E3CED3;
-    --dmg-coral: #F3D7C1;
-    --dmg-slate-gray: #DBE4E4;
-    --dmg-lilac: #D7D4D6;
-}
+    --brgreen: #e8e6dc;
+    --phb-light-green: #e0e5c1;
+    --phb-light-cyan: #b5ceb8;
+    --phb-mauve: #dcccc5;
+    --phb-tan: #e5d5ac;
+    --dmg-lavender: #e3ced3;
+    --dmg-coral: #f3d7c1;
+    --dmg-slate-gray: #dbe4e4;
+    --dmg-lilac: #d7d4d6;
 
+    /* Some blues*/
+    --steelblue: #4f6480;
+    --slateblue: #556b8a;
+    --dustynavy: #44546a;
+    --inkblue: #3e5875;
+    --darkteal: #4a6a68;
+
+    --steelblue-bg: rgba(79, 100, 128, 0.12);
+    --slateblue-bg: rgba(85, 107, 138, 0.12);
+    --dustynavy-bg: rgba(68, 84, 106, 0.12);
+    --inkblue-bg: rgba(62, 88, 117, 0.12);
+    --darkteal-bg: rgba(74, 106, 104, 0.12);
+}
 
 /* ==========================================================================
    Bookinsanity
@@ -86,7 +99,8 @@
 
 @font-face {
     font-family: "Nodesto";
-    src: url("../fonts/Nodesto Caps Condensed Bold Italic.woff2") format("woff2");
+    src: url("../fonts/Nodesto Caps Condensed Bold Italic.woff2")
+        format("woff2");
     font-weight: 700;
     font-style: italic;
 }
@@ -255,7 +269,6 @@ body,
     box-shadow: none !important;
 }
 
-
 /*.md-sidebar__inner {
     background: var(--bgtan) !important;
 }*/
@@ -263,7 +276,6 @@ body,
 /*.md-nav {
     background: hotpink !important;
 }*/
-
 
 /* colors */
 .md-typeset h1,
@@ -274,7 +286,6 @@ body,
 .md-typeset h6 {
     color: var(--titlered);
 }
-
 
 .md-typeset h1 {
     border-bottom: 2px solid var(--titlegold);
@@ -316,7 +327,6 @@ h6,
     font-family: "Mr Eaves Small Caps", serif;
 }
 
-
 /* Tables *
 
 .md-typeset table:not([class]) {
@@ -334,12 +344,10 @@ h6,
 }
 */
 
-
 .md-typeset table:not([class]) {
     background-color: var(--bgtan);
     border: 1px solid var(--pagegold);
     font-family: "Scaly Sans", sans-serif;
-
 }
 
 .md-typeset table:not([class]) th {
@@ -358,42 +366,48 @@ h6,
     background-color: #f4ead2;
 }
 
-/* admonitions */
+.md-typeset table:not([class]) tr:has(.section) td {
+    /*background-color: var(--titlered) !important;
+      color: var(--bgtan2018);*/
+    border-top: 2px solid var(--titlegold);
+    border-bottom: 1px solid var(--pagegold);
+    background: var(--phb-tan);
 
-
-
-.md-typeset details.note {
-    background-color: var(--bgtan);
-    border: 1px solid var(--pagegold);
-}
-
-.md-typeset details.warning {
-    background-color: var(--bgtan);
-    border: 1px solid var(--pagegold);
-}
-
-/*.md-typeset details.note summary {
-    background-color: var(--titlered);
-    color: var(--bgtan2018);
-    font-family: "Mr Eaves Small Caps", serif;
-}*/
-
-/* remove ugly blue pencil thingy 
-.md-typeset details.note > summary::before {
-    display: none !important;
-}*/
-
-/* turn the arrow red */
-.md-typeset details summary::after {
-    color: var(--titlered) !important;
-}
-
-.md-typeset details.note summary {
-    background-color: var(--phb-tan);
     color: var(--titlered);
+    font-family: "Scaly Sans Caps", sans-serif;
 }
 
-.md-typeset details.note .admonition-content,
-.md-typeset details.note > div {
-    background-color: var(--bgtan);
+/* spell card
+.spell-card {
+    background: var(--bgtan);
+    border: 1px solid var(--pagegold);
+    padding: 1rem;
+}*/
+
+.spell-title {
+    font-family: "Scaly Sans Caps", sans-serif;
+    color: var(--titlered);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ==========================================================================
+   Code blocks
+   ========================================================================== */
+
+/* --md-code-fg-color/--md-code-bg-color drive both inline `code` and fenced
+   code blocks directly — reusing --phb-tan (already a deeper, slightly more
+   saturated tan than the page background) gives code an "inset box" look
+   instead of a flat color clash. --inktext (defined above) replaces
+   Material's default near-black for a warmer, ink-on-parchment foreground. */
+
+:root {
+    --md-code-bg-color: var(--phb-tan);
+    --md-code-fg-color: var(--inktext);
+}
+
+.md-typeset pre,
+.md-typeset .highlight {
+    border: 1px solid var(--pagegold);
+    border-radius: 0.2rem;
 }

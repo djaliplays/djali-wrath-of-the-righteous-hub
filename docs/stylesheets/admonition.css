@@ -1,0 +1,461 @@
+/* ==========================================================================
+   Pathfinder admonitions
+   ==========================================================================
+   Recolors every built-in Material admonition type to fit the parchment
+   palette from pathfinder.css, and adds custom Pathfinder-specific types.
+
+   Depends on the variables defined in pathfinder.css's :root block
+   (--bgtan, --inkblue, --steelblue, --titlered, etc.).
+
+   IMPORTANT: each --md-admonition-icon--xxx declaration below must stay on
+   ONE physical line. If you wrap/reformat one across multiple lines, the
+   browser drops the whole declaration silently (no error in mkdocs serve,
+   just a missing icon) — check this first if you add more icons later.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Extra accent colors
+   -------------------------------------------------------------------------- */
+
+:root {
+    --olivegreen: #5b7a4f; /* success */
+    --ochre: #9c6b1f; /* warning */
+    --plum: #6b4068; /* bug, trickster-feature */
+    --indigo: #4b4a7a; /* example */
+    --dustyrose: #9c6b6b; /* quote */
+    --mythicgold: #b8860b; /* mythic-feature */
+    --angelgold: #e0b43d; /* angel-feature — brighter/lighter than mythicgold and titlegold so the three golds stay distinguishable */
+    --pewter: #6b6f73; /* item family: item, item-scroll, item-potion, item-weapon */
+
+    --olivegreen-bg: rgba(91, 122, 79, 0.12);
+    --ochre-bg: rgba(156, 107, 31, 0.12);
+    --plum-bg: rgba(107, 64, 104, 0.12);
+    --indigo-bg: rgba(75, 74, 122, 0.12);
+    --dustyrose-bg: rgba(156, 107, 107, 0.12);
+    --mythicgold-bg: rgba(184, 134, 11, 0.12);
+    --angelgold-bg: rgba(224, 180, 61, 0.15);
+    --pewter-bg: rgba(107, 111, 115, 0.12);
+    --titlered-bg: rgba(88, 24, 13, 0.12);
+    --rulered-bg: rgba(156, 43, 27, 0.12);
+}
+
+/* --------------------------------------------------------------------------
+   Shared base
+   Every admonition/details box gets the parchment body background and a
+   thin gold border by default, regardless of type. Both the plain "!!!"
+   form (.admonition) and the collapsible "???" form (details) are covered
+   here — that dual coverage is the bit that was missing before, which is
+   why "note" only looked right some of the time.
+   -------------------------------------------------------------------------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+    background-color: var(--bgtan);
+    border-width: 1px;
+}
+
+.md-typeset .admonition-content,
+.md-typeset .admonition > div,
+.md-typeset details > div {
+    background-color: var(--bgtan);
+}
+
+/* the collapse/expand arrow on "???" admonitions , possible TODO: change for all to match icon color */
+.md-typeset details summary::after {
+    color: var(--titlered);
+}
+
+/* ==========================================================================
+   Built-in Material admonition types, recolored
+   ========================================================================== */
+
+/* note */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+    border-color: var(--inkblue);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+    background-color: var(--inkblue-bg);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+    background-color: var(--inkblue);
+}
+
+/* abstract */
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+    border-color: var(--steelblue);
+}
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary {
+    background-color: var(--steelblue-bg);
+}
+.md-typeset .abstract > .admonition-title::before,
+.md-typeset .abstract > summary::before {
+    background-color: var(--steelblue);
+}
+
+/* info */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+    border-color: var(--slateblue);
+}
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+    background-color: var(--slateblue-bg);
+}
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+    background-color: var(--slateblue);
+}
+
+/* tip */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+    border-color: var(--darkteal);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+    background-color: var(--darkteal-bg);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+    background-color: var(--darkteal);
+}
+
+/* success */
+.md-typeset .admonition.success,
+.md-typeset details.success {
+    border-color: var(--olivegreen);
+}
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary {
+    background-color: var(--olivegreen-bg);
+}
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before {
+    background-color: var(--olivegreen);
+}
+
+/* question */
+.md-typeset .admonition.question,
+.md-typeset details.question {
+    border-color: var(--dustynavy);
+}
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary {
+    background-color: var(--dustynavy-bg);
+}
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before {
+    background-color: var(--dustynavy);
+}
+
+/* warning */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+    border-color: var(--ochre);
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+    background-color: var(--ochre-bg);
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+    background-color: var(--ochre);
+}
+
+/* failure */
+.md-typeset .admonition.failure,
+.md-typeset details.failure {
+    border-color: var(--rulered);
+}
+.md-typeset .failure > .admonition-title,
+.md-typeset .failure > summary {
+    background-color: var(--rulered-bg);
+}
+.md-typeset .failure > .admonition-title::before,
+.md-typeset .failure > summary::before {
+    background-color: var(--rulered);
+}
+
+/* danger */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+    border-color: var(--titlered);
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+    background-color: var(--titlered-bg);
+}
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before {
+    background-color: var(--titlered);
+}
+
+/* bug */
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+    border-color: var(--plum);
+}
+.md-typeset .bug > .admonition-title,
+.md-typeset .bug > summary {
+    background-color: var(--plum-bg);
+}
+.md-typeset .bug > .admonition-title::before,
+.md-typeset .bug > summary::before {
+    background-color: var(--plum);
+}
+
+/* example */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+    border-color: var(--indigo);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+    background-color: var(--indigo-bg);
+}
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before {
+    background-color: var(--indigo);
+}
+
+/* quote */
+.md-typeset .admonition.quote,
+.md-typeset details.quote {
+    border-color: var(--dustyrose);
+}
+.md-typeset .quote > .admonition-title,
+.md-typeset .quote > summary {
+    background-color: var(--dustyrose-bg);
+}
+.md-typeset .quote > .admonition-title::before,
+.md-typeset .quote > summary::before {
+    background-color: var(--dustyrose);
+}
+
+/* ==========================================================================
+   Custom Pathfinder admonition types
+   Usage:  !!! spell "Fireball"            (plain)
+           ??? feat "Power Attack"          (collapsible)
+   ========================================================================== */
+
+:root {
+    --md-admonition-icon--spell: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 5.6 5 7l1.4-2.5L5 2l2.5 1.4L10 2 8.6 4.5 10 7zm12 9.8L22 14l-1.4 2.5L22 19l-2.5-1.4L17 19l1.4-2.5L17 14zM22 2l-1.4 2.5L22 7l-2.5-1.4L17 7l1.4-2.5L17 2l2.5 1.4zm-8.66 10.78 2.44-2.44-2.12-2.12-2.44 2.44zm1.03-5.49 2.34 2.34c.39.37.39 1.02 0 1.41L5.04 22.71c-.39.39-1.04.39-1.41 0l-2.34-2.34c-.39-.37-.39-1.02 0-1.41L12.96 7.29c.39-.39 1.04-.39 1.41 0"/></svg>');
+    --md-admonition-icon--feat: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7S5 16.2 3.5 16.2H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>');
+    --md-admonition-icon--class-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>');
+    --md-admonition-icon--hex: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M368 32c41.7 0 75.9 31.8 79.7 72.5l85.6 26.3c25.4 7.8 42.8 31.3 42.8 57.9 0 21.8-11.7 41.9-30.7 52.7l-144.5 82.1 92.5 92.5h50.7c17.7 0 32 14.3 32 32s-14.3 32-32 32h-64c-8.5 0-16.6-3.4-22.6-9.4L346.9 360.2c11.7-36 3.2-77.1-25.4-105.7-40.6-40.6-106.3-40.6-146.9-.1l-73.6 70c-6.4 6.1-6.7 16.2-.6 22.6s16.2 6.6 22.6.6l73.8-70.2.1-.1.1-.1c3.5-3.5 7.3-6.6 11.3-9.2 27.9-18.5 65.9-15.4 90.5 9.2 24.7 24.7 27.7 62.9 9 90.9-2.6 3.8-5.6 7.5-9 10.9l-37 37H352c17.7 0 32 14.3 32 32s-14.3 32-32 32H64c-35.3 0-64-28.7-64-64C0 249.6 127 112.9 289.3 97.5 296.2 60.2 328.8 32 368 32m0 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48"/></svg>');
+    --md-admonition-icon--mythic-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 16 3 5l5.5 5L12 4l3.5 6L21 5l-2 11zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14z"/></svg>');
+    --md-admonition-icon--demon-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.9.9-2.8 2.8c-.8.8-.8 2 0 2.8L14.5 8l-5.3 5.4L7.8 12c-.8-.8-2-.8-2.8 0l-4 4 1.4 1.4 4-4 1.4 1.4-4 4 1.4 1.4 4-4 1.4 1.4-.7.8-3.2 3.2L8 23l4-4c.8-.8.8-2 0-2.8l-1.4-1.4 5.3-5.4 1.4 1.4c.8.8 2 .8 2.8 0L23 8zm2.8 8.5-4.2-4.2 1.4-1.4L20.1 8z"/></svg>');
+    --md-admonition-icon--trickster-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.11 19.45a6.95 6.95 0 0 1-4.4-5.1L2.05 6.54c-.24-1.08.45-2.14 1.53-2.37l9.77-2.07.03-.01c1.07-.21 2.12.48 2.34 1.54l.35 1.67 4.35.93h.03c1.05.24 1.73 1.3 1.51 2.36l-1.66 7.82a6.993 6.993 0 0 1-8.3 5.38 6.9 6.9 0 0 1-3.89-2.34M20 8.18 10.23 6.1l-1.66 7.82v.03c-.57 2.68 1.16 5.32 3.85 5.89s5.35-1.15 5.92-3.84zm-4 8.32a2.96 2.96 0 0 1-3.17 1.39 2.97 2.97 0 0 1-2.33-2.55zM8.47 5.17 4 6.13l1.66 7.81.01.03c.15.71.45 1.35.86 1.9-.1-.77-.08-1.57.09-2.37l.43-2c-.45-.08-.84-.33-1.05-.69.06-.61.56-1.15 1.25-1.31h.25l.78-3.81c.04-.19.1-.36.19-.52m6.56 7.06c.32-.53 1-.81 1.69-.66.69.14 1.19.67 1.28 1.29-.33.52-1 .8-1.7.64-.69-.13-1.19-.66-1.27-1.27m-4.88-1.04c.32-.53.99-.81 1.68-.66.67.14 1.2.68 1.28 1.29-.33.52-1 .81-1.69.68-.69-.17-1.19-.7-1.27-1.31m1.82-6.76 1.96.42-.16-.8z"/></svg>');
+    --md-admonition-icon--angel-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c41 0 80.3 16.3 109.2 45.2l5.5 5.5c29 29 45.3 68.3 45.3 109.2 0 24.1-5.7 47.6-16.2 68.8-1.9 3.7-5.3 6.5-9.3 7.7l-112 33.6c-3.9 1.2-6.5 4.7-6.5 8.8 0 5.1 4.1 9.2 9.2 9.2h32.2c14.3 0 21.4 17.2 11.3 27.3l-22.4 22.4c-1.9 1.9-4.2 3.2-6.7 4l-81 24.3c-3.9 1.2-6.5 4.7-6.5 8.8 0 5.1 4.1 9.2 9.2 9.2 13.2 0 18.9 15.7 7.8 22.9-41.1 26.6-89.3 41.1-139 41.1h-86l-48 48c-8.8 8.8-23.2 8.8-32 0s-8.8-23.2 0-32L256 224c8.8-8.8 8.8-23.2 0-32s-23.2-8.8-32 0L79.5 336.5c-5.7 5.7-15.5 1.7-15.5-6.4 0-67.9 27-133 75-181L242.8 45.2C271.7 16.3 311 0 352 0"/></svg>');
+    --md-admonition-icon--item: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 4h14a3 3 0 0 1 3 3v4h-7v-1H9v1H2V7a3 3 0 0 1 3-3m6 7h2v2h-2zm-9 1h7v1l2 2h2l2-2v-1h7v8H2z"/></svg>');
+    --md-admonition-icon--item-scroll: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 112c0-41.5 31.6-75.6 72-79.6V32h280c53 0 96 43 96 96v176H272c-39.8 0-72 32.2-72 72v60c0 24.3-19.7 44-44 44s-44-19.7-44-44V208H48c-26.5 0-48-21.5-48-48zm236.8 368c7.1-13.1 11.2-28.1 11.2-44v-60c0-13.3 10.7-24 24-24h248c13.3 0 24 10.7 24 24v24c0 44.2-35.8 80-80 80zM80 80c-17.7 0-32 14.3-32 32v48h64v-48c0-17.7-14.3-32-32-32"/></svg>');
+    --md-admonition-icon--item-potion: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.79 1.64-5.2 4-6.33V5c0-.55.45-1 1-1h.5l-1-2h5l-1 2h.5c.55 0 1 .45 1 1v3.67c2.36 1.13 4 3.54 4 6.33m-8-9v4.1A5 5 0 0 0 7 15l.08.91L9 13.93 13.07 18l3.86-3.86A5.01 5.01 0 0 0 13 10.1V6zm2.07 6c.55 0 1 .45 1 1s-.45 1-1 1c-.57 0-1-.45-1-1s.43-1 1-1"/></svg>');
+    --md-admonition-icon--item-weapon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42"/></svg>');
+}
+
+/* spell: general-purpose spell reference card. Icon: wand (auto-fix) */
+.md-typeset .admonition.spell,
+.md-typeset details.spell {
+    border-color: var(--inkblue);
+}
+.md-typeset .spell > .admonition-title,
+.md-typeset .spell > summary {
+    background-color: var(--inkblue-bg);
+}
+.md-typeset .spell > .admonition-title::before,
+.md-typeset .spell > summary::before {
+    background-color: var(--inkblue);
+    -webkit-mask-image: var(--md-admonition-icon--spell);
+    mask-image: var(--md-admonition-icon--spell);
+}
+
+/* feat: general feats — the basic building blocks of a character. Icon: puzzle piece */
+.md-typeset .admonition.feat,
+.md-typeset details.feat {
+    border-color: var(--titlegold);
+}
+.md-typeset .feat > .admonition-title,
+.md-typeset .feat > summary {
+    background-color: rgba(201, 173, 106, 0.18);
+}
+.md-typeset .feat > .admonition-title::before,
+.md-typeset .feat > summary::before {
+    background-color: var(--titlegold);
+    -webkit-mask-image: var(--md-admonition-icon--feat);
+    mask-image: var(--md-admonition-icon--feat);
+}
+
+/* class-feature: core class abilities. Icon: shield */
+.md-typeset .admonition.class-feature,
+.md-typeset details.class-feature {
+    border-color: var(--steelblue);
+}
+.md-typeset .class-feature > .admonition-title,
+.md-typeset .class-feature > summary {
+    background-color: var(--steelblue-bg);
+}
+.md-typeset .class-feature > .admonition-title::before,
+.md-typeset .class-feature > summary::before {
+    background-color: var(--steelblue);
+    -webkit-mask-image: var(--md-admonition-icon--class-feature);
+    mask-image: var(--md-admonition-icon--class-feature);
+}
+
+/* hexes (a special type of class feature I talk about a lot). Icon: frog */
+.md-typeset .admonition.hex,
+.md-typeset details.hex {
+    border-color: var(--steelblue);
+}
+.md-typeset .hex > .admonition-title,
+.md-typeset .hex > summary {
+    background-color: var(--steelblue-bg);
+}
+.md-typeset .hex > .admonition-title::before,
+.md-typeset .hex > summary::before {
+    background-color: var(--steelblue);
+    -webkit-mask-image: var(--md-admonition-icon--hex);
+    mask-image: var(--md-admonition-icon--hex);
+}
+
+/* mythic-feature: mythic path abilities. Icon: crown */
+.md-typeset .admonition.mythic-feature,
+.md-typeset details.mythic-feature {
+    border-color: var(--mythicgold);
+}
+.md-typeset .mythic-feature > .admonition-title,
+.md-typeset .mythic-feature > summary {
+    background-color: var(--mythicgold-bg);
+}
+.md-typeset .mythic-feature > .admonition-title::before,
+.md-typeset .mythic-feature > summary::before {
+    background-color: var(--mythicgold);
+    -webkit-mask-image: var(--md-admonition-icon--mythic-feature);
+    mask-image: var(--md-admonition-icon--mythic-feature);
+}
+
+/* demon-feature: demon mythic path / aspects. Icon: pitchfork */
+.md-typeset .admonition.demon-feature,
+.md-typeset details.demon-feature {
+    border-color: var(--titlered);
+}
+.md-typeset .demon-feature > .admonition-title,
+.md-typeset .demon-feature > summary {
+    background-color: var(--titlered-bg);
+}
+.md-typeset .demon-feature > .admonition-title::before,
+.md-typeset .demon-feature > summary::before {
+    background-color: var(--titlered);
+    -webkit-mask-image: var(--md-admonition-icon--demon-feature);
+    mask-image: var(--md-admonition-icon--demon-feature);
+}
+
+/* trickster-feature: trickster mythic path / tricks. Icon: drama masks */
+.md-typeset .admonition.trickster-feature,
+.md-typeset details.trickster-feature {
+    border-color: var(--plum);
+}
+.md-typeset .trickster-feature > .admonition-title,
+.md-typeset .trickster-feature > summary {
+    background-color: var(--plum-bg);
+}
+.md-typeset .trickster-feature > .admonition-title::before,
+.md-typeset .trickster-feature > summary::before {
+    background-color: var(--plum);
+    -webkit-mask-image: var(--md-admonition-icon--trickster-feature);
+    mask-image: var(--md-admonition-icon--trickster-feature);
+}
+
+/* angel-feature: angel mythic path. Icon: feather */
+.md-typeset .admonition.angel-feature,
+.md-typeset details.angel-feature {
+    border-color: var(--angelgold);
+}
+.md-typeset .angel-feature > .admonition-title,
+.md-typeset .angel-feature > summary {
+    background-color: var(--angelgold-bg);
+}
+.md-typeset .angel-feature > .admonition-title::before,
+.md-typeset .angel-feature > summary::before {
+    background-color: var(--angelgold);
+    -webkit-mask-image: var(--md-admonition-icon--angel-feature);
+    mask-image: var(--md-admonition-icon--angel-feature);
+}
+
+/* ==========================================================================
+   Item admonitions
+   All four share the same pewter accent — they're one visual family,
+   differentiated by icon and title rather than by color.
+   Usage: !!! item "Cloak of Many Colors"
+          !!! item-scroll "Scroll of Fireball"
+          !!! item-potion "Potion of Heroism"
+          !!! item-weapon "Frost Brand"
+   ========================================================================== */
+
+/* item: general/catch-all. Icon: treasure chest */
+.md-typeset .admonition.item,
+.md-typeset details.item {
+    border-color: var(--pewter);
+}
+.md-typeset .item > .admonition-title,
+.md-typeset .item > summary {
+    background-color: var(--pewter-bg);
+}
+.md-typeset .item > .admonition-title::before,
+.md-typeset .item > summary::before {
+    background-color: var(--pewter);
+    -webkit-mask-image: var(--md-admonition-icon--item);
+    mask-image: var(--md-admonition-icon--item);
+}
+
+/* item-scroll: scrolls. Icon: scroll */
+.md-typeset .admonition.item-scroll,
+.md-typeset details.item-scroll {
+    border-color: var(--pewter);
+}
+.md-typeset .item-scroll > .admonition-title,
+.md-typeset .item-scroll > summary {
+    background-color: var(--pewter-bg);
+}
+.md-typeset .item-scroll > .admonition-title::before,
+.md-typeset .item-scroll > summary::before {
+    background-color: var(--pewter);
+    -webkit-mask-image: var(--md-admonition-icon--item-scroll);
+    mask-image: var(--md-admonition-icon--item-scroll);
+}
+
+/* item-potion: potions. Icon: round-bottom flask */
+.md-typeset .admonition.item-potion,
+.md-typeset details.item-potion {
+    border-color: var(--pewter);
+}
+.md-typeset .item-potion > .admonition-title,
+.md-typeset .item-potion > summary {
+    background-color: var(--pewter-bg);
+}
+.md-typeset .item-potion > .admonition-title::before,
+.md-typeset .item-potion > summary::before {
+    background-color: var(--pewter);
+    -webkit-mask-image: var(--md-admonition-icon--item-potion);
+    mask-image: var(--md-admonition-icon--item-potion);
+}
+
+/* item-weapon: weapons. Icon: sword */
+.md-typeset .admonition.item-weapon,
+.md-typeset details.item-weapon {
+    border-color: var(--pewter);
+}
+.md-typeset .item-weapon > .admonition-title,
+.md-typeset .item-weapon > summary {
+    background-color: var(--pewter-bg);
+}
+.md-typeset .item-weapon > .admonition-title::before,
+.md-typeset .item-weapon > summary::before {
+    background-color: var(--pewter);
+    -webkit-mask-image: var(--md-admonition-icon--item-weapon);
+    mask-image: var(--md-admonition-icon--item-weapon);
+}

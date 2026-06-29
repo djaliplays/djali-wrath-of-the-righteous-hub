@@ -1,0 +1,142 @@
+/* ==========================================================================
+   YouTube video cards
+   ==========================================================================
+   Styles the HTML produced by the youtube() macro in main.py (used on
+   video reference pages, one card per video). Depends on pathfinder.css
+   variables (--bgtan, --pagegold, --titlered, --inkblue, etc.) — load
+   after pathfinder.css and admonition.css.
+
+   Note on specificity: admonition.css has a blanket rule
+   ".md-typeset .admonition, .md-typeset details { ... }" at specificity
+   (0,1,1). Every selector below that targets a bare <details>/<summary>
+   inside .video-card is written as ".md-typeset .video-card__summary ..."
+   (two classes) specifically to outrank that — a single-class selector
+   here would silently lose and leave Material's default border/background
+   showing through.
+   ========================================================================== */
+
+.md-typeset .video-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: var(--bgtan);
+    border: 1px solid var(--pagegold);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin: 1.25rem 0;
+}
+
+.md-typeset .video-card__thumb {
+    position: relative;
+    flex: 0 0 240px;
+    display: block;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    border: 1px solid var(--pagegold);
+}
+
+.md-typeset .video-card__thumb img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 0;
+}
+
+.md-typeset .video-card__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin: -1.5rem 0 0 -1.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition:
+        background-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.md-typeset .video-card__play::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    width: 0;
+    height: 0;
+    margin: -0.6rem 0 0 -0.4rem;
+    border-style: solid;
+    border-width: 0.6rem 0 0.6rem 1rem;
+    border-color: transparent transparent transparent #fff;
+}
+
+.md-typeset .video-card__thumb:hover .video-card__play {
+    background-color: var(--titlered);
+    transform: scale(1.08);
+}
+
+.md-typeset .video-card__body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.md-typeset .video-card__title {
+    display: block;
+    font-family: "Mr Eaves Small Caps", serif;
+    font-size: 0.9rem;
+    color: var(--titlered) !important;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.md-typeset .video-card__title:hover {
+    color: var(--rulered) !important;
+    text-decoration: underline;
+}
+
+/* the collapsible summary — deliberately NOT using the .note/.admonition
+   look, just a quiet inline toggle consistent with the rest of the card */
+.md-typeset details.video-card__summary {
+    margin-top: 0.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+.md-typeset .video-card__summary > summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: "Scaly Sans Caps", sans-serif;
+    color: var(--inkblue);
+    background-color: var(--inkblue-bg);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem;
+}
+
+.md-typeset .video-card__summary > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Material applies its default (note/pencil) icon to ANY bare <summary> as
+   a fallback when no type class is present — this kills that icon
+   specifically here, since this toggle is deliberately plain. */
+.md-typeset .video-card__summary > summary::before {
+    content: none;
+}
+
+.md-typeset .video-card__summary-body {
+    padding: 0.5rem 0.2rem 0;
+}
+
+.md-typeset .video-card__summary-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .md-typeset .video-card {
+        flex-direction: column;
+    }
+    .md-typeset .video-card__thumb {
+        flex-basis: auto;
+        width: 100%;
+    }
+}

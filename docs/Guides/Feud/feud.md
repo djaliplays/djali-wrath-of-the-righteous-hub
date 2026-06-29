@@ -22,7 +22,7 @@ This yields:
 
 - Full Starward Gaze XP if done right
 
-If you only want the final, step-by-step optimised routes, you can skip ahead to the [Peaceful → Kill Routes](#Peaceful--Kill-Routes) section.
+If you only want the final, step-by-step optimised routes, you can skip ahead to the [Peaceful → Kill Routes](#peaceful-kill-routes) section.
 
 ## Video
 
