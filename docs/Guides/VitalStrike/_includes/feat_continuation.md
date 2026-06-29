@@ -72,3 +72,6 @@ These two feat's have no particular synergy with Vital Strike, but will just gen
 
 ??? feat "Improved Critical"
     {% include '_includes/improved_critical.md' %}
+
+??? feat "Lunge"
+    {% include '_includes/lunge.md' %}
