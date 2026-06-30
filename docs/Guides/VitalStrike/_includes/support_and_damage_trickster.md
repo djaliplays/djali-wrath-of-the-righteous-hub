@@ -21,8 +21,8 @@ Another notable option is **Knowledge (Arcana) II**. This Mythic Trick can add t
 ??? trickster-feature "Knowledge (Arcana) II"
     {% include '_includes/arcana_2.md' %}
 
-??? item-weapon "Masterwork Weapon Trait"
-    {% include '_includes/masterwork_trait.md' %}
+??? item-weapon "Agile Weapon Trait"
+    {% include '_includes/agile_trait.md' %}
 
 Knowledge (Arcana) II does compete with several powerful Improved Mythic Tricks. **Perception II**, for example, grants the entire party the Completely Normal Spell metamagic feat and unlocks the improved critical feats. While those critical feats are less valuable for Vital Strike than for full attacks, they can potentially be quite useful for the rest of the party.
 
@@ -62,29 +62,16 @@ Its main strength is that, much like **Bolt of Justice** and **Storm of Justice*
 
 The downside is the lack of a merged spellbook. Unlike Angel, Trickster cannot accelerate its caster level progression, so the spell comes online considerably later and does a lot less damage.
 
-Rain of Halberds is unlocked at **Mythic Rank 5**, at the start of Act 4. Shortly afterwards, the Rod of Magical Affinity also becomes available.
+Rain of Halberds is unlocked at incredibly late at **Mythic Rank 7**, at the start of Act 5. By then you already have the Rod of Magical Affinity.
 
-There are several ways to approach the transition:
-
-* **Mythic Rank 4:** Take **Reusue Magic Device** in Act 3 to make immediate use of the wand upon finding it (in Act 4). The opportunity cost is giving up powerful alternatives such as **Knowledge (Arcana) II** or **Perception II** which unlike Reuse Magic Device also provide value during act 3 itself.
-* **Mythic Rank 6 or 7:** Delay the transition until later. This preserves earlier mythic tricks, but leaves relatively little of the game in which to benefit from it. 
-
-In case of mythic level 7 acquisition its should probably be treated as an extra with no spell specialization or similar investment.
 
 ##### Damage
 
-The plain mythic 5 damage is terrible:
-
-$$
-\text{CL} \times 1d10  = \mathbf{10d10}
-$$
-
-With the wand and Robe of the Seven Sins (both from Act 4 Treasure Isles)
-it becomes better:
+The mythic 7 damage with the wand and Robe of the Seven Sins (both from Act 4 Treasure Isles):
 
 $$
 \begin{aligned}
-(13d10 + 13 \times 2 (\text{Bolster}))  \times 1.5 (\text{Empower}) &= \mathbf{234} (\text{Maximized}) 
+(15d10 + 15 \times 2 (\text{Bolster}))  \times 1.5 (\text{Empower}) &= \mathbf{270} (\text{Maximized}) 
 \end{aligned}
 $$
 
@@ -102,11 +89,11 @@ $$
         The interaction between Empower Spell and Maximize Spell is inconsistent. For some spells, such as Bolt of Justice and Rain of Halberds, the additional damage granted by Empower is also maximized. For others, such as Hellfire Ray, the Empower portion is rolled normally instead of being maximized.
 
 
-With some feat investment; Spell Specialization taken twice once normally and once trough Loremaster for +4 CL.
+With some feat investment; Spell Specialization taken twice once normally and once trough Loremaster for +4 CL. Honestly given the late unlock it's not that worth investing.
 
 $$
 \begin{aligned}
-(17d10 + 17 \times 2 (\text{Bolster}))  \times 1.5 (\text{Empower}) &= \mathbf{306} (\text{Maximized}) 
+(19d10 + 19 \times 2 (\text{Bolster}))  \times 1.5 (\text{Empower}) &= \mathbf{342} (\text{Maximized}) 
 \end{aligned}
 $$
 
