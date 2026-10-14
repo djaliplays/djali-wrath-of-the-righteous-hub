@@ -39,7 +39,7 @@ A better fit is a divine caster that does not rely on an animal companion. **Sha
 
 Although unable to solo as effectively, a standard Shaman can still comfortably reach level 6 by following the optimised [**Ramien Kill Route**](../Feud/feud.md#peaceful-kill-ramien-optimized) for *Feud of the Faithful*. Ember can then be recruited and progressed into an animal companion class for a tank, with the remaining companions joining afterwards. Since recruitment begins at level 6, the party remains there for a relatively long time, maximising the value of an early Greater Vital Strike.
 
-The benefit of Standard Shaman is a somewhat stronger late-game. It can qualify naturally for **Winter Witch**, gaining additional caster levels for Bolt of Justice and Storm of Justice. This can be done by selecting **Frost Spirit** at character creation, sacrificing the stronger early-game **Battle Spirit**, or by obtaining Frost through Second Spirit Mythic. The loss of Battle Spirit is largely offset by the early Greater Vital Strike power spike.
+<!-- The benefit of Standard Shaman is a somewhat stronger late-game. It can qualify naturally for **Winter Witch**, gaining additional caster levels for Bolt of Justice and Storm of Justice. This can be done by selecting **Frost Spirit** at character creation, sacrificing the stronger early-game **Battle Spirit**, or by obtaining Frost through Second Spirit Mythic. The loss of Battle Spirit is largely offset by the early Greater Vital Strike power spike. 
 
 ??? mythic-feature "Second Spirit"
     {% include '_includes/second_spirit.md' %}
@@ -51,6 +51,9 @@ The benefit of Standard Shaman is a somewhat stronger late-game. It can qualify 
     Wildland Shaman can also qualify for Winter Witch by taking a one-level Witch dip with the Frost Patron, although this costs an additional caster level.
 
 Another advantage of the base Shaman is **Wandering Spirit**, which grants temporary access to another spirit's spells and abilities. This substantially reduces the opportunity cost of selecting Frost Spirit instead of Battle Spirit as the primary spirit.
+-->
+
+An advantage of the base Shaman is **Wandering Spirit**, which grants temporary access to another spirit's spells and abilities. 
 
 A useful interaction is that metamagicked versions of spirit spells are retained after switching spirits. 
 
@@ -58,9 +61,11 @@ A useful interaction is that metamagicked versions of spirit spells are retained
     {% include '_includes/wandering_spirit.md' %}
 
 
-!!! tip "Example Build"
-    **Frost Spirit Shaman** with a **Loremaster** level at character level 6 for **Greater Vital Strike**. Transition into an **Angel blaster**, obtaining Spell Specialization from Loremaster level 3 before taking six levels of **Winter Witch**.
+<!--!!! tip "Example Build"
+    **Frost Spirit Shaman** with a **Loremaster** level at character level 6 for **Greater Vital Strike**. Transition into an **Angel blaster**, obtaining Spell Specialization from Loremaster level 3 before taking six levels of **Winter Witch**. -->
     
+!!! tip "Example Build"
+    **Battle Spirit Shaman** with a **Loremaster** level at character level 6 for **Greater Vital Strike**. Transition into an **Angel blaster**, obtaining Spell Specialization from Loremaster level 3. 
 
 ### Unnecessary Damage Maximization
 #### Geomancer Dip
@@ -117,8 +122,11 @@ A bugged interaction between **School Mastery** and **Expanded Arsenal** allows 
 
 For absolute maximum damage, some of the choices are less practical.
 
+<!--    **Build:** Wildland Shaman 10, Winter Witch 6, Loremaster 3, Geomancer 1, (Merged) Angel 10 -->
+
 !!! abstract "Build Overview"
-    **Build:** Wildland Shaman 10, Winter Witch 6, Loremaster 3, Geomancer 1, (Merged) Angel 10
+    **Build:** Wildland Shaman 16, Loremaster 3, Geomancer 1, (Merged) Angel 10 
+
 
     **Mythic:** Abundant Casting x3, Ascendant Element: Fire, School Mastery: Any but Conjuration, Expanded Arsenal: Conjuration, Expanded Arsenal: Any x3, Any
 
@@ -126,10 +134,10 @@ For absolute maximum damage, some of the choices are less practical.
 
 $$
 \begin{aligned}
-&29\ (\text{Merged Angel with Shaman}) + 2\ (\text{Winter Witch}) \\
+&29\ (\text{Merged Angel with Shaman}) \\
 &+ 2\ (\text{Spell Specialization}) + 2\ (\text{Spell Specialization, Loremaster Wizard Feat}) \\
 &+\ 4\ (\text{School Mastery + 4x Expanded Arsenal Bug}) + 3\ (\text{Robe of the Seven Sins, DLC3}) \\
-&+\ 3\ (\text{Sin Mage's Staff, DLC6}) + 2\ (\text{Storyteller's Knowledge}) + 1\ (\text{Fresh Yoghurt}) = 48
+&+\ 3\ (\text{Sin Mage's Staff, DLC6}) + 2\ (\text{Storyteller's Knowledge}) + 1\ (\text{Fresh Yoghurt}) = 46
 \end{aligned}
 $$
 
@@ -177,8 +185,8 @@ $$
 
 $$
 \begin{aligned}
-&= 48d10 + 4d10\ (\text{Sword of Heaven + The Bound of Possibility}) + 48 \times 2\ (\text{Bolster}) \\
-&= 52d10 + 96
+&= 46d10 + 4d10\ (\text{Sword of Heaven + The Bound of Possibility}) + 46 \times 2\ (\text{Bolster}) \\
+&= 50d10 + 92
 \end{aligned}
 $$
 
@@ -186,8 +194,8 @@ $$
 
 $$
 \begin{aligned}
-&= (52d10 + 96) \times 1.5 \times 1.5 \times 1.5 \\
-&= \mathbf{2079}\ (\text{Maximized})
+&= (50d10 + 92) \times 1.5 \times 1.5 \times 1.5 \\
+&= \mathbf{1998}\ (\text{Maximized})
 \end{aligned}
 $$
 
