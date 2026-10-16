@@ -52,14 +52,19 @@
     - +2 bonuses to a saving throw of choice
 
 
+!!! bug "6-Level Caster Loremaster Bug"
+    For several 6-level casters, Loremaster and certain other prestige classes either fail to advance caster level or advance the wrong spellbook at specific levels.
+
 #### 3rd Level Spell Unlock
 
 | **Type**                  | **Level** | **Sneak**                          | **Sense Vitals**             | **Other**                                      |
 |---------------------------|-----------|-------------------------------------|------------------------------|------------------------------------------------|
-| **Full Caster (prepared)**   | 5         | *Shadow Shaman*                    | Wizard                       | Cleric, Druid, Shaman, Witch                   |
-| **Full Caster (spontaneous)** | 6         | -                                   | Sorcerer, Arcanist           | Oracle, *Stigmatized Witch*                   |
-| **Half Caster**            | 7         | *Sanctified Slayer*, *Inciter*, *Eldritch Scoundrel*, *Cult Leader* | Bard, Hunter, *Eldritch Scoundrel*, Skald | Inquisitor, Warpriest                         |
-| **Warrior Caster**         | 10        | *Divine Scion*                      | Ranger                       | Paladin, Bloodrager                            |
+| **9-Level Caster (prepared)**   | 5         | *Shadow Shaman*                    | Wizard                       | Cleric, Druid, Shaman, Witch                   |
+| **9-Level Caster (spontaneous)** | 6         | -                                   | Sorcerer, Arcanist           | Oracle, *Stigmatized Witch*                   |
+| **6-Level Caster**            | 7         | *Sanctified Slayer*, *Inciter*, *Eldritch Scoundrel*, *Cult Leader* | Bard, Hunter, *Eldritch Scoundrel*, Skald | Inquisitor, Warpriest                         |
+| **4-Level Caster**         | 10        | *Divine Scion*                      | Ranger                       | Paladin, Bloodrager                            |
+
+
 
 ##### Sense Vitals vs. Class Sneak Attack Dice
 
@@ -74,6 +79,6 @@
 ##### Warpriest
 - Can acquire Vital Strike feats using its unique ability to substitute class levels for BAB prerequisites.  
 
-##### Warrior Casters
+##### 4-Level Casters
 - Only the Freebooter makes sense for a Vital Strike build.  
 - Freebooters can obtain *Greater Vital Strike* either through Loremaster or by natural feat progression, thanks to their full BAB.

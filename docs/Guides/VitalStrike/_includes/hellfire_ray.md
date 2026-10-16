@@ -22,7 +22,10 @@ This transition would be a lot better if Rays Spells still applied sneak on ever
     - Waste a couple of feats on VS. Not a big deal, small cost and don't need too many feats for HFR.
     - HFR has no use for Sneak Attack. Accomplished Sneak Attacker is wasted and picking a Sneak Attack subclass might be suboptimal as you lose other features for it.
     - Lose a CL from Rowdy dip, delays HFR scaling and matters for intensified HFR.
-    - Half casters soft cap at 16 CL, can still get to the hard cap of 20 CL through items and spell specialization.
+    - Some 6-level casters don't get CL from Loremaster levels due to a bug, this obviously effect HFR which scales with CL.
+    ??? bug "6-Level Caster Loremaster Bug"
+        For several 6-level casters, Loremaster and certain other prestige classes either fail to advance caster level or advance the wrong spellbook at specific levels.
+
 
 !!! danger "Bigger Cons"
     - Waste a Mythic feat on Mythic Vital Strike. HFR is mythic intensive (Abundant Casting x3, Spell Penetration, Ascendant Element).
