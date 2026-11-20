@@ -1,0 +1,2610 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+abolish_disease.md
+abolish_guile.md
+abolish_poison.md
+abolish_undeath.md
+abundant_smite_chaos.md
+abundant_smite.md
+accomplished_sneak_attacker.md
+agile_trait.md
+all_is_darkness.md
+alter_ego.md
+ambrosial.md
+arcana_2.md
+arcane_bloodline_arcana.md
+arcane_bond.md
+ascendant_element.md
+aspect_babau.md
+aspect_brimorak.md
+aspect_coloxus.md
+aspect_deskari.md
+aspect_incubus.md
+aspect_nocticula.md
+aspect_of_deskari.md
+aspect_shadow_demon.md
+aspect_vrock.md
+azata_favorable_magic.md
+azata_incredible_might.md
+bane_of_flesh.md
+battering_blast.md
+battle_spirit_1.md
+bit_of_luck.md
+bolt_of_justice.md
+boots_of_arcane_persistence.md
+broken_trickster.md
+bulls_strength.md
+cackle.md
+call_of_the_fiery_things.md
+camouflage_forester.md
+camouflage.md
+cave_fangs_stalactites.md
+cave_fangs_stalagmites.md
+cave_fangs.md
+champion_of_the_faith_smite.md
+chant.md
+cleave.md
+cleaving_finish.md
+combat_reflexes.md
+corrupt_magic.md
+crippling_strike.md
+crusaders_edge.md
+cunning_initiative.md
+dagger_of_the_betrayer.md
+deadly_aim.md
+death_of_elements.md
+death_ward.md
+decree_of_hells_fires.md
+decree_of_hunt.md
+decree_of_school_magic.md
+decree_of_vengeance.md
+demon_extra_minor_aspect.md
+demonic_charge.md
+demonic_rage.md
+destructive_dispel.md
+devil_hells_authority.md
+devouring_lust.md
+dimensional_step.md
+dispel_magic.md
+dispel_synergy.md
+dispelling_attack.md
+diva_style.md
+divine_dismissal.md
+divine_favor.md
+divine_power.md
+duality_of_conjuration_and_summoning.md
+elemental_barrage.md
+elemental_bloodline_arcana.md
+enduring_spells.md
+enlarge_person.md
+evasion.md
+evercold.md
+everlasting_flame.md
+evil_eye_shaman.md
+evil_eye.md
+expanded_arsenal.md
+expeditious_retreat.md
+favored_terrain_forester.md
+favored_terrain_geomancer.md
+favored_terrain.md
+feint.md
+fervent_reflexes.md
+final_feint.md
+flame_curse.md
+focused_strike.md
+forewarned.md
+fortune_shaman.md
+fortune.md
+freezing_cold.md
+ftk.md
+fury.md
+geomancy.md
+giant_weapon_wielder.md
+gloves_of_enduring_wizard.md
+gold_dragon_dragon_feat.md
+gold_dragon_dragon_might.md
+gold_dragon_dragon_smite.md
+gold_dragon_gold_dragon_breath.md
+gold_dragon_mind_clearing_breath.md
+gold_dragon_overwhelming_breath.md
+gold_dragon_perfect_body.md
+gold_dragon_perfect_mind.md
+gold_dragon_perfect_soul.md
+grand_cognatogen.md
+great_cleave.md
+greater_dispel_magic.md
+greater_snap_shot.md
+greater_spell_focus.md
+haste.md
+heartstone_of_the_night_hag_queen.md
+hellfire_ray.md
+hells_decree.md
+hide_in_plain_sight.md
+holy_hymn.md
+hurricane_bow.md
+iii_critical_i.md
+impromptu_sneak_attack.md
+improved_cleaving_finish.md
+improved_critical.md
+improved_initiative_mythic.md
+improved_initiative.md
+improved_snap_shot.md
+incorporeal.md
+infuse_magic_device.md
+inspirational_leader.md
+invisible_thief.md
+joy_of_life.md
+last_stand.md
+lead_blades.md
+legendary_proportions.md
+lich_death_of_elements.md
+lich_eclipse_chill.md
+lich_fear_control.md
+lich_withering_life.md
+lightning_draw.md
+loremaster_6_level_bug.md
+loremaster_intensified_bug.md
+loremaster_secret.md
+loremaster.md
+lunge.md
+magic_weapon.md
+magus_arcana_empowered_magic.md
+magus_arcana_maximized_magic.md
+magus_arcana_reach_magic.md
+magus_arcana.md
+mark_of_justice.md
+masterwork_trait.md
+meta_bolster.md
+meta_empower.md
+meta_heighten.md
+meta_intensified.md
+meta_maximize.md
+meta_persistent.md
+meta_quicken.md
+misfortune_shaman.md
+misfortune.md
+mythic_spell_focus.md
+night_flash.md
+numerian_greatsword.md
+oracles_curse.md
+perfect_mind.md
+petrifying_strike.md
+piercing_rays.md
+plague_of_madness.md
+power_attack.md
+powerless_prophecy.md
+primal_regression.md
+profane_hymn.md
+promise_of_greatness.md
+protective_luck_shaman.md
+protective_luck.md
+quarterstaff_of_the_war_mage.md
+rain_of_halberds.md
+ranged_feint.md
+razmirs_mask.md
+recluses_stride.md
+righteous_crusaders_ring.md
+ring_of_triumphant_advance.md
+robe_of_the_seven_sins.md
+rod_of_magical_affinity.md
+rogue_talent_familiar.md
+rupture_restraints.md
+school_mastery.md
+scorching_ray.md
+second_spirit.md
+sense_vitals.md
+shaman_secret.md
+shrouded_step.md
+slayers_feint.md
+smite_chaos.md
+smite_evil.md
+snap_shot.md
+solar_winds.md
+spell_focus.md
+spirit_animal.md
+stalactites_trap.md
+stealth_1.md
+stealth_2.md
+storm_of_justice.md
+stormlords_resolve.md
+sure_footing.md
+surprise_spells.md
+sword_of_heaven.md
+sword_of_holy_damage.md
+sworn_enemy_smite.md
+the_bound_of_possibility.md
+treacherous_flame.md
+trick_fate.md
+trickster_sneak.md
+true_strike.md
+two-weapon_feint.md
+umd_2.md
+umd_3.md
+uncanny_dodge.md
+undead_bloodline_arcana.md
+vanish.md
+vulnerability_curse.md
+wandering_spirit.md
+warrior_priest.md
+warsight.md
+winds_of_vengeance.md
+witch_familiar.md
+wizard_metamagic_mastery.md
+wrath_of_the_creator.md
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="abolish_disease.md">
+**Sword of Heaven**
+
+**Prerequisites:**
+
+- Improved Sword of Heaven
+- MR4
+
+The Angel's weapons become the bane of all diseases. A creature wielding them becomes immune to diseases. healing spells cast by that creature now remove all diseases from the target and also remove the fatigued, exhausted, sickened, and nauseated conditions. Creatures that apply diseases on attacks or are otherwise closely linked to diseases suffer an additional 50% damage from the wielder as holy damage.
+</file>
+
+<file path="abolish_guile.md">
+**Sword of Heaven**
+
+**Prerequisites:**
+
+- Improved Sword of Heaven
+- MR4
+
+The Angel's weapons become the bane of all guile. A creature wielding them becomes immune to compulsion effects. healing spells cast by that creature now remove all mind-affecting effects from the target. Creatures that commonly use compulsion suffer an additional 50% damage from the wielder as holy damage.
+</file>
+
+<file path="abolish_poison.md">
+**Sword of Heaven**
+
+**Prerequisites:**
+
+- Improved Sword of Heaven
+- MR4
+
+The Angel's weapons become the bane of all poisons. A creature wielding them becomes immune to poisons. healing spells cast by that creature now remove all poisons from the target and heal all ability damage and ability drain. Creatures that apply poison on attacks or are otherwise closely linked to poisons suffer an additional 50% damage from the wielder as holy damage.
+</file>
+
+<file path="abolish_undeath.md">
+**Sword of Heaven**
+
+**Prerequisites:**
+
+- Improved Sword of Heaven
+- MR4
+
+The Angel's weapons become the bane of all undeath. A creature wielding them becomes immune to death effects and energy drain. healing spells cast by that creature now remove paralysis and all negative levels from the target. Undead creatures suffer an additional 50% damage from the wielder as holy damage.
+</file>
+
+<file path="abundant_smite_chaos.md">
+**Mythic Ability**
+
+You've learned a way to increase the number of uses of your smite chaos ability.
+
+**Benefit:** You can use smite chaos a number of additional times per day equal to half your mythic rank.
+</file>
+
+<file path="abundant_smite.md">
+**Mythic Ability**
+
+You've learned a way to increase the number of uses of your smite evil ability.
+
+**Benefit:** You can use smite evil a number of additional times per day equal to half your mythic rank.
+</file>
+
+<file path="accomplished_sneak_attacker.md">
+**Prerequisites** 
+
+- Sneak Attack: > 1 
+
+**Effect**
+
+Your sneak attack damage increases by 1d6.
+
+Your number of sneak attack dice cannot exceed half your character level (rounded up).
+</file>
+
+<file path="agile_trait.md">
+**Weapon Trait**
+
+Agile weapons are unusually well balanced and responsive. A wielder with the Weapon Finesse feat can choose to apply her Dexterity modifier to damage rolls with an agile weapon in place of her Strength modifier (whichever is higher). This modifier to damage is not increased for two-handed weapons, but is still reduced for off-hand weapons.
+</file>
+
+<file path="all_is_darkness.md">
+**Tortured Crusader**
+
+A tortured crusader can call out to the powers of good to aid her in her struggle against evil. As a swift action, the tortured crusader chooses one target within sight to smite. The tortured crusader adds half her Wisdom bonus (minimum 1) to her attack rolls and adds her paladin level to all damage rolls made against the target of her smite. Smite evil attacks automatically bypass any DR the creature might possess.
+
+In addition, while smite evil is in effect, the tortured crusader gains a +4 deflection bonus to her AC against attacks made by the target of the smite. Smite evil lasts until the target dies or the tortured crusader selects a new target. A tortured crusader can use this ability once per day at 1st level, and one additional time per day for every 5 levels she has, to a total of 5 times per day at 20th level (not counting the 3 additional uses granted by her unbroken paragon feature at 20th level).
+</file>
+
+<file path="alter_ego.md">
+**Assassin**
+
+An assassin can create copies of himself to distract the enemy. As long as at least one copy is present on the battlefield, the assassin deals sneak attack damage to all creatures. This ability otherwise functions as the mirror image spell.
+
+The assassin creates one copy plus one copy for every 3 levels the assassin has beyond 3rd.
+
+He can use this ability a number of times per day equal to 1 + his Intelligence modifier.
+
+**Note:** Dealing sneak damage and targeting flat-footed AC go together in WotR. When an ability says the former, you can expect it also does the latter.
+</file>
+
+<file path="ambrosial.md">
+**Shirt**
+
+This robe grants its wearer a +4 bonus to attack rolls with ray attacks, +1 point of damage per dice rolled to fire, acid, force, cold, electricity spells and a +4 bonus on caster level checks to overcome spell resistance.
+
+**Acquisition**
+
+Given via Crusade event to Knight Commander with Arcane Trickster class after completing Know Thy Enemy quest and finishing Areelu's Laboratory area.
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Ambrosial_Attire_of_Arcane_Annihilation_(Shirt))
+</file>
+
+<file path="arcana_2.md">
+**Improved Mythic Trick**
+
+You can reveal hidden effects that can be used by wearers of magical equipment. Every item you identify gets an additional random minor effect.
+
+For weapons, the possible enchantments are Keen, Frost, Flaming, Agile, Corrosive, Shock, Radiant, Necrotic, Aberration Bane, Animal Bane, Construct Bane, Dragon Bane, Fey Bane, Monstrous Humanoid Bane, Magical Beast Bane, Good Outsider Bane, Lawful Outsider Bane, Plant Bane, or Vermin Bane.
+
+For armor, the possible enchantments are Cold Resistance 10 or 15, Acid Resistance 10 or 15, Electricity Resistance 10 or 15, Fire Resistance 10 or 15, Sonic Resistance 10, Damage Resistance 2, or Shadow.
+</file>
+
+<file path="arcane_bloodline_arcana.md">
+**Arcane Bloodline**
+
+Whenever you apply a metamagic feat to a spell that increases the slot used by at least one level, increase the spell's DC by +1. This bonus does not stack with itself and does not apply to spells modified by the Heighten Spell feat.
+</file>
+
+<file path="arcane_bond.md">
+**Wizard**
+
+At 1st level, you can form a powerful bond with an object or a creature. This bond can take one of two forms: a familiar or a bonded object. A familiar is a magical pet that enhances your skills and senses, while a bonded object is an item you can use to cast additional spells.
+
+A bonded object can be used once per day to restore any one spell that the wizard had prepared for this day.
+</file>
+
+<file path="ascendant_element.md">
+**Mythic Ability**
+
+You've mastered a certain element to a spectacular level.
+
+**Benefit:** Choose one energy type (acid, cold, electricity, fire, sonic, or negative). The damage of that energy type you deal can no longer be prevented or reduced by energy resistances or energy immunities. This bonus works on any damage you deal with the chosen energy type.
+</file>
+
+<file path="aspect_babau.md">
+**Minor Demon Aspect**
+
+The Demon adopts the aspect of the babau, gaining a bonus on all Mobility, Trickery, and Stealth skill checks equal to half the Demon's mythic rank plus 1. Those bonuses don't stack with other bonuses from demonic aspects.
+
+The aspect of the babau increases the Demon's sneak attack damage during a demonic rage by 2d6. The bonus increases by 1d6 at 6th and 9th mythic ranks. Any creature that strikes the Demon with the aspect of the babau during a demonic rage with a non-reach melee weapon suffers 2d6 acid damage.
+
+This damage increases by 1d6 at 6th and 9th mythic ranks.
+</file>
+
+<file path="aspect_brimorak.md">
+**Minor Demon Aspect**
+
+The Demon adopts the aspect of the brimorak, gaining a bonus on all Mobility, Trickery, and Use Magic Device skill checks equal to half the Demon's mythic rank plus 1. Those bonuses don't stack with other bonuses from demonic aspects.
+
+Any creature that strikes the Demon with the aspect of the brimorak during a demonic rage with a non-reach melee weapon suffers 2d6 fire damage. This damage increases by 1d6 at 6th and 9th mythic ranks. 
+
+Whenever the Demon with the aspect of the brimorak casts a spell that deals damage during a demonic rage, that spell deals an additional 2 points of damage per dice rolled. The bonus to damage increases by 1 at 6th and 9th mythic ranks.
+
+!!! bug "Spell Damage"
+    The addtional points of damage only apply to fire spells.
+</file>
+
+<file path="aspect_coloxus.md">
+**Major Demon Aspect**
+
+The Demon adopts the aspect of the coloxus, gaining a bonus to Intelligence score equal to half the Demon's mythic rank plus 1. 
+
+The aspect of the coloxus allows the Demon to use abilities and cast spells as move actions during a demonic rage.
+</file>
+
+<file path="aspect_deskari.md">
+**Demon Lord Aspect**
+
+The aspect of Deskari changes all energy damage the Demon deals while in a demonic rage to unholy, and the Demon's physical damage ignores physical damage immunity or damage reduction.
+</file>
+
+<file path="aspect_incubus.md">
+**Minor Demon Aspect**
+
+The Demon adopts the aspect of the incubus, gaining a bonus on all Persuasion, Athletics, and Lore (nature) skill checks equal to half the Demon's mythic rank plus 1. Those bonuses don't stack with other bonuses from demonic aspects. 
+
+Whenever the Demon with the aspect of the incubus casts a spell or uses an ability during a demonic rage, its DC increases by 1. This bonus increases by 1 at 6th and 9th mythic ranks. 
+
+While in a demonic rage, the Demon with the aspect of the incubus gains a +4 bonus on weapon damage rolls. The bonus to damage increases by 2 at 6th and 9th mythic ranks.
+</file>
+
+<file path="aspect_nocticula.md">
+**Demon Lord Aspect**
+
+Once per demonic rage, the Demon can use this ability to grant one ally all the benefits of the demonic rage, including the effects of the Demon's active aspects and major aspects, as a free action until the end of combat.
+</file>
+
+<file path="aspect_of_deskari.md">
+**Demon**
+
+The aspect of Deskari changes all energy damage the Demon deals while in a demonic rage to unholy, and the Demon's physical damage ignores physical damage immunity or damage reduction.
+</file>
+
+<file path="aspect_shadow_demon.md">
+**Major Demon Aspect**
+
+The Demon adopts the aspect of the shadow demon, gaining a bonus to Wisdom score equal to half the Demon's mythic rank plus 1. 
+
+The aspect of the shadow demon makes the Demon incorporeal during a demonic rage.
+</file>
+
+<file path="aspect_vrock.md">
+**Minor Demon Aspect**
+
+The Demon adopts the aspect of the vrock, gaining a bonus on all Knowledge (arcana), Knowledge (world), and Lore (religion) skill checks equal to half the Demon's mythic rank plus 1. Those bonuses don't stack with other bonuses from demonic aspects. 
+
+While in a demonic rage, the Demon with the aspect of the vrock gains a +2 bonus on ranged attack rolls. The bonus increases by 1 at 6th and 9th mythic ranks. All spells and non-physical abilities that the Demon with the aspect of the vrock uses during a demonic rage count as reach spells. During a demonic rage, all enemies within 30 feet of the Demon with the aspect of the vrock gain a –1 penalty on Reflex saves and move as if in difficult terrain. This penalty increases by 1 at 6th and 9th mythic ranks.
+</file>
+
+<file path="azata_favorable_magic.md">
+**Superpower**
+
+The Azata's magic becomes incredibly more powerful. Whenever an enemy makes a saving throw against the Azata's spells, that enemy rolls the die twice and takes the worse result. 
+
+Whenever the Azata makes a concentration check or a check to overcome spell resistance, they roll twice and take the better result. 
+
+If the Azata casts a spell whose description says that a successful saving throw halves its damage or duration, it only decreases it by 25% instead.
+</file>
+
+<file path="azata_incredible_might.md">
+**Superpower**
+
+The Azata gains a morale bonus equal to their mythic rank on attack and damage rolls. 
+
+Whenever the Azata hits with a charge attack or confirms a critical hit, the target must succeed at a Fortitude saving throw, with a DC equal to 10 + the Azata's mythic rank + Strength modifier. If the target fails the saving throw, one of the following happens at random: Enemy is stunned for 1d4 rounds (30%) Enemy is knocked prone for 1d4 rounds (20%) Enemy is pushed away 15 feet and is stunned for 1d4 rounds (20%) Enemy is crippled until the end of the fight: they can no longer move and suffer a –3 penalty on attack rolls and to AC (15%) Enemy becomes exhausted (10%) Enemy is killed (5%).
+
+Additionally, the Azata can decide to lose these advantages to instead bolster the physical abilities of companions, granting them a morale bonus on all attack and damage rolls equal to half the Azata's mythic rank.
+
+!!! note "Patch 2.2.0as, Nov 21, 2023 change"
+    Azata's Incredible Might ability now works not only on weapon attacks and damage rolls, but to all attack and damage rolls;
+</file>
+
+<file path="bane_of_flesh.md">
+**Ring**
+Once per day, whenever your HP falls below 0, your HP is restored by twice your character level, and the ring summons 1d4+2 undead skeletal champions around you for 2 minutes.
+
+!!! bug "Fire Conversion"
+    When the ring's once-per-day effect triggers upon the wielder falling below 0 HP, it also applies an unintended buff that grants +2 to attack rolls and converts elemental spell damage to Fire.
+
+    It is removed upon rest.
+
+**Acquisition**
+Relic Broken Phylactery of Stevanius the Rotten
+Crusade Battle south from Gargoyle Canyon (Act 2)
+</file>
+
+<file path="battering_blast.md">
+- **Level:** 3
+- **School:** Evocation
+- **Spell Descriptors:** Force
+- **Target:** One enemy
+- **Range:** Close
+- **Delivery:** Ranged Touch Attack
+- **Saving Throw:** Reflex on Bull Rush
+- **Spell Resistance:** Yes
+- **Casting Time:** Standard Action
+
+You hurl a fist-sized ball of force resembling a sphere of spikes to ram a designated creature. You must succeed on a ranged touch attack to strike your target. On a successful hit, you deal 1d6 points of force damage per two caster levels (maximum 5d6). For every 5 caster levels you possess beyond 5th, you gain an additional ball of force.
+A creature struck by any of these is subject to a bull rush attempt. The force has a Strength modifier equal to your Intelligence, Wisdom, or Charisma modifier (whichever is highest). The CMB for the force's bull rush uses your caster level as its base attack bonus, adding the force's Strength modifier and a +10 bonus for each additional blast that hits. If the bull rush succeeds, the force pushes the creature away from you in a straight line, and the creature must make a Reflex save or fall prone.
+
+**Notes**:
+The extra balls of force are capped at 7 (CL 35).
+
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Battering_Blast)
+</file>
+
+<file path="battle_spirit_1.md">
+**Battle Spirit**
+
+A shaman surrounds herself with the spirit of battle. Allies within 30 feet of the shaman (including the shaman) receive a +1 morale bonus on attack rolls and weapon damage rolls.
+At 8th level and 16th level, these bonuses increase by 1.
+
+The shaman can use this ability for a number of rounds per day equal to 3 + her Charisma modifier. These rounds do not need to be consecutive.
+</file>
+
+<file path="bit_of_luck.md">
+**Luck Domain**
+
+As a standard action, the character can touch a willing creature and grant it a bit of luck. For the next round, whenever the target rolls a d20, it rolls twice and takes the more favourable result.
+
+This ability can be used a number of times per day equal to 3 + the character's Wisdom modifier.
+</file>
+
+<file path="bolt_of_justice.md">
+- **Level:** Angel 6
+- **School:** Conjuration
+- **Spell Descriptors:** —
+- **Target:** One enemy
+- **Range:** Long
+- **Delivery:** Direct
+- **Saving Throw:** Reflex half
+- **Spell Resistance:** No
+- **Duration:** Instant
+- **Casting Time:** Standard Action
+
+You launch a bolt that does 1d6 holy damage per caster level to the target. In addition, the target must make a Reflex save or be knocked prone.
+
+If the target is evil, the spell does 1d8 damage per level and if the creature fails its reflex save, it also suffers a -2 penalty to AC, attack rolls and saving throws.
+
+If the target is undead or an evil outsider, the spell does 1d10 damage per level and if the creature fails its reflex save, it also suffers a -4 penalty to AC, attack rolls and saving throws.
+
+If the target is a demon lord, evil dragon or a powerful undead creature like a lich, the spell does 1d12 damage per level and the target suffers a -4 penalty to AC, attack rolls and saving throws. In addition, the target must make a Reflex save or be knocked prone.
+</file>
+
+<file path="boots_of_arcane_persistence.md">
+**Boots**
+
+Whenever the wearer casts the same spell for the fourth time during the day, their next spell is quickened, as though using the Quicken Spell feat.
+
+**Quicken Spell:** Casting a quickened spell is a swift action. You can perform another action, including casting another spell, in the same round. A spell with a casting time of more than 1 round or 1 full-round action cannot be quickened.
+
+*Acquisition*: Sold by Krebus in Middle City (Act 4).
+</file>
+
+<file path="broken_trickster.md">
+**Glasses**
+
+This mask grants its wearer immunity to poison and a +6 enhancement bonus to Wisdom and Charisma ability scores. It also makes it impossible to identify the wearer's alignment.
+
+Whenever the wearer takes damage of any energy type, they gain resistance 20 to this energy for 1 round. Whenever the wearer takes physical damage, they gain DR 20/— for 1 round.
+
+**Acquisition**
+
+Found in Laughter's Prison (Midnight Isles DLC, Act 3).
+</file>
+
+<file path="bulls_strength.md">
+- **Level:** 2
+- **School:** Transmutation
+- **Target:** Friendly Close
+- **Duration:** 1 minute/level
+
+
+The subject becomes stronger. The spell grants a +4 enhancement bonus to Strength, adding the usual benefits to melee attack rolls, melee damage rolls, and other uses of the Strength modifier. Enhancement bonuses don't stack with other enhancement bonuses, for example with bonuses from belts.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Bull's_Strength)
+</file>
+
+<file path="cackle.md">
+**Witch Hex**
+
+A witch can cackle madly as a move action. Any creature that is within 30 feet that is under the effects of an evil eye hex, fortune hex, protective luck, or misfortune hex caused by the witch has the duration of that hex extended by 1 round.
+</file>
+
+<file path="call_of_the_fiery_things.md">
+**Shirt**
+
+This shirt makes all the wearer's fire spells deal additional 4d6 of fire damage while making them suffer a –2 penalty to AC.
+
+**Acquisition**
+
+Made from the relic Fire of Baphomet, found in the Crusade battle north from Sinister Mansion (Act 5).
+</file>
+
+<file path="camouflage_forester.md">
+**Forester**
+
+A forester of 7th level or higher can, as a move action, use the Stealth skill to hide in any of his favored terrains, even in combat.
+</file>
+
+<file path="camouflage.md">
+**Ranger**
+
+A ranger of 12th level or higher can, as a move action, use the Stealth skill to hide in any of his favored terrains, even in combat.
+</file>
+
+<file path="cave_fangs_stalactites.md">
+**Personal Spell**
+
+- **Level:** 5
+- **School:** Conjuration
+- **Casting time:** Standard action
+- **Duration:** 10 minutes/level
+- **Trap placement:** Free action
+
+Stalactites: Shards of rock drop from above, dealing 3d8 points of bludgeoning and piercing damage (Reflex half). A creature that fails its Reflex save is pinned to the ground under stalactites and rubble, gaining the entangled condition until it can free itself with a successful DC 15 Strength check or DC 20 Mobility check.
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Cave_Fangs_(Stalactites))
+</file>
+
+<file path="cave_fangs_stalagmites.md">
+**Personal Spell**
+
+- **Level:** 5
+- **School:** Conjuration
+- **Casting time:** Standard action
+- **Duration:** 10 minutes/level
+- **Trap placement:** Swift action
+
+Stalagmites: Piercing spires of rock erupt up from the ground, dealing 3d8 points of piercing damage and knocking the creature prone (a successful Reflex saving throw halves this damage and avoids being knocked prone). Once the stalagmites appear, they function thereafter as spike stones for 1 minute per caster level and then crumble to dust.
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Cave_Fangs_(Stalagmites))
+</file>
+
+<file path="cave_fangs.md">
+**Personal Spell**
+
+- **Level:** 5
+- **School:** Conjuration
+- **Casting time:** Standard action
+- **Duration:** 10 minutes/level
+- **Saving throw:** Reflex half
+- **Spell resistance:** Not affected
+
+Creates a magical trap that makes stalactites or stalagmites "bite" enemies moving through the affected area. You choose the variant when you cast the spell. For the duration you can place traps anywhere within close range as a free action (a swift action for Stalagmites). Each trap has a 5-foot radius and shortens the spell's remaining duration by 10 minutes.
+
+**Variants:** Cave Fangs: Stalactites, Cave Fangs: Stalagmites
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Cave_Fangs)
+</file>
+
+<file path="champion_of_the_faith_smite.md">
+**Champion of the Faith**
+
+At 4th level, a champion of the faith can focus his powers against his chosen foes. As a swift action, the champion of the faith chooses one target within sight to smite. If this target is of his opposed alignment, the champion of the faith adds his Charisma bonus (if any) to his attack rolls and adds his warpriest level to all damage rolls made against the target of his smite. Smite attacks automatically bypass any DR the target possesses.
+
+In addition, while smite is in effect, the champion of the faith gains a deflection bonus equal to his Charisma modifier (if any) to his AC against attacks made by the target of the smite. If the smite targets a creature that's not of the champion of the faith's opposed alignment, the smite is wasted with no effect.
+
+The smite effect remains until the target of the smite is dead or the next time the champion of the faith regains spells.
+
+The champion of the faith can use this ability once per day, plus one additional time per day for every 4 levels beyond 4th (to a maximum of five times per day at 20th level).
+
+Using this ability consumes two uses of his fervor ability.
+</file>
+
+<file path="chant.md">
+**Shaman Hex**
+
+A Shaman can chant as a move action. Any creature that is within 30 feet that is under the effects of the Shaman's evil eye, fortune, fury, misfortune, or protective luck hex has that effect's duration extended by 1 round.
+</file>
+
+<file path="cleave.md">
+**Prerequisites** 
+
+- Power Attack
+- Strength 13  
+
+As a standard action, make a single attack at full base attack bonus. If you hit, you can make one additional attack against an adjacent foe within reach. You can only make one extra attack per round with this feat unless you have Great Cleave. Using this feat imposes a -2 penalty to your Armor Class until your next turn.
+</file>
+
+<file path="cleaving_finish.md">
+**Prerequisites**
+
+- Power Attack
+- Cleave
+- Strength 13
+
+**Effect**
+
+If you make a melee attack, and your target drops to 0 or fewer hit points as a result of your attack, you can make another melee attack using your highest base attack bonus against another opponent within reach. You can make only one extra attack per round with this feat.
+</file>
+
+<file path="combat_reflexes.md">
+**Effect**
+
+You can make a number of additional attacks of opportunity per round equal to your Dexterity bonus. You can also make attacks of opportunity while flat-footed.
+</file>
+
+<file path="corrupt_magic.md">
+**Lich Mythic Spell**
+
+- **Level:** 9
+- **School:** Abjuration
+- **Target:** One creature
+- **Range:** Medium
+- **Saving Throw:** —
+- **Casting Time:** Standard Action
+
+This functions as a targeted dispel magic, but it can dispel multiple spells, starting with the highest-level spells and proceeding to lower-level spells. Additionally, the target receives a –1 penalty on attack and damage rolls, saving throws, and to AC for every dispelled effect.
+</file>
+
+<file path="crippling_strike.md">
+**Advanced Rogue Talent**
+
+A character with this talent can sneak attack opponents with such precision that the blows weaken and hamper them. An opponent damaged by her sneak attacks also take 2 points of Strength damage.
+</file>
+
+<file path="crusaders_edge.md">
+**Level:** 4
+**School:** Transmutation
+**Target:** Friendly Close
+**Duration:** 1 minute/level
+
+When you cast this spell on a melee weapon in your primary hand, you imbue it with a powerful holy energy, granting your primary weapon the bane weapon quality against evil outsiders. Furthermore, whenever you score a successful critical hit against an outsider with the evil subtype, you not only deal normal critical damage with the weapon but also nauseate the outsider for 1d3 rounds — the outsider can reduce this nauseated condition to sickened for 1 round with a successful Fortitude save.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Crusader's_Edge )
+</file>
+
+<file path="cunning_initiative.md">
+**Inquisitor Feature**
+
+At 2nd level, an inquisitor adds her Wisdom modifier to initiative checks, in addition to her Dexterity modifier.
+</file>
+
+<file path="dagger_of_the_betrayer.md">
+**Dagger +5**
+
+This +5 cruel anarchic dagger allows its wielder to channel magic through it, making it more powerful. The save DCs of all spells the wielder casts increase by 2. If the wielder is an arcanist with the magic deceiver archetype, the save DCs of fused spells they cast increase by 2 in addition to the first bonus.
+
+**Acquisition**
+
+Sold by the Shopkeeper (Equipment) in the A Dance of Masks DLC (Act 5).
+</file>
+
+<file path="deadly_aim.md">
+**Prerequisites** 
+
+- Dexterity 13  
+
+**Effect**
+
+You can take a -1 penalty on all ranged attack rolls to gain a +2 bonus on ranged damage rolls.  
+
+At base attack bonus +4, and every +4 thereafter, the penalty increases by -1 and the damage bonus increases by +2. You must choose to use this feat before making an attack roll, and its effects last until your next turn. The bonus does not apply to touch attacks or effects that don’t deal hit point damage.
+</file>
+
+<file path="death_of_elements.md">
+**Lich**
+
+The Lich can change any elemental damage they deal to negative energy, no matter the source of this elemental damage. The Lich also gains the Consuming Elements ability, which they can use for a number of rounds per day equal to half their mythic rank, turning all elemental damage they receive into negative energy.
+</file>
+
+<file path="death_ward.md">
+**Personal Spell**
+
+- **Level:** 4 or 5
+- **School:** Necromancy 
+- **Duration:** 1 minute per level 
+
+The subject gains a +4 morale bonus on saves against all death spells and magical death effects. The subject is immune to energy drain and any negative energy effects, including channeled negative energy. This spell does not remove negative levels that the subject has already gained and does not protect against other sorts of attacks, even if those attacks might be lethal.
+
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Death_Ward)
+</file>
+
+<file path="decree_of_hells_fires.md">
+All enemies in a 50 feet radius are dealt 2d10 damage per your mythic rank (half fire, half unholy). If after this damage their HP is lower than ten times your mythic rank, they must make a Fortitude saving throw. If they fail that saving throw, they die.
+</file>
+
+<file path="decree_of_hunt.md">
+You grant one ally the ability to mark an enemy as the target for the hunt. You lose control of this ally immediately, and they try to attack the prey, gaining a bonus to attack and damage rolls equal to your mythic rank. This effect lasts until the end of combat, or until the target is dead.
+</file>
+
+<file path="decree_of_school_magic.md">
+One ally is ordered to only use one school of magic, but the potency of their spells increases considerably. Caster level and DC of saving throws against this ally's spells is increased by half your mythic rank.
+</file>
+
+<file path="decree_of_vengeance.md">
+One ally goes into battle madness. Until the end of combat, the ally attacks enemies indiscriminately, but gains a number of temporary hit points equal to ten times your mythic rank. Additionally, each time this ally kills a target, they gain DR 5/evil, +2 bonus to CMD and saving throws against movement impairing, paralyzing and stunning effects until the end of combat. This bonus stacks up to 5 times.
+</file>
+
+<file path="demon_extra_minor_aspect.md">
+**Demon Feature**
+
+At the 5th mythic rank, the Demon gains two major demonic aspects, and they get one more at the 7th mythic rank. These aspects use more powerful demons as inspiration and allow the Demon to focus their rage more effectively.
+</file>
+
+<file path="demonic_charge.md">
+**Demon**
+
+At the 3rd mythic rank, you can teleport to the target enemy as a move action, dealing 2d6 unholy damage per mythic rank to all enemies in a 10-foot radius around the beginning point of the teleport and at the end point. An enemy can only be damaged by this ability once per round.
+</file>
+
+<file path="demonic_rage.md">
+**Demon**
+
+At the 3rd mythic rank, the power of the Abyss courses through the Demon, waiting to be unleashed. The Demon can enter a demonic rage as a free action. The demonic rage lasts until the end of combat. While in a demonic rage, the Demon gains a +2 bonus on attack rolls, damage rolls, caster level checks, and Reflex saving throws. The DCs for all saving throws against the Demon's spells and abilities are increased by 2.
+
+These benefits increase by 1 at 6th and 9th mythic ranks. You can use demonic rage 3 times per day. The number of uses increases by 1 at 6th and 9th mythic ranks.
+
+Note: Each time you activate the rage, you will take (1d4 + (mythic rank / 2)) damage per each enemy within 5 feet.
+</file>
+
+<file path="destructive_dispel.md">
+**Feat**
+
+When you successfully make a targeted dispel check against an opponent, that opponent must succeed at a Fortitude save (DC = 10 + 1/2 caster level + casting ability modifier) or be stunned until the start of your next turn. If the save succeeds, the opponent is instead sickened for 1 round.
+</file>
+
+<file path="devil_hells_authority.md">
+**Devil Feature**
+
+You gain the ability to use the authority of Hell to shape mythic powers into other forms.
+
+Three times per day, you can gain the ability to use Angel's Sword ability with one improvement or Demonic rage with one aspect for the next ten minutes.
+</file>
+
+<file path="devouring_lust.md">
+**Metamagic Rod**
+
+This rod grants you the ability to modify up to six spells per day so that the energy type of the damage they deal changes to unholy. The modified spell also becomes maximized as though using the Maximize Spell feat.
+
+Greater rods can be used with spells of 9th level or lower.
+
+**Acquisition**
+
+Made from the relic Attractive Impulse, found in the Crusade battle south of the Lands of Yath Watch (Act 3).
+</file>
+
+<file path="dimensional_step.md">
+**Wizard Specialist School - Conjuration**
+
+At 8th level, you can use this ability to teleport up to 30 feet as a move action. You can use this ability a total number of times per day equal to your wizard level
+</file>
+
+<file path="dispel_magic.md">
+- **Level:** 3 or 4 (Druid, Hunter)
+- **School:** Abjuration
+- **Target:** One creature
+- **Range:** Medium
+- **Saving Throw:** —
+- **Casting Time:** Standard Action
+
+You can use dispel magic to end one ongoing spell that has been cast on a creature or one area effect from a spell in the selected point.
+</file>
+
+<file path="dispel_synergy.md">
+**Feat**
+
+If you successfully dispel an ongoing magical effect on an opponent, that opponent takes a –2 penalty on saving throws against your spells for 1 round.
+</file>
+
+<file path="dispelling_attack.md">
+**Advanced Rogue Talent**
+
+An opponent that is dealt sneak attack damage by a character with this ability is affected by a targeted dispel magic affecting one of the spell effects active on the target. The caster level for this ability is equal to the character's level.
+</file>
+
+<file path="diva_style.md">
+**Prerequisites**
+
+- Feint
+- Bard 1 or BAB 1
+- Charisma 13
+
+**Effect**
+
+You employ song, dance, or some other method of performance to distract your enemies from the battle at hand.
+
+Benefit: You can attempt a Persuasion (bluff) check to feint as a free action when you begin a bardic performance.
+</file>
+
+<file path="divine_dismissal.md">
+**Earth Breaker +4**
+
+This +4 holy earth breaker allows its wielder to cast dispel magic, greater at will as a wizard of level equal to the wielder's character level.
+
+**Acquisition**
+
+Sold by Wirlong Black Mask in Middle City
+</file>
+
+<file path="divine_favor.md">
+**Personal Spell**
+
+- **Level:** 1
+- **School:** Evocation 
+- **Duration:** 1 minute
+
+Calling upon the strength and wisdom of a deity, you gain a +1 luck bonus on attack and weapon damage rolls for every three caster levels you have (at least +1, maximum +3). The damage bonus doesn't apply to spell damage.
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Divine_Favor)
+</file>
+
+<file path="divine_power.md">
+- **Level:** 4
+- **School:** Evocation
+- **Target:** Friendly Close
+- **Duration:** 1 minute/level
+
+Calling upon the divine power of your patron, you imbue yourself with strength and skill in combat. You gain a +1 luck bonus on attack rolls, weapon damage rolls, Strength checks, and Strength-based skill checks for every three caster levels you have (maximum +6). You also gain 1 temporary hit point per caster level. Whenever you make a full attack, you can make an additional attack at your full base attack bonus, plus any appropriate modifiers. This additional attack is not cumulative with similar effects, such as haste or weapons with the speed special ability.
+
+
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Divine_Power)
+</file>
+
+<file path="duality_of_conjuration_and_summoning.md">
+**Rechargeable Item**
+
+This book allows you to summon a demon or angel once per day. If the owner is evil alignment, it will summon 1d2+1 monadic devas. If the owner is good alignment, it will summon 1d2+1 nabasu demons. If the wearer is neutral, there is an equal chance to summon angels or demons. Duration of summoning is equal to the owner's level. There is a 10% chance that the creatures will break free from the control and start attacking the owner. This book has 10 pages, and each time the owner uses it to summon a creature, they receive one of the following scrolls randomly:
+
+- Scroll of Angelic Resistance — +2 racial bonus on saves against poison for 1 hour.
+- Scroll of Demonic Resistance — You gain a +5 electricity resistance for 1 hour.
+- Scroll of Abyssal Regeneration — You gain a +5 fast healing for 1 hour.
+- Scroll of Angelic Knowledge — You gain a +2 bonus to all Knowledge and Lore skill checks for 1 hour.
+- Scroll of Demonic Intimidation — You gain a + 2 bonus to Intimidation skill checks for 1 hour.
+- Scroll of Wings of Freedom — You gain a +2 bonus on saving throws against ground effects for 1 hour.
+- Scroll of Divination — All spells from Divination school you cast as if you were 1 level higher for 1 hour.
+- Scroll of Stomp — You gain a +2 bonus on CMB checks for 1 hour.
+- Scroll of Resourceful Smite — You gain an additional smite evil per day permanently. Effect can be applied once per creature.
+- Scroll of Resourceful Rage — You gain an additional Rage per day permanently. Effect can be applied once per creature.
+
+**Acquisition**
+
+Found in the Lost Chapel (Zacharius library) (Act 2).
+</file>
+
+<file path="elemental_barrage.md">
+**Mythic Ability**
+
+You've mastered the art of raining elemental spells on your foes, and found a way to empower them by combining different elements.
+
+**Benefit:** Every time a spell you cast deals energy damage to a creature, you apply an elemental mark to it. If you deal energy damage to a marked target with a different type of energy during the next 3 rounds, the target takes additional divine damage equal to 1d6 per mythic rank.
+</file>
+
+<file path="elemental_bloodline_arcana.md">
+**Elemental Bloodline**
+
+All spells that deal energy damage that you cast will deal damage of a type matching your element instead. This also changes the spell's type to match the energy type of your element.
+</file>
+
+<file path="enduring_spells.md">
+**Mythic Ability**
+
+You've learned a way to prolong the effects of your beneficial spells.
+
+**Benefit:** The effects of your spells on your allies that should last longer than an hour but shorter than 24 hours now last 24 hours.
+</file>
+
+<file path="enlarge_person.md">
+- **Level:** 1
+- **School:** Transmutation
+- **Target:** Friendly Close
+- **Duration:** 1 minute/level
+
+This spell causes instant growth of a humanoid creature, doubling its height and multiplying its weight by 8. This increase changes the creature's size category to the next larger one. The target gains a +2 size bonus to Strength, a –2 size penalty to Dexterity (to a minimum of 1), and a –1 penalty on attack rolls and AC due to its increased size. Melee and ranged weapons used by this creature deal more damage.
+
+A humanoid creature whose size increases to Large has a space of 10 feet and a natural reach of 10 feet. This spell does not change the target's speed.
+
+Enlarge Person dispels Reduce Person.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Enlarge_Person )
+</file>
+
+<file path="evasion.md">
+**Class Feature**
+
+A creature with evasion can avoid even magical and unusual attacks with great agility. If it makes a successful Reflex saving throw against an attack that normally deals half damage on a successful save, it instead takes no damage. A helpless creature does not gain the benefit of evasion.
+</file>
+
+<file path="evercold.md">
+**Heavy Crossbow +1**
+
+This +1 heavy crossbow fires two bolts on its first attack each round. If both hit, the target must make a DC 25 Fortitude save or take 2d6 cold damage and be staggered for 1 round.
+</file>
+
+<file path="everlasting_flame.md">
+**Angel**
+
+Sword of Heaven now lasts for 1 minute per mythic rank.
+</file>
+
+<file path="evil_eye_shaman.md">
+**Shaman Hex**
+
+The target takes a –2 penalty on one of the following (shaman's choice):
+
+- AC
+- Ability checks
+- Attack rolls
+- Saving Throws
+- Skill Checks
+
+This hex lasts for a number of rounds equal to 3 + the shaman's Wisdom modifier. A Will save reduces this to just 1 round.
+
+This is a mind-affecting effect.
+
+At 8th level the penalty increases to –4.
+</file>
+
+<file path="evil_eye.md">
+**Witch Hex**
+
+The target takes a –2 penalty on one of the following (witch's choice):
+
+- AC
+- Ability checks
+- Attack rolls
+- Saving Throws
+- Skill Checks
+
+This hex lasts for a number of rounds equal to 3 + the witch's Intelligence modifier (or 3 + Charisma modifier for Stigmatized Witch). A Will save reduces this to just 1 round. 
+
+This is a mind-affecting effect.
+
+At 8th level the penalty increases to –4.
+</file>
+
+<file path="expanded_arsenal.md">
+**Mythic Feat**
+
+Select one school of magic. All bonuses from your feats and mythic feats that apply to another school of magic, such as Spell Focus and School Mastery, also apply to the chosen school.
+</file>
+
+<file path="expeditious_retreat.md">
+**Personal Spell**
+
+- **Level:** 1
+- **School:** Transmutation
+- **Duration:** 1 minute/level
+
+This spell increases your base speed by 30 feet. This adjustment is treated as an enhancement bonus. There is no effect on other modes of movement, such as burrow, climb, fly, or swim.
+</file>
+
+<file path="favored_terrain_forester.md">
+**Forester**
+
+At 5th level, Forester may select a type of terrain to gain bonuses as per Ranger's Favored Terrain
+</file>
+
+<file path="favored_terrain_geomancer.md">
+**Geomancer**
+
+At 7th level, a geomancer may select a type of terrain. The geomancer gains a +2 bonus on initiative checks and Lore (nature), Perception, and Stealth skill checks when he is in this terrain.
+
+At 13th and 19th levels, the geomancer may select an additional favored terrain. In addition, at each of these levels, the skill bonus and initiative bonus in any one favored terrain (including the one just selected, if so desired) increases by +2.
+
+This replaces bloodline bonus feats.
+</file>
+
+<file path="favored_terrain.md">
+**Ranger**
+
+At 3rd level, a ranger may select a type of terrain. The ranger gains a +2 bonus on initiative checks and Lore (Nature), Perception, and Stealth skill checks when he is in this terrain.
+
+At 8th level and every five levels thereafter, the ranger may select an additional favored terrain. In addition, at each such interval, the skill bonus and initiative bonus in any one favored terrain (including the one just selected, if so desired), increases by +2.
+</file>
+
+<file path="feint.md">
+**Prerequisites**
+
+- Combat Expertise or Kinetic Warrior 
+- Intelligence 13
+
+**Effect**
+
+You are skilled at fooling your opponents in combat. Benefit: To feint, make a Persuasion (bluff) check. The DC of this check is equal to 10 + your opponent's base attack bonus + your opponent's Wisdom modifier. If your opponent is trained in Perception, the DC is instead equal to 10 + your opponent's Perception bonus, if higher. If successful, the next melee attack you make against the target does not allow it to use its Dexterity bonus to AC (if any). This attack must be made on or before your next turn. You also receive a +2 bonus on Persuasion (bluff) checks to feint.
+</file>
+
+<file path="fervent_reflexes.md">
+**Instinctual Warrior**
+
+An instinctual warrior adds his Wisdom bonus (if any) to his initiative checks.
+</file>
+
+<file path="final_feint.md">
+**Prerequisites**
+
+- BAB 6
+- Feint
+- Combat Expertise or Kinetic Warrior 
+- Intelligence 13
+
+**Effect**
+
+You are skilled at making foes overreact to your attacks. Benefit: Whenever you use feint to cause a target to lose its Dexterity bonus, it loses that bonus against all melee attacks made by anyone for one round.
+</file>
+
+<file path="flame_curse.md">
+**Shaman Hex**
+
+**Prerequisites** 
+
+- Shaman Flame Spirit
+
+The Shaman causes a creature within 30' to become vulnerable to fire until the end of the Shaman's next turn. At 8th level and 16th level, the duration of the effect increases by 1 round.
+</file>
+
+<file path="focused_strike.md">
+**Prerequisites** 
+
+- Power Attack 
+- Strength 13
+- BAB 1
+
+**Effect**
+
+Using a two-handed weapon, or a one-handed weapon with two hands, you do not apply the Power Attack attack roll penalty to the first attack made in a given turn.
+</file>
+
+<file path="forewarned.md">
+**Divination Wizard**
+
+You receive a bonus on initiative checks equal to 1/2 your wizard level (minimum +1). At 20th level, anytime you roll initiative, assume the roll resulted in a natural 20.
+</file>
+
+<file path="fortune_shaman.md">
+**Shaman Hex**
+
+The shaman can grant a creature within 30 feet a bit of good luck for 1 round. The target can call upon this good luck, allowing him to reroll any ability check, attack roll, saving throw, or skill check, taking the better result.
+
+At 8th level and 16th level, the duration of this hex is extended by 1 round.
+
+Once a creature has benefited from the fortune hex, it cannot benefit from it again for 24 hours.
+</file>
+
+<file path="fortune.md">
+**Witch Hex**
+
+The witch can grant a creature within 30 feet a bit of good luck for 1 round. The target can call upon this good luck, allowing him to reroll any ability check, attack roll, saving throw, or skill check, taking the better result. 
+
+At 8th level and 16th level, the duration of this hex is extended by 1 round.
+
+Once a creature has benefited from the fortune hex, it cannot benefit from it again for 24 hours.
+</file>
+
+<file path="freezing_cold.md">
+**Winter Witch**
+
+At 3rd level, a winter witch's spells become incredibly cold, increasing their caster level by 1.
+
+At 6th level this bonus increases to 2.
+</file>
+
+<file path="ftk.md">
+**Order of the Lion**
+
+At 8th level, an order of the lion cavalier can call out to his allies, inspiring them to greatness. As a swift action, the cavalier can grant a competence bonus equal to his Charisma modifier on all attack and damage rolls to all allies within 30 feet.
+
+This bonus lasts for 1 round.
+
+This ability can be used once per combat.
+</file>
+
+<file path="fury.md">
+**Shaman Hex**
+
+A Shaman incites a creature within 30 feet into a primal fury. The target receives a +2 morale bonus on attack rolls and a +2 resistance bonus on saving throws against fear for a number of rounds equal to the Shaman's Wisdom modifier.
+
+At 8th and 16th levels, these bonuses increase by 1.
+
+Once a creature has benefited from the fury hex, it cannot benefit from it again for 24 hours.
+</file>
+
+<file path="geomancy.md">
+**Geomancer**
+
+The next spell the geomancer casts deals 1d8 direct damage to the geomancer himself. In exchange for this sacrifice, either the geomancer and his allies within 30 feet gain special benefits, or the geomancer's enemies within 30 feet suffer special drawbacks. The exact effect depends on the terrain that surrounds the geomancer:
+
+=== "Abyss"
+    The dark energies of the Abyss corrupt your foes. All enemies within 30 feet take 1d6 damage per spell level and must succeed at a Fortitude saving throw or become corrupted.
+    
+    Creatures corrupted this way suffer a -2 penalty on attack rolls, damage rolls, and the save DCs of their spells and abilities.
+
+    This is a curse effect.
+
+=== "Desert"
+    A brutal sandstorm ravages your foes. All enemies within 30 feet take 1d6 slashing damage per spell level and must succeed at a Reflex saving throw or become blinded for 1d4 rounds.
+
+=== "Forest"
+    The lush canopies and the pulsing vitality of the woods fill you with vigor. Both you and all allies within 30 feet regain 1d6 hit points per spell level.
+
+=== "Highlands"
+    The rugged endurance of the mountain protects you from harm. For 1 round, both you and all allies within 30 feet gain DR N/-, where N is equal to twice the spell's level.
+
+=== "Underground"
+    Stalagmites and stalactites assail your enemies, pinning them to the ground. All enemies within 30 feet take 1d6 piercing damage per spell level and must succeed at a Reflex saving throw or lose their ability to move for 1 round.
+
+    Pinned: This creature is unable to move.
+
+=== "Urban"
+    Your foes are harried by a hail of urban debris such as bricks or roof tiles. All enemies within 30 feet take 1d6 bludgeoning damage per spell level and must succeed at a Fortitude saving throw or become stunned for 1 round.
+
+
+
+If this ability causes an enemy to make a saving throw, the DC of that saving throw becomes equal to the DC of the spell cast by the geomancer. Activating or disabling this effect is a free action. Geomancy has an effect only if the triggering spell targets at least one creature.
+
+This replaces all bonus spells gained as part of a bloodline.
+</file>
+
+<file path="giant_weapon_wielder.md">
+**Titan Fighter**
+
+At 1st level, a titan fighter learns to wield a two-handed melee weapon in one hand (except double weapons). It is treated as one-handed when determining the effects of the Power Attack feat, adding the Strength bonus on damage rolls, and for all other purposes. All special properties of the weapon are preserved. The titan fighter takes an additional -2 penalty on attack rolls when using a two-handed weapon in one hand.
+</file>
+
+<file path="gloves_of_enduring_wizard.md">
+**Gloves**
+
+Whenever the wearer of these gloves casts a level 7 (or higher) spell, they get 20 temporary hit points for 1 minute.
+
+**Acquisition**
+
+Quest: Mercy. Found in a hidden room of Latverk (Act 4, Middle City).
+</file>
+
+<file path="gold_dragon_dragon_feat.md">
+**Gold Dragon**
+
+You can select any feat, ignoring its prerequisites.
+</file>
+
+<file path="gold_dragon_dragon_might.md">
+**Gold Dragon**
+
+- **Spell level:** 8
+- **School:** Transmutation
+- **Range:** Personal
+- **Action:** Swift
+- **Duration:** 1 round
+
+As a swift action, increase all damage you deal by 50% for 1 round.
+</file>
+
+<file path="gold_dragon_dragon_smite.md">
+**Gold Dragon**
+
+- **Spell level:** 8
+- **School:** Abjuration
+- **Action:** Standard
+- **Duration:** Permanent
+- **Saving throw:** None
+- **Spell resistance:** No
+
+Mark all enemies within a 30-foot radius with the dragon smite effect. Whenever you or an ally attacks a marked enemy, that enemy takes additional damage equal to half your Charisma modifier.
+</file>
+
+<file path="gold_dragon_gold_dragon_breath.md">
+**Gold Dragon**
+
+You can breathe holy energy in a 50-foot cone, dealing (character level + half mythic rank)d8 holy damage. A successful Reflex save (DC = 10 + half character level + mythic rank + your highest ability modifier) halves the damage.
+
+Enemies struck take a –1 penalty on all d20 rolls; enemies that fail the save instead take a –2 penalty. You can use this ability once every 1d4 rounds. The cooldown decreases to 1d2 rounds at mythic rank 9 and to 1 round at rank 10.
+</file>
+
+<file path="gold_dragon_mind_clearing_breath.md">
+**Gold Dragon Breath**
+
+Your breath dispels enemy-applied mind-affecting effects from allies in the area. It also dispels all mind-affecting effects from enemies struck, including effects applied by your allies while those enemies were under domination or charm effects.
+</file>
+
+<file path="gold_dragon_overwhelming_breath.md">
+**Gold Dragon Breath**
+
+You add twice your mythic rank instead of your mythic rank to the saving throw DC of your breath.
+</file>
+
+<file path="gold_dragon_perfect_body.md">
+**Gold Dragon**
+
+You gain immunity to poison, disease, fear, confusion, paralysis and sleep, and energy resistance equal to your character level + half your mythic rank. Saving throw bonuses below 5 + mythic rank and attributes below 14 are increased to those thresholds. Your highest ability score gains +4.
+
+Your hit dice become d12s. Damage spells use at least d6s; spells already using d6s or larger instead deal +1 damage per die rolled. All your weapons count as +5 weapons.
+</file>
+
+<file path="gold_dragon_perfect_mind.md">
+**Gold Dragon**
+
+You gain immunity to mind-affecting effects and spell resistance equal to 15 + your character level + half your mythic rank. You can convert all damage you deal to holy damage, or unholy damage if you have vowed to serve Dahak.
+
+Your base attack bonus is increased to 15 + mythic rank if lower. All skills become class skills, and skill ranks below your mythic rank are increased to that value. Attributes below 18 are increased to 18. Your highest ability score bonus increases to +6.
+
+Damage spells use at least d8s; spells already using d8s or larger instead deal +1 damage per die rolled.
+</file>
+
+<file path="gold_dragon_perfect_soul.md">
+**Gold Dragon**
+
+You gain immunity to acid, cold, electricity, fire, energy drain and negative energy. All your spells and abilities are empowered and maximised, if possible.
+
+Damage spells use at least d10s; spells already using d10s or larger instead deal +1 damage per die rolled. Your highest ability score bonus increases to +8.
+</file>
+
+<file path="grand_cognatogen.md">
+**Alchemist Discovery**
+
+**Grand Cognatogen**
+
+The alchemist's cognatogen grants a +6 natural armour bonus, a +8 alchemical bonus to one mental ability score (Intelligence, Wisdom, or Charisma), a +6 alchemical bonus to a second mental ability score, and a +4 alchemical bonus to a third mental ability score.
+
+While the cognatogen persists, the alchemist takes a –2 penalty to Strength, Dexterity, and Constitution. When it ends, the alchemist takes 2 points of ability damage to each physical ability score.
+</file>
+
+<file path="great_cleave.md">
+**Prerequisites** 
+
+- Cleave
+- Strength 13  
+
+**Effect**
+
+As a standard action, you can make a single attack at your full base attack bonus against a foe within reach. If you hit, you deal damage normally and can make an additional attack (using your full base attack bonus) against a foe that is adjacent to the previous foe and also within reach. If you hit, you can continue to make attacks against foes adjacent to the previous foe, so long as they are within your reach. You cannot attack an individual foe more than once during this attack action. When you use this feat, you take a –2 penalty to your Armor Class until your next turn.
+</file>
+
+<file path="greater_dispel_magic.md">
+- **Level:** 6 or 5 (Bard)
+- **School:** Abjuration
+- **Target:** One creature
+- **Range:** Medium
+- **Saving Throw:** —
+- **Casting Time:** Standard Action
+
+This functions as dispel magic, except that it affects everything within a 20-foot-radius burst or it can dispel multiple spells, starting with the spell with the highest caster level and proceeding to spells with lower caster level.
+
+??? spell "Dispel Magic"
+    {% include '_includes/dispel_magic.md' %}
+</file>
+
+<file path="greater_snap_shot.md">
+**Prerequisites** 
+
+- Improved Snap Shot
+- Dexterity 17
+- BAB 12
+
+**Effect**
+
+You threaten an additional 5' with Snap Shot. When you make an attack of opportunity, you gain a +2 bonus to damage and critical confirmation rolls. This increases to +4 at BAB 16 and +6 at BAB 20.
+</file>
+
+<file path="greater_spell_focus.md">
+**Prerequisites**
+
+- Spell Focus
+
+**Effect**
+
+Choose a school of magic to which you have already applied the Spell Focus feat. Any spells you cast of this school are very hard to resist.
+
+Benefit: Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select. This bonus stacks with the bonus from Spell Focus.
+
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school to which you already have applied the Spell Focus feat.
+</file>
+
+<file path="haste.md">
+- **Level:** 3
+- **School:** Transmutation
+- **Target:** All allies within a 30 foot burst, centered on target creature within close range. 
+- **Duration:** 1 round/level
+
+
+The transmuted creatures move and act more quickly than normal. This extra speed has several effects.
+When making a full attack, a hasted creature may make one extra attack with its main weapon. The attack is made using the creature's full base attack bonus, plus any modifiers appropriate to the situation. (This effect is not cumulative with similar effects, such as that provided by a speed weapon, nor does it actually grant an extra action, so you can't use it to cast a second spell or otherwise take an extra action in the round.)
+
+A hasted creature gains a +1 bonus on attack rolls and a +1 dodge bonus to AC and Reflex saves. Any condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses.
+
+A hasted creature's speed increases by 30 feet, to a maximum of twice the subject's normal speed. This increase counts as an enhancement bonus. Multiple haste effects don't stack. Haste dispels slow.
+
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Haste )
+</file>
+
+<file path="heartstone_of_the_night_hag_queen.md">
+**Necklace**
+
+This stone grants its wearer a +7 natural armor enhancement bonus to AC and spell resistance 38 and increases the DC of all spells the wearer casts by 3.
+
+**Acquisition**
+
+Second reward of the Echo of Fury Arena in the A Dance of Masks DLC.
+</file>
+
+<file path="hellfire_ray.md">
+- **Level:** 6
+- **School:** Evocation
+- **Spell Descriptors:** Evil
+- **Target:** One enemy
+- **Range:** Long
+- **Delivery:** Ranged Touch Attack
+- **Saving Throw:** —
+- **Spell Resistance:** Yes
+- **Casting Time:** Standard Action
+
+A blast of hellfire blazes from your hands. You can fire one ray, plus one additional ray for every 4 caster levels beyond 11th (to a maximum of three rays at 19th level). Each ray requires a ranged touch attack to hit and deals 1d6 points of damage per caster level (maximum 15d6). Half the damage is fire damage, but the other half results directly from unholy power and is therefore not subject to being reduced by fire resistance.
+</file>
+
+<file path="hells_decree.md">
+**Devil**
+
+As you become a Devil, you gain the ability to issue Hell's Decrees a number of times per day equal to your mythic rank.
+
+If a saving throw is involved, its DC is 10+ double the devil's mythic rank.
+</file>
+
+<file path="hide_in_plain_sight.md">
+**Cult Leader**
+
+At 12th level, a cult leader can use the Stealth skill even while being observed.
+</file>
+
+<file path="holy_hymn.md">
+"Demon Mythic Spell"
+
+- **Level:** 6
+- **School:** Enchantment
+- **Duration:** Rounds/CL
+- **Target:** All creatures within a 40 foot burst, centered on caster.
+- **Saving Throw:** —
+- **Casting Time:** Standard Action
+
+You bring special favor upon yourself and your allies while bringing disfavor to your enemies. You and each of your allies gain a +2 luck bonus on attack rolls, weapon damage rolls, saves, and skill checks, while each of your foes takes a –2 penalty on such rolls.
+</file>
+
+<file path="hurricane_bow.md">
+**Personal Spell**
+
+- **School:** Transmutation
+
+**Spell Lists**
+
+- Ranger 1
+- Wizard/Sorcerer 1
+- Hunter 1
+
+**Description**
+
+Hurricane bow significantly increases the weight and density of arrows or bolts fired from your bow or crossbow the instant before they strike their target and then return them to normal a few moments later. Any arrow fired from a bow or crossbow you are carrying when the spell is cast deals damage as if one size larger than it actually is. For instance, an arrow fired from a Medium longbow normally deals 1d8 points of damage, but it would instead deal 2d6 points of damage if fired from a hurricane bow.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Hurricane_Bow)
+</file>
+
+<file path="iii_critical_i.md">
+**Prerequisites** 
+
+- Improved Mythic Trick Perception II
+- Improved Improved Improved Critical
+- BAB 8
+
+**Effect**
+
+Choose one type of weapon that has the Improved Improved Improved Critical feat. When using the weapon you selected, your critical multiplier is increased by one.
+
+Special: You can gain this feat multiple times. The effects do not stack. Each time you take the feat, it applies to a new type of weapon
+</file>
+
+<file path="impromptu_sneak_attack.md">
+**Arcane Trickster**
+
+Beginning at 3rd level, an arcane trickster can enter a special stance that allows him to improvise a way to sneak attack targets regardless of their awareness. An arcane trickster can maintain this stance for one round per day. For every two levels above 3rd arcane trickster can maintain this stance for one additional round, up to a maximum of 4 rounds at 9th level.
+
+The target of impromptu sneak attacks loses any Dexterity bonus to AC, but only against those attacks. The power can be used against any target, but creatures that are not subject to critical hits take no extra damage (though they still lose any Dexterity bonus to AC against the attack).
+</file>
+
+<file path="improved_cleaving_finish.md">
+**Prerequisites**
+
+- Power Attack
+- Cleave
+- Cleaving Finish
+- Great Cleave
+- Strength 13
+- Base Attack Bonus 6
+
+**Effect**
+
+You can use Cleaving Finish any number of times per round.
+</file>
+
+<file path="improved_critical.md">
+**Prerequisites** 
+
+- BAB 8
+
+**Effect**
+Choose one type of weapon. When using the weapon you selected, your threat range is doubled.
+
+Special: You can gain Improved Critical multiple times. The effects do not stack. Each time you take the feat, it applies to a new type of weapon.
+
+This effect doesn't stack with any other effect that expands the threat range of a weapon.
+</file>
+
+<file path="improved_initiative_mythic.md">
+**Mythic Feat**
+
+You leap into the fray with speed and confidence.
+
+Benefit: The bonus on initiative checks granted by Improved Initiative increases by an amount equal to your mythic rank.
+</file>
+
+<file path="improved_initiative.md">
+**Feat**
+
+Your quick reflexes allow you to react rapidly to danger. You get a +4 bonus on initiative checks.
+</file>
+
+<file path="improved_snap_shot.md">
+**Prerequisites** 
+
+- Rapid Shot
+- Snap Shot
+- BAB 9
+
+**Effect**
+
+You threaten an additional 5' with Snap Shot.
+</file>
+
+<file path="incorporeal.md">
+**Defensive Ability**
+
+You take no damage from non-magic weapons, you also take only half damage from any source which deals neither ghost, holy, divine or force damage.
+</file>
+
+<file path="infuse_magic_device.md">
+**Mythic Trick**
+
+You have learned of a way to improve the efficiency of used magical items. The caster level of all abilities from magical items you use is increased by your mythic rank.
+</file>
+
+<file path="inspirational_leader.md">
+**Mythic Ability**
+
+You are a beacon of hope for your comrades, and they perform better near you.
+
+Benefit: Your allies within 50 feet of you gain a bonus equal to half your mythic rank plus 1 to their initiative, saving throws against mind-affecting effects, and concentration checks.
+</file>
+
+<file path="invisible_thief.md">
+At 9th level, an arcane trickster can become invisible, as if under the effects of greater invisibility, as a free action. She can remain invisible for a number of rounds per day equal to her arcane trickster level. These rounds need not be consecutive.
+</file>
+
+<file path="joy_of_life.md">
+**Azata Mythic Spell, 6th Level**
+
+- **Target:** All allies within a 60-foot burst, centred on the caster
+- **Duration:** 1 round per 2 caster levels
+- **Action:** Standard action
+
+The Azata summons the power of Life itself. The Azata's and their companions' attacks deal Holy damage for the duration.
+
+The spell also restores all companions' spell slots up to 5th level. It does not restore the Azata's mythic spellbook.
+</file>
+
+<file path="last_stand.md">
+**Mythic Ability**
+
+Your mission is too important to fall in battle and your mythic powers let you endure unbelievable things.
+
+Benefit: Once per day, when your HP drops low, you become unkillable. For 2 rounds, you become immune to damage that would make you unconscious.
+</file>
+
+<file path="lead_blades.md">
+**Personal Spell**
+
+- **School:** Transmutation
+
+**Spell Lists**
+
+- Artifice Domain 1
+- Hunter 1
+- Ranger 1
+
+Lead blades increases the momentum and density of your melee weapons just as they strike a foe. All melee weapons you are carrying when the spell is cast deal damage as if one size category larger than they actually are. For instance, a Medium longsword normally deals 1d8 points of damage, but it would instead deal 2d6 points of damage if benefiting from lead blades. Only you can benefit from this spell. If anyone else uses one of your weapons to make an attack, it deals damage as normal for its size.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Lead_Blades )
+</file>
+
+<file path="legendary_proportions.md">
+- **Level:** 7
+- **School:** Transmutation
+- **Target:** Friendly Close
+- **Duration:** 1 minute/level
+
+You call upon the primordial power of ancient megafauna to boost the size of your target. Because of its connection to living creatures of the distant past, the spell does not function on outsiders, undead, and summoned creatures. Your target grows to legendary proportions, increasing in size by two categories. The creature's height doubles and its weight increases by a factor of 12. The target gains a +6 size bonus to its Strength score and a +4 size bonus to its Constitution score. It gains a +6 form bonus to its natural armor, and DR 10/adamantine. Melee and ranged weapons used by this creature deal more damage.
+Enlarge Person dispels Reduce Person.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Legendary_Proportions )
+</file>
+
+<file path="lich_death_of_elements.md">
+**Lich Power**
+
+The Lich converts all elemental damage they deal, regardless of its source, into negative energy.
+
+The Lich also gains Consuming Elements, which can be activated for a number of rounds per day equal to half their mythic rank. While active, all elemental damage the Lich receives is converted into negative energy.
+</file>
+
+<file path="lich_eclipse_chill.md">
+**Lich Power**
+
+For up to 3 rounds per day, the Lich can imbue all spells they cast with eclipse chill. Creatures affected by these spells must succeed at a Fortitude saving throw (DC = 10 + half the Lich's character level + their mythic rank + their highest ability modifier) or become blinded and take 2d8 + mythic rank cold damage. They also become vulnerable to cold and negative energy until the end of combat.
+</file>
+
+<file path="lich_fear_control.md">
+**Lich Power**
+
+The Lich gains a +4 profane bonus on attack rolls and a profane bonus on damage rolls equal to their mythic rank against frightened creatures and creatures affected by mind-affecting effects.
+
+Additionally, enemies within 10 feet must succeed at a Will saving throw (DC = 10 + half the Lich's character level + their mythic rank + their highest ability modifier) or become shaken until the end of combat. A successful save grants immunity to this ability for 24 hours.
+</file>
+
+<file path="lich_withering_life.md">
+**Lich Power**
+
+When a living creature takes spell damage from the Lich, it also takes 1 point of ability damage to either Strength, Dexterity and Constitution, or Intelligence, Wisdom and Charisma. The Lich chooses which set of ability scores is affected.
+</file>
+
+<file path="lightning_draw.md">
+**Sword Saint**
+
+At 7th level, a sword saint applies his Intelligence modifier as well as his Dexterity modifier on initiative rolls (minimum 0).
+</file>
+
+<file path="loremaster_6_level_bug.md">
+For several 6-level casters, Loremaster and certain other prestige classes either fail to advance caster level or advance the wrong spellbook at specific levels.
+</file>
+
+<file path="loremaster_intensified_bug.md">
+Intensified Spell does not count towards the Metamagic prerequisite of Loremaster, unlike other metamagic feats.
+</file>
+
+<file path="loremaster_secret.md">
+At 1st level and every two levels thereafter (3rd, 5th, 7th, and 9th), the Loremaster selects one secret from the following list. Each secret can only be chosen once:
+
+- Spells from Cleric, Wizard, or Druid lists.
+- Combat feats, Wizard feats, or Rogue talents (including combat tricks).
+- +2 bonuses to a saving throw of choice
+</file>
+
+<file path="loremaster.md">
+| **Feature**             | **Details**                                                                 |
+|-------------------------|-----------------------------------------------------------------------------|
+| **Prerequisites**       | Metamagic: Any (except Intensified Spell, see bug below)                    |
+|                         | Skill Focus: Knowledge (Arcana) *or* Skill Focus: Knowledge (World)         |
+|                         | 3rd level Divine *or* Arcane spells                                         |
+| **Class Skills**        | Knowledge (Arcana), Knowledge (World), Lore (Nature), Lore (Religion), Persuasion, UMD |
+| **BAB**                 | +0                                                                          |
+| **Spellbook Selection** | Divine/Arcane of choice                                                     |
+| **CL**                  | +1 to chosen Divine/Arcane                                                  |
+
+**On Prerequisites**:
+
+- Alchemist "extracts" don't qualify as Divine or Arcane spells
+
+**Class Features**:
+
+- Half-BAB progression while maintaining full spellcasting advancement.
+- *Secrets* are the class's defining feature, available at odd levels and allowing feats, spells, or talents while bypassing prerequisites.
+
+**Spell Timing**
+
+-  A Loremaster Secret can only grant a spell of a level the character could already cast *before* taking the Loremaster level. Consequently, the earliest one can obtain a spell through Loremaster is one character level later than if it belonged to one’s own class spellbook.
+</file>
+
+<file path="lunge.md">
+**Prerequisites**
+
+- BAB 6
+
+**Effect**
+
+You can increase the reach of your melee attacks by 5 feet until the end of your turn by taking a –2 penalty to your AC until your next turn. You must decide to use this ability before any attacks are made.
+</file>
+
+<file path="magic_weapon.md">
+- **Level:** 1
+- **School:** Transmutation
+- **Target:** Friendly within touch range
+- **Duration:** 1 minute/level
+
+Magic weapon gives a weapon a +1 enhancement bonus on attack and damage rolls. An enhancement bonus doesn't stack with a masterwork weapon's +1 bonus on attack rolls.
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Magic_Weapon)
+</file>
+
+<file path="magus_arcana_empowered_magic.md">
+**Magus Arcana**
+
+The magus can cast three spell per day as if those spells were modified by the Empower Spell feat.
+
+Prerequisite: Magus 6
+</file>
+
+<file path="magus_arcana_maximized_magic.md">
+**Magus Arcana**
+
+The magus can cast three spell per day as if those spells were modified by the Maximize Spell feat.
+
+Prerequisite: Magus 12
+</file>
+
+<file path="magus_arcana_reach_magic.md">
+**Magus Arcana**
+
+The magus can cast three spell per day as if those spells were modified by the Reach Spell feat.
+</file>
+
+<file path="magus_arcana.md">
+**Magus**
+
+As he gains levels, a magus learns arcane secrets tailored to his specific way of blending martial puissance and magical skill. Starting at 3rd level, a magus gains one magus arcana. He gains an additional magus arcana for every three levels of magus attained after 3rd level. Unless specifically noted in a magus arcana's description, a magus cannot select a particular magus arcana more than once.
+</file>
+
+<file path="mark_of_justice.md">
+**Paladin**
+
+At 11th level, a paladin can expend two uses of her smite evil ability to grant the ability to smite evil to all allies for 1 minute, using her bonuses. As a swift action, the paladin chooses one target within sight to smite. If this target is evil, the paladin's allies add her Charisma bonus (if any) to their attack rolls and add her paladin level to all damage rolls made against the target of her smite. Smite evil attacks automatically bypass any DR the creature might possess.
+
+In addition, while smite evil is in effect, the paladin's allies gain a deflection bonus equal to her Charisma bonus (if any) to their AC against attacks made by the target of this smite. If the paladin targets a creature that is not evil, this smite is wasted with no effect.
+</file>
+
+<file path="masterwork_trait.md">
+**Weapon Trait**
+
+A masterwork weapon is a finely crafted version of a normal weapon. Wielding it provides a +1 enhancement bonus on attack rolls.
+
+A masterwork weapon's value is changed to 100 gold.
+</file>
+
+<file path="meta_bolster.md">
+**Prerequisites**
+
+- Intelligence 3
+
+**Effect**
+
+You make your Spells deal additional area of effect damage, while making them stronger.
+
+Benefit: Spell now deals 2 more points of damage per die rolled to all its targets. Additionally, all enemies in 5 feet of the spell targets are dealt 2 damage per die rolled of the original spell. The spell can no longer apply precision damage.
+
+Level increase: +1 (A bolstered spell uses up a spell slot one level higher than the spell's actual level)
+</file>
+
+<file path="meta_empower.md">
+**Prerequisites**
+
+- Intelligence 3
+
+**Effect**
+
+
+You can increase the power of your spells, causing them to deal more damage.
+
+Benefit: All variable, numeric effects of an empowered spell are increased by half including bonuses to those rolls.
+
+Saving throws and opposed rolls are not affected, nor are spells without random variables.
+
+Level Increase: +2 (An empowered spell uses up a spell slot two levels higher than the spell's actual level.)
+</file>
+
+<file path="meta_heighten.md">
+**Effect**
+
+You can cast spells as if they were a higher level.
+
+Benefit: A heightened spell has a higher spell level than normal (up to a maximum of 9th level). Unlike other metamagic feats, Heighten Spell actually increases the effective level of the spell that it modifies. All effects dependent on spell level (such as saving throw DCs and ability to penetrate a lesser globe of invulnerability) are calculated according to the heightened level.
+
+Level Increase: The heightened spell is as difficult to prepare and cast as a spell of its effective level.
+</file>
+
+<file path="meta_intensified.md">
+**Prerequisites**
+
+- Intelligence 3
+
+**Effect**
+
+Your spells can go beyond several normal limitations. 
+
+Benefit: An intensified spell increases the maximum number of damage dice by 5 levels. You must actually have sufficient caster levels to surpass the maximum in order to benefit from this feat. No other variables of the spell are affected, and spells that inflict damage that is not modified by caster level are not affected by this feat. 
+
+Level Increase: +1 (An intensified spell uses up a spell slot one level higher than the spell's actual level.)
+</file>
+
+<file path="meta_maximize.md">
+**Prerequisites**
+
+- Intelligence 3
+
+**Effect**
+
+Benefit: All variable, numeric effects of a spell modified by this feat are maximized. Saving throws and opposed rolls are not affected, nor are spells without random variables.
+
+Level Increase: +3 (A maximized spell uses up a spell slot three levels higher than the spell's actual level.)
+
+An empowered, maximized spell gains the separate benefits of each feat: the maximum result plus half the normally rolled result.
+</file>
+
+<file path="meta_persistent.md">
+**Effect**
+
+The target of your spell must succeed on their spell saving throw twice to resist it. Requires a spell slot 2 levels higher than normal.
+</file>
+
+<file path="meta_quicken.md">
+**Effect**
+
+You can cast spells in a fraction of the normal time.
+
+Benefit: Casting a quickened spell is a swift action. You can perform another action, even casting another spell, in the same round as you cast a quickened spell. A spell whose casting time is more than 1 round or 1 full-round action cannot be quickened.
+
+Level Increase: +4 (A quickened spell uses up a spell slot four levels higher than the spell's actual level.)
+
+Casting a quickened spell doesn't provoke an attack of opportunity.
+
+Special: You can apply the effects of this feat to a spell cast spontaneously, so long as it has a casting time that is not more than 1 full-round action, without increasing the spell's casting time.
+</file>
+
+<file path="misfortune_shaman.md">
+**Shaman Hex**
+
+The shaman can cause a creature within 30 feet to suffer grave misfortune for 1 round. Anytime the creature makes an ability check, attack roll, saving throw, or skill check, it must roll twice and take the worse result. A Will save negates this hex.
+
+At 8th level and 16th level, the duration of this hex is extended by 1 round. This hex affects all rolls the target must make while it lasts.
+
+Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day.
+</file>
+
+<file path="misfortune.md">
+**Witch Hex**
+
+The witch can cause a creature within 30 feet to suffer grave misfortune for 1 round. Anytime the creature makes an ability check, attack roll, saving throw, or skill check, it must roll twice and take the worse result. A Will save negates this hex. 
+
+At 8th level and 16th level, the duration of this hex is extended by 1 round. This hex affects all rolls the target must make while it lasts. 
+
+Whether or not the save is successful, a creature cannot be the target of this hex again for 1 day.
+</file>
+
+<file path="mythic_spell_focus.md">
+**Mythic Feat**
+
+**Prerequisites**
+
+- Spell Focus
+
+**Effect**
+
+Your magical specialities are particularly effective.
+
+Benefit: Choose a school of magic you already have Spell Focus in. The bonus to save DCs provided by Spell Focus and Greater Spell Focus for that school increases by 1.
+</file>
+
+<file path="night_flash.md">
+**Estoc**
+
+This +5 speed shock estoc grants its wielder a +5 bonus on initiative rolls.
+
+**Acquisition**
+
+Sold by Wirlong Black Mask in Middle City (Act 4)
+</file>
+
+<file path="numerian_greatsword.md">
+**Greatsword +3**
+
+This +3 greatsword is merged with Numerian technology. Once per day the wielder can activate one of five enhancements for a number of rounds equal to half the wielder's level.
+
+- **Fiber Muscles:** The primary subject of fiber muscles gains a +4 enhancement bonus to Dexterity and Strength scores, and a +4 enhancement bonus to Mobility skill checks.
+- **Augmented Heart:** The primary subject of augmented heart gains a +6 enhancement bonus to Constitution score and fortification 25.
+- **Force Shield:** This shield is supported by some generator in this dungeon. It grants the wearer a +4 shield bonus to AC. Magic missiles and similar abilities can bypass it.
+- **Stainless Skin:** The primary subject of stainless skin gains a +4 natural armor bonus to AC and +4 bonus to AC against touch attacks.
+- **Upgraded Neural System:** The primary subject of the upgraded neural system gains a +4 enhancement bonus to Intelligence score. DC of saving throws against spells and abilities they use is increased by 2.
+
+**Acquisition**
+
+Found in Blackwater (Act 3).
+</file>
+
+<file path="oracles_curse.md">
+**Oracle**
+
+Each oracle is cursed, but this curse comes with a benefit as well as a hindrance. This choice is made at 1st level, and once made, it cannot be changed. The oracle's curse cannot be removed or dispelled without the aid of a deity. An oracle's curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.
+</file>
+
+<file path="perfect_mind.md">
+**Gold Dragon**
+
+You gain immunity to mind-affecting effects and spell resistance equal to 15 + your character level + half your mythic rank. You can change all damage you deal to holy damage (or unholy damage if you have vowed to serve Dahak). If your base attack bonus is less than 15 + mythic rank, you gain a bonus up to that number. All skills become class skills for you. If you have less ranks in a skill than your mythic rank, you gain a bonus up to that number. If any of your attributes before modifiers is less than 18, you gain a bonus up to that number. The bonus to your highest ability score increases to +6. Any spells dealing damage now change their dice to d8, if it was not d8 or greater. If it already was d8 or greater, instead the spell deals 1 additional point of damage per dice rolled.
+</file>
+
+<file path="petrifying_strike.md">
+**Advanced Rogue Talent**
+
+A character with this ability can sneak attack opponents with such precision that their blows slow and hamper them. An opponent damaged by one of their sneak attacks also takes 2 points of Dexterity damage.
+</file>
+
+<file path="piercing_rays.md">
+**Angelic Halo**
+
+Whenever Angelic Halo is active, all enemies in a 50-foot area suffer a penalty to spell resistance equal to 1 + half the Angel's mythic rank, as well as a penalty on all saving throws equal to half the penalty to spell resistance.
+</file>
+
+<file path="plague_of_madness.md">
+**Quarterstaff +3**
+
+This is a +3 quarterstaff. Whenever you cast the same spell three times in a row, your next spell becomes empowered, as though using the Empower Spell feat, and maximized, as though using the Maximize Spell feat.
+
+**Acquisition**
+
+Made from the relic Wicked Dope, found in the Crusade battle southwest of the Lands of Yath Watch (Act 3).
+</file>
+
+<file path="power_attack.md">
+**Prerequisites**  
+- Strength 13  
+
+**Effect**
+
+You can take a -1 penalty on melee attack rolls and combat maneuvers for a +2 damage bonus. This bonus increases by 50% with two-handed, two-handed one-handed, or primary natural weapons, and is halved for off-hand or secondary natural weapons.  
+
+At base attack bonus +4 and every 4 points after, the penalty increases by -1 and the damage bonus by +2.  
+
+The effect lasts until your next turn and doesn't apply to touch attacks or non-damaging effects.
+</file>
+
+<file path="powerless_prophecy.md">
+**Oracle Curse**
+
+You are forewarned of danger but can't act to prevent it. You gain Uncanny Dodge, as the rogue class feature, but you are staggered for the entire first round of combat.
+
+At 5th level, you gain a +4 insight bonus on initiative checks.
+
+At 10th level, you gain Improved Uncanny Dodge as the rogue ability, using your oracle level as your rogue level.
+
+At 15th level, you gain a +4 insight bonus on all your saving throws and to your AC during the first round of combat.
+</file>
+
+<file path="primal_regression.md">
+- **Level:** 6 or 7 (Witch)
+- **School:** Enchantment
+- **Spell Descriptors:** Mind-Affecting, Charm
+- **Target:** All Creatures 30ft burst
+- **Range:** Close
+- **Saving Throw:** Will negates
+- **Spell Resistance:** Yes
+- **Casting Time:** Standard Action
+
+This spell sequesters the targets' ability for higher reasoning, allowing their darker impulses to come to the fore. An affected target becomes a ravening monster — savage, bloodthirsty, and brutish. Until the spell ends, the targets have all of the following benefits and drawbacks:
+The targets' Intelligence and Charisma scores drop to 1, and they are unable to cast spells.
+
+The targets take a –4 penalty on Will saves.
+
+The targets gain a +6 enhancement bonus to Strength, a +2 natural armor bonus to AC, and 2d8 temporary hit points. These temporary hit points disappear at the end of the spell's duration.
+
+When the spell ends, on the next round each affected creature must succeed at a Will saving throw or take 1d4 points of Intelligence drain and 1d4 points of Charisma damage.
+</file>
+
+<file path="profane_hymn.md">
+"Demon Mythic Spell"
+
+- **Level:** 3
+- **School:** Transmutation
+- **Duration:** Rounds/CL
+- **Target:** All enemies within a 40 foot burst, centered on caster.
+- **Saving Throw:** —
+- **Casting Time:** Standard Action
+
+Every enemy in a 40-foot radius receives a –2 penalty on attack and damage rolls, caster level checks to overcome spell resistance, concentration checks, and all saving throws.
+</file>
+
+<file path="promise_of_greatness.md">
+**Breastplate +4**
+
+This +4 breastplate makes the wearer's first spell cast in any combat bolstered, as though using the Bolster Spell feat.
+
+**Acquisition**
+
+Sold by Wirlong Black Mask in the Fleshmarkets, located in the Middle City (Act 4).
+</file>
+
+<file path="protective_luck_shaman.md">
+**Shaman Hex**
+
+The shaman can cause fate to twist so that it benefits a creature within 30 feet for 1 round. Whenever that creature is targeted by an effect that requires an attack roll, including weapon attacks, the attacker must roll twice and take the worse result.
+
+At 8th level and 16th level, the duration of this hex is extended by 1 round. A shaman cannot use this ability on herself. Hexes that affect the fortune hex, such as cackle, also affect protective luck.
+</file>
+
+<file path="protective_luck.md">
+**Witch Hex**
+
+The witch can cause fate to twist so that it benefits a creature within 30 feet for 1 round. Whenever that creature is targeted by an effect that requires an attack roll, including weapon attacks, the attacker must roll twice and take the worse result. 
+
+At 8th level and 16th level, the duration of this hex is extended by 1 round. A witch cannot use this ability on herself. Hexes that affect the fortune hex, such as cackle, also affect protective luck.
+</file>
+
+<file path="quarterstaff_of_the_war_mage.md">
+**Quarterstaff +3**
+
+This +3 quarterstaff adds +2 to the DC for all saving throws against spells the wielder casts. It also grants the wielder a +4 bonus to caster level checks made to overcome spell resistance, and a +5 competence bonus to Use Magic Device skill checks.
+
+**Acquisition**
+
+Found in the Ivory Sanctum (central room) (Act 3).
+</file>
+
+<file path="rain_of_halberds.md">
+**Trickster Spell**
+
+- **Level:** 5 
+- **School:** Conjuration
+- **Casting Time:** Standard Action
+- **Spell Resistance**: Not affected
+- **Target:**  All creatures within a 20 foot burst, centered on target point within medium range.
+
+**In-Game Description**
+
+You create a rain of halberds, making an attack roll against every creature in a 10-foot radius. A successful attack deals 1d10 points of slashing and piercing damage per caster level, and can critically strike.
+
+**Effect**
+
+Deals 1d10 slashing and piercing damage per caster level to all creatures within a 20 foot area.
+</file>
+
+<file path="ranged_feint.md">
+**Prerequisites**
+
+- Feint
+- BAB 2
+
+**Effect**
+
+You can mislead foes about your aim with ranged attacks. Benefit: You can feint with a ranged weapon. When you successfully use a ranged feint, you deny that enemy its Dexterity bonus to AC against your ranged attacks as well as your melee attacks for the same duration as normal. If your feints normally deny a foe its Dexterity bonus to AC against attacks other than your own, this applies only against others' melee attacks.
+</file>
+
+<file path="razmirs_mask.md">
+**Glasses**
+
+The mask of Razmir himself. This mask grants its wearer immunity to spells from the Divination school, a +8 enhancement bonus to all mental ability scores, and the spell turning ability. The first spell the wearer casts in a round is cast as a free action.
+
+!!! bug "Razmir's Spell Reflection"
+    The mask reflects more than spells. It can also reflect abilities such as Vital Strike and Charge. Normal Spell Reflection only affects spells subject to spell resistance.
+
+**Acquistion**
+
+Quest A Grand Masquerade (DLC 6)
+</file>
+
+<file path="recluses_stride.md">
+**Lone Strider**
+
+Your base speed increases by 10 feet.
+
+At 5th level, once per round, you gain a +20 bonus to AC against the first attack of opportunity.
+
+At 10th level, you can teleport a medium distance as a move action. You can teleport a number of times per day equal to 3 + your Charisma modifier.
+</file>
+
+<file path="righteous_crusaders_ring.md">
+**Ring**
+
+If the wearer of this ring has smite evil class ability, this ring grants them one additional use of it per day after resting.
+
+**Acquisition**
+
+Found in the Underground Hideout (Act 2).
+</file>
+
+<file path="ring_of_triumphant_advance.md">
+**Ring**
+
+This ring grants its wearer a +2 deflection bonus to AC. Any morale bonuses the wearer has are doubled.
+
+
+**Acquisition**
+
+Any morale bonuses receive an equal, corresponding untyped bonus.
+</file>
+
+<file path="robe_of_the_seven_sins.md">
+**Robe**
+
+If the wearer of this robe is a spellcaster, their caster level is increased by 3, the save DC against all their spells is increased by 1, and they gain a +5 competence bonus on caster level checks to overcome spell resistance.
+
+**Acquisition**
+
+Dropped by the boss Demon-May-Care Joestantin on Treasure Island (Treasures of the Midnight Isles DLC, Act 4.3).
+</file>
+
+<file path="rod_of_magical_affinity.md">
+**Wand**
+
+The wielder of this greater metamagic rod can cast spells that are empowered, heightened, bolstered and maximized, as per using the corresponding metamagic feats.
+
+Greater metamagic rods can be used with spells of 9th level or lower.
+
+The rod has 5 charges. Modifying a spell with a rod expends 1 charge. When all the charges are expended, the rod becomes useless.
+
+**Note:** Actually a Wand
+
+**Acquisition**
+
+Drops in Treasure Island (Act 4.7) from The-Last-Sound-You-Hear boss.
+</file>
+
+<file path="rogue_talent_familiar.md">
+**Rogue Talent**
+
+A rogue with this talent gains a familiar as the familiar option of the wizard's arcane bond class feature.
+</file>
+
+<file path="rupture_restraints.md">
+**Mythic Ability**
+
+You can create a surge of mythic powers that frees you from all magical restraints.
+
+Benefit: Three times per day, you automatically dispel any effects that make you frightened, dazed, sickened, shaken, staggered, nauseated, stunned, paralyzed, or confused whenever you become affected by any of these effects.
+</file>
+
+<file path="school_mastery.md">
+**Mythic Feat**
+
+Select one school of magic. All spells you cast from that school gain +1 caster level.
+</file>
+
+<file path="scorching_ray.md">
+- **Level:** 2
+- **School:** Evocation
+- **Spell Descriptors:** Fire
+- **Target:** One enemy
+- **Range:** Close
+- **Delivery:** Ranged Touch Attack
+- **Saving Throw:** —
+- **Spell Resistance:** Yes
+- **Casting Time:** Standard Action
+
+You blast your enemies with a searing beam of fire. You may fire one ray, plus one additional ray for every four levels beyond 3rd (to a maximum of three rays at 11th level). Each ray requires a ranged touch attack to hit and deals 4d6 points of fire damage.
+
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Scorching_Ray)
+</file>
+
+<file path="second_spirit.md">
+**Mythic Ability**
+
+Your growing powers let you speak to one more spirit.
+
+Benefit: You gain one more shaman spirit.
+</file>
+
+<file path="sense_vitals.md">
+**Personal Spell**
+
+- **Level:** 2
+- **School:** Divination
+
+This spell makes your eyes shine blood red and allows you to see the vital areas and weak points of creatures as a warm glow. This allows you to make sneak attacks, as the rogue ability of the same name, dealing an additional 1d6 points of damage; this additional damage increases by 1d6 for every 3 caster levels you possess beyond 3rd, to a maximum of +5d6 at 15th level. This additional damage stacks with other sources of precision damage.
+
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Sense_Vitals)
+</file>
+
+<file path="shaman_secret.md">
+**Shaman Hex**
+
+The Shaman receives one metamagic feat as a bonus feat. The Shaman must meet the prerequisites for the feat.
+</file>
+
+<file path="shrouded_step.md">
+**Witch of the Veil**
+
+At 2nd level, a witch of the veil gains the ability to become invisible for a number of rounds equal to her Intelligence bonus as a swift action.
+
+At 8th level, she also can teleport 30 feet and then become invisible, as per the invisibility spell.
+
+At 16th level, she gains the benefits of the invisibility, greater spell instead.
+</file>
+
+<file path="slayers_feint.md">
+**Prerequisites**
+
+- Feint
+- Combat Expertise
+- Dexterity 15
+- Skill Focus: Mobility or Slayer Proficiencies
+
+**Effect**
+
+You rely on your deceptive speed and agility instead of trickery to catch your opponents unprepared. Benefit: You can use Mobility instead of Persuasion (whichever is higher) to feint in combat.
+</file>
+
+<file path="smite_chaos.md">
+**Hellknight**
+
+Once per day, a Hellknight can call out to the powers of law to aid him in his struggle against chaos. As a swift action, the Hellknight chooses one target within sight to smite. If this target is chaotic, the Hellknight adds his Charisma bonus (if any) to his attack rolls and adds twice his Hellknight level to all damage rolls made against the target of his smite. Smite chaos attacks automatically bypass any DR the creature might possess.
+
+In addition, while smite chaos is in effect, the Hellknight gains a deflection bonus equal to his Charisma modifier (if any) to his AC against attacks made by the target of the smite.
+
+If the Hellknight targets a creature that is not chaotic, the smite is wasted with no effect.
+
+The smite chaos lasts until the target dies or the Hellknight selects a new target.
+
+At 4th level, and at every three levels thereafter, the Hellknight may smite chaos one additional time per day.
+</file>
+
+<file path="smite_evil.md">
+**Paladin**
+
+Once per day, a paladin can call out to the powers of good to aid her in her struggle against evil. As a swift action, the paladin chooses one target within sight to smite. If this target is evil, the paladin adds her Charisma bonus (if any) to her attack rolls and adds her paladin level to all damage rolls made against the target of her smite. If the target of smite evil is an outsider with the evil subtype, an evil-aligned dragon, or an undead creature, the bonus to damage on the first successful attack increases to 2 points of damage per level the paladin possesses. Regardless of the target, smite evil attacks automatically bypass any DR the creature might possess.
+
+In addition, while smite evil is in effect, the paladin gains a deflection bonus equal to her Charisma modifier (if any) to her AC against attacks made by the target of the smite. If the paladin targets a creature that is not evil, the smite is wasted with no effect.
+
+The smite evil effect remains until the target of the smite is dead or the next time the paladin rests and regains her uses of this ability. At 4th level, and at every three levels thereafter, the paladin may smite evil one additional time per day.
+</file>
+
+<file path="snap_shot.md">
+**Prerequisites** 
+
+- Point-Blank Shot
+- Precise Shot
+- BAB 6
+
+**Effect**
+
+You threaten squares within your melee reach with a ranged weapon and you may make attacks of opportunity with that weapon.
+</file>
+
+<file path="solar_winds.md">
+**Angel**
+
+Whenever Angelic Halo is active, all allies in a 50-foot area get a bonus to fire, cold, acid, and electricity resistances equal to 5 per the Angel's mythic rank, and a bonus to sonic and negative energy resistance equal to 3 per the Angel's mythic rank, as well as a bonus to force, unholy, holy, and divine resistance equal to the Angel's mythic rank.
+</file>
+
+<file path="spell_focus.md">
+**Effect**
+
+Choose a school of magic. Any spells you cast of that school are more difficult to resist.
+
+Benefit: Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select.
+
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school of magic.
+</file>
+
+<file path="spirit_animal.md">
+**Shaman**
+
+At 1st level, a shaman forms a close bond with a spirit animal tied to her chosen spirit. This animal is her conduit to the spirit world, guiding her along the path to enlightenment. The animal also aids a shaman by granting her a special ability. A shaman must commune with her spirit animal each day to prepare her spells.
+</file>
+
+<file path="stalactites_trap.md">
+<!--
+  TODO verify in game: rounding of the spell level formula (floor/ceil).
+-->
+**Area Trap**
+
+- **Spell level:** Half your character level (maximum 9)
+- **School:** Conjuration
+- **Action:** Free action
+- **Range:** Close
+- **Target:** All enemies within a 5-foot burst
+- **Duration:** 1 hour/level (how long the trap stays on the ground)
+- **Saving throw:** Reflex half
+- **Spell resistance:** Not affected
+- **Save DC:** Varies; shown on the ability
+
+Create Stalactites trap.
+
+Granted by *Cave Fangs: Stalactites*, which also holds the trap's effect text. In game the ability is titled "Cave Fangs".
+
+**Source:** [Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Cave_Fangs_(Stalactites))
+</file>
+
+<file path="stealth_1.md">
+**Mythic Trick**
+
+You can easily slip into shadow at any time. You can enter stealth during combat as a move action. This stealth is not broken by a single enemy detecting you — instead it acts similar to the invisibility spell, giving you total concealment against all creatures that did not succeed on a Perception check against you.
+</file>
+
+<file path="stealth_2.md">
+**Improved Mythic Trick**
+
+You exceed at stealth, fading from sight with your every move. Your stealth in combat now works more akin to the effect of the Invisibility, Greater spell.
+</file>
+
+<file path="storm_of_justice.md">
+- **Level:** Angel 8
+- **School:** Conjuration
+- **Spell Descriptors:** —
+- **Target:**  All enemies within a 30' burst centred on target point within Long range
+- **Range:** Long
+- **Delivery:** Direct
+- **Saving Throw:** Reflex half
+- **Spell Resistance:** No
+- **Duration:** Instant
+- **Casting Time:** Standard Action
+
+Enemies in the area of effect are hit with Bolt of Justice.
+</file>
+
+<file path="stormlords_resolve.md">
+**Bracers**
+
+If the wearer of these bracers has the ability to cast spells spontaneously, it grants them the ability to cast the following spells: jolting portent, call lightning, lightning bolt, chains of light, call lightning storm, chain lightning, stormbolts. To cast a spell, the wearer still needs to have a spell slot of the required level. It also grants the wearer an electric shield that deals (1d6 + wearer's level) electric damage each time an enemy lands a hit against the wearer, as well as electricity resistance 30. The wearer can fully embrace the power of these bracers, allowing them to turn all the damage caused by the spells they cast into electrical.
+
+**Acquisition**
+
+Blackwater (Act 3)
+</file>
+
+<file path="sure_footing.md">
+**Boots**
+
+These boots allow their wearer to add half their rank in Perception skill to damage on their first attack with a ranged weapon every round.
+
+**Acquisition**
+
+Found in the Shadow Demon's Lair during the Act 4
+Shadow Dance demon exclusive quest.
+</file>
+
+<file path="surprise_spells.md">
+**Arcane Trickster Capstone**
+
+At 10th level, an arcane trickster can add her sneak attack damage to any spell that deals damage, if the targets are flat-footed. This additional damage only applies to spells that deal hit point damage, and the additional damage is of the same type as the spell. If the spell allows a saving throw to negate or halve the damage, it also negates or halves the sneak attack damage.
+</file>
+
+<file path="sword_of_heaven.md">
+**Angel**
+
+Angels can imbue their weapons with holy power. Weapons imbued with holy power deal an additional 2d6 holy damage on attacks, while spells and abilities used while holding imbued weapons deal an additional 2 dice of damage or heal an additional 2 dice of damage.
+
+You can use Sword of Heaven a number of times per day equal to 1 plus half your mythic rank.
+</file>
+
+<file path="sword_of_holy_damage.md">
+**Angel**
+
+Whenever Sword of Heaven is active, this ability allows the Angel to transform all damage dealt by the Angel into holy damage.
+</file>
+
+<file path="sworn_enemy_smite.md">
+**Faith Hunter**
+
+At 6th level, once per day as a swift action, a faith hunter can smite one foe she can see. If the foe is of the faith hunter's sworn enemy alignment, the faith hunter gains a +4 bonus on attack rolls against that foe and a bonus equal to half her inquisitor level on damage rolls made against the foe. Smites against targets of the faith hunter's sworn enemy alignment automatically bypass any DR the creature might possess. If the faith hunter targets a creature that is not of her sworn enemy alignment, the smite is wasted with no effect.
+
+The smite effect remains until the foe is dead or the next time the faith hunter rests and regains her uses of this ability.
+
+At 10th level and every 4 inquisitor levels thereafter, a faith hunter can smite her enemies one additional time per day, to a maximum of four times per day at 18th level.
+</file>
+
+<file path="the_bound_of_possibility.md">
+**Cloak**
+
+=== "Aeon"
+    When in combat, an Aeon wearing this cloak distorts time and space in a 30-foot area. Each round enemies have to pass a Will saving throw (DC = 10 + mythic rank + Wisdom modifier) or be slowed for one round, as per slow spell. Allies instead are under a constant haste spell effect. They also gain a +4 insight bonus on attack rolls, saving throws, and skill checks.
+
+=== "Angel"
+    When an Angel wears this cloak, his Sword of Heaven ability deals an additional 4 dice of damage or heal an additional 4 dice of damage instead of 2.	
+
+=== "Azata"
+    Azata shares a bond with her dragon. 50% damage is redirected to Aivu. In addition, Aivu gets additional DR N/— where N is equal to Azata's mythic rank.	
+
+=== "Demon"
+    Demon Rage and Demon Aspects now grant bonuses as if you were 3 mythic ranks higher.	
+
+=== "Devil"
+    This cloak grants Devil 3 additional uses of Hell's Seal per day.	
+
+=== "Golden Dragon"
+    If the wearer is a gold dragon, this cloak grants the wearer 2 additional spell slots for spells of any level. In addition, the wearer's dragon's breath deals an additional 20 divine damage. Its DC is increased by 2. The wearer's caster level is increased by 2.	
+
+=== "Legend"
+    This Cloak allows Legend to reroll any skill check and take the best result from both throws.	
+
+=== "Lich"
+    When Lich wears this cloak his Lord Beyond the Grave grants additional +4 bonus to Strength, Dexterity, and Charisma ability scores.	
+
+=== "Swarm"
+    Whenever one of the Locust's clones dies, it spawns a CR 18 Locust Swarm after itself, which attacks your enemies to the best of its abilities for 3 minutes.	
+
+=== "Trickster"
+    The wearer of this cloak automatically succeeds on their first saving throw in a round. In addition, whenever the wearer fails a saving throw, they get a +10 bonus on their next saving throw.	
+
+
+**Acquisition**
+
+Storyteller act 5 item errand.
+
+[Pathfinder: Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/Restoring_an_Ancient_Cloak)
+</file>
+
+<file path="treacherous_flame.md">
+**Gloves**
+
+Whenever the wearer of these gloves lands a sneak attack against an enemy, the enemy becomes vulnerable to fire for 1 round and suffers additional 2d6 fire damage. In addition, whenever the enemy who has been hit by the wearer at least once, takes fire damage from any source, it suffers a –3 penalty on all saves for 2 rounds.
+
+**Acquisition**
+
+Made from the Fire of Baphomet relic which you can
+get from the Crusade Battle north from Sinister Mansion (Act 5).
+</file>
+
+<file path="trick_fate.md">
+**Trickster Spell**
+
+- **Level:** 7 (at Mythic 9)
+- **School:** Divination
+- **Duration:** Three Rounds 
+- **Casting Time:** Standard Action
+- **Target:** Ally in close range
+
+When the fate gives your friend a challenge — you respond with a special die. For three rounds, the target ally always rolls 20 on all d20 rolls.
+</file>
+
+<file path="trickster_sneak.md">
+**Trickster**
+
+At 3rd rank, a Trickster gains +2d6 sneak attack damage. This increases by +1d6 at 5th, 7th, and 9th mythic ranks.
+</file>
+
+<file path="true_strike.md">
+**Personal Spell**
+
+- **Level**:1
+- **School**:Divination
+
+You gain temporary intuitive insight into the immediate future during your next attack. Your next single attack roll (if it is made before the end of the next round) gains a +20 insight bonus. Additionally, you are not affected by the miss chance that applies to attackers trying to strike a concealed target.
+
+**Source:** [Pathfinder:Kingmaker Wiki](https://pathfinderkingmaker.fandom.com/wiki/True_Strike)
+</file>
+
+<file path="two-weapon_feint.md">
+**Prerequisites**
+
+- Feint
+- Two-Weapon Fighting
+- Dexterity 15
+- Intelligence 13
+
+**Effect**
+
+While using Two-Weapon Fighting to make melee attacks, you can forgo your first primary-hand melee attack to make a Persuasion (bluff) check to feint an opponent.
+</file>
+
+<file path="umd_2.md">
+**Improved Mythic Trick**
+
+You have learned of a way to use items so delicately that their use is completely unnoticed. Wands you use no longer lose charges from use, and you can equip any magical items possible, regardless of requirements.
+</file>
+
+<file path="umd_3.md">
+**Greater Mythic Trick**
+
+You have learned that there is a very unconventional and effective way to use scrolls. Apparently, there are those guys called "Wizards" and they use scrolls in a very original way — instead of using magic from a scroll outright, they copy it into this thing they call "Spellbook," and then use the spell every day. You now have one of those spellbooks, and can copy spells into it from scrolls as if you were a wizard of your character level. The casting stat for this spellbook is intelligence.
+</file>
+
+<file path="uncanny_dodge.md">
+**Class Feature**
+
+The character can react to danger before her senses would normally allow her to do so. She cannot be caught flat-footed, nor does she lose her Dexterity bonus to AC if the attacker is invisible. She still loses her Dexterity bonus to AC if immobilized. A character with this ability can still lose her Dexterity bonus to AC if an opponent successfully uses the feint action against her.
+
+If a character already has uncanny dodge from a different class, she automatically gains improved uncanny dodge instead.
+</file>
+
+<file path="undead_bloodline_arcana.md">
+**Undead Bloodline**
+
+Some undead are susceptible to your mind-affecting spells. Undead creatures are treated as humanoids for the purposes of determining which spells affect them.
+</file>
+
+<file path="vanish.md">
+- **Level:** 1
+- **School:** Illusion
+- **Target:** Friendly within touch range
+- **Duration:** 1 round/level (up to 5 rounds)
+
+The touched creature becomes invisible for a short time.
+</file>
+
+<file path="vulnerability_curse.md">
+**Witch Hex**
+
+The witch can make her enemies vulnerable to energy. This hex lasts for a number of rounds equal to the witch's level, during which any energy resistance or energy immunities on the target are suppressed. A successful Will save reduces this to just 1 round. Whether or not the save is successful, that creature cannot be the target of this hex again for 1 day.
+</file>
+
+<file path="wandering_spirit.md">
+**Shaman**
+
+The shaman can adapt to a specific situation by forming a temporary bond with a wandering spirit that would grant them new spells and abilities. Such a spirit can be changed every day.
+</file>
+
+<file path="warrior_priest.md">
+**Feat**
+
+You gain a +1 bonus on initiative checks and a +2 bonus on concentration checks.
+</file>
+
+<file path="warsight.md">
+**Battle Mystery**
+
+Whenever you roll for initiative, you can roll twice and take either result. At 7th level, you gain Uncanny Dodge. At 11th level, you can roll for initiative three times and take any one of the results.
+</file>
+
+<file path="winds_of_vengeance.md">
+**Personal Spell**
+
+- **Level:** 9
+- **School:** Evocation
+- **Duration:** 1 minute/level
+
+You surround yourself with a buffeting shroud of supernatural, tornado-force winds. These winds grant you a fly speed of 60 feet with perfect maneuverability. Neither your armor nor your load affects this fly speed. The winds shield you from any other wind effects, and form a shell of breathable air around you, allowing you to fly and breathe underwater or in outer space.
+
+You have total concealment against ranged attacks. Gases and most gaseous breath weapons cannot pass though the winds.
+
+In addition, when a creature hits you with a melee attack, you can shape your winds so they lash out at that creature as an immediate action. The creature must make a Fortitude Saving Throw or take 5d8 points of bludgeoning damage and be knocked prone (if on the ground). On a failed save, Huge flying creatures are checked and Large-sized or smaller flying creatures are blown away instead of knocked prone.
+
+On a successful save, the damage is halved and the creature is not knocked prone (or checked or blown away).
+</file>
+
+<file path="witch_familiar.md">
+**Witch**
+
+Witch choses a familiar who gives them a bonus to certain abilities or skills.
+
+Witch's Familiar: At 1st level, a witch forms a close bond with a familiar, a creature that teaches her magic and helps to guide her along her path. Familiars also aid a witch by granting her skill bonuses, additional spells, and help with some types of magic.
+
+A witch must commune with her familiar each day to prepare her spells. Familiars store all of the spells that a witch knows, and a witch cannot prepare a spell that is not stored by her familiar. A witch's familiar begins play storing all of the 0-level witch spells plus three 1st level spells of the witch's choice. The witch also selects a number of additional 1st-level spells equal to her Intelligence modifier to store in her familiar. At each new witch level, she adds two new spells of any spell level or levels that she can cast (based on her new witch level) to her familiar. A witch can also add additional spells to her familiar through a special ritual.
+</file>
+
+<file path="wizard_metamagic_mastery.md">
+**Specialist School - Universalist**
+
+At 8th level, you can extend or alter the range of your next spell as though using the Extend or Reach spell feat accordingly. You can use this ability once per day at 8th level and one additional time per day for every two wizard levels you possess beyond 8th.
+
+At 12th level, you can empower your next spell as though using the Empower Spell feat. Empowering costs 2 daily usages of metamagic mastery.
+
+At 16th level, you can maximize your next spell as though using the Maximize Spell feat. Maximizing costs 3 daily usages of metamagic mastery.
+
+At 20th level, you can quicken your next spell as though using the Quicken Spell feat. Quickening costs 4 daily usages of metamagic mastery.
+</file>
+
+<file path="wrath_of_the_creator.md">
+**Dwarven Urgrosh**
+
+This +5 keen construct bane dwarven urgrosh grants its wielder a +6 insight bonus on initiative rolls, increases base speed by 10 feet and grants a +2 dodge bonus to AC against Huge and bigger enemies.
+
+**Acquisition**
+
+Found in Iz, west Basement (Act 5)
+</file>
+
+</files>

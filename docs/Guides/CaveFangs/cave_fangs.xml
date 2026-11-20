@@ -1,0 +1,3255 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+_includes/
+  ability.md
+  angel_mythic_6_damage_potential.md
+  dc.md
+  dr_and_incorporeal.md
+  elemental_barrage.md
+  elemental_conversion.md
+  enduring_spells.md
+  failsafes.md
+  fire_items.md
+  geomancy_backlash.md
+  geomancy_terrain_by_act.md
+  geomancy.md
+  getting_the_spell.md
+  gold_dragon_mythic_10_damage_potential.md
+  holy_conversion.md
+  initiative.md
+  intro.md
+  location_terrain_draft.md
+  metamagic.md
+  mobility_stealth.md
+  mythic_angel.md
+  mythic_azata.md
+  mythic_damage_calculations.md
+  mythic_damage_overview_rev2.md
+  mythic_damage_overview_revised.md
+  mythic_damage_overview.md
+  mythic_damage_potential.md
+  mythic_demon.md
+  mythic_gold_dragon.md
+  mythic_lich.md
+  negative_energy_conversion.md
+  smites.md
+  standard_action.md
+  surprise_spells.md
+cave_fangs.md
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="_includes/ability.md">
+## The Ability
+
+Cave Fangs allows traps to be placed across the battlefield. The Stalactites variant grants the ability to place them as a free action. Placing a trap directly on an enemy during combat triggers it immediately.
+
+### Names used in this guide
+
+| Name | What it is |
+|---|---|
+| **Cave Fangs** | The 5th-level conjuration spell, with two variants. |
+| **Cave Fangs: Stalactites** | The variant used in this guide. Casting it is a standard action and grants a timed buff. |
+| **Stalactites Trap** | The ability granted by the buff, used to place the actual traps. In-game, it is titled "Cave Fangs" with the description: "Create Stalactites trap". |
+| **Buff** | Refers to the Cave Fangs: Stalactites buff. |
+| **Trap** | Short for Stalactites Trap. |
+
+### The spell and the trap
+
+??? spell "Cave Fangs"
+    {% include '_includes/cave_fangs.md' %}
+
+??? spell "Cave Fangs: Stalactites"
+    {% include '_includes/cave_fangs_stalactites.md' %}
+
+??? spell "Stalactites Trap"
+    {% include '_includes/stalactites_trap.md' %}
+
+Both the spell and the traps it creates count as conjuration spells.
+
+### Trap placement 
+
+Placing a trap is a free action, with no fixed limit on the number placed per turn. The practical limit is the buff's remaining duration, as each trap consumes 10 minutes.
+
+The number of available traps is therefore equal to the buff's remaining duration divided by 10 minutes. Since the buff lasts 10 minutes per caster level, this allows one trap per caster level before modifiers. Effects that directly extend the buff's duration provide additional traps (see [Enduring Spells](#enduring-spells)).
+
+Traps remain on the ground for 1 hour per level, although this rarely matters in combat. They can be placed directly on enemies, triggering immediately.
+
+### Trap spell level
+
+The trap's spell level is **half the character level, capped at 9**. It is independent of Cave Fangs' own spell level (5), the spell slot used, and caster level. Several interactions discussed later in this guide depend on the trap's spell level.
+
+### Stalagmites version
+
+The Stalagmites variant uses a swift action to place a trap, limiting placement to one per turn in combat. This is why the guide focuses on Stalactites.
+
+??? spell "Cave Fangs: Stalagmites"
+    {% include '_includes/cave_fangs_stalagmites.md' %}
+</file>
+
+<file path="_includes/angel_mythic_6_damage_potential.md">
+#### Mythic Rank 6 damage potential
+
+The following calculations estimate the damage from a single **Cave Fangs** cast, with Sword of Heaven active and all 144 traps hitting an (infinite hp) target.
+
+Maximised damage is rounded down by the game for each trap. Average damage retains fractional values until the total is calculated.
+
+**Stalactite Trap damage**
+
+These calculations assume Sword of Heaven is active, including the *Bound of Possibility* buff. The Bolster is not applied to the Sword of Heaven extra dice. 
+
+- Base damage with Bolster: \(3d8 + 6\)
+- Damage with Sword of Heaven: \(7d8 + 6\)
+
+Plague of Madness provides Empower and Maximise, while Promise of Greatness provides the Bolster effect. Abolish Guile is another 1.5 times multiplier.
+
+\[
+\left\lfloor (7 \times 8 + 6) \times 1.5^2  \right\rfloor
+= 139
+\]
+
+**Theoretical maximum Trap damage**
+
+This setup assumes:
+
+- Hellknight 10 main character (not recommended)
+- Level 20 Paladin ally
+- Fire Conversion and Flame Curse on the enemy
+- A Guile Demon
+
+\[
+\left\lfloor
+(7 \times 8 + 6 + 20 + 20) \times 1.5^3
+\right\rfloor
+= 344
+\]
+
+**Geomancy damage**
+
+At character level 18 or higher, Geomancy deals:
+
+\[
+9d6 \rightarrow 13d6
+\]
+
+The average damage with Abolish Guile is:
+
+\[
+13 \times \frac{6 + 1}{2} \times 1.5 = 68.25
+\]
+
+
+**Elemental Barrage damage**
+
+Elemental Barrage deals \(6d6\) damage when an enemy is damaged after also having been damaged during the previous turn.
+
+Witch Abolish Guile:
+
+\[
+6 \times \frac{6 + 1}{2} \times 1.5 = 31.5
+\]
+
+##### Total single-target damage potential
+
+Using all 144 traps against a Flame Cursed enemy, the theoretical damage consists of:
+
+- 344 maximised trap damage per trap
+- 68.25 average Geomancy damage per trap
+
+Elemental Barrage is excluded from this total.
+
+**Total across 144 traps:**
+
+\[
+(344 + 68.25) \times 144
+= \boxed{59\,364 \text{ average damage}}
+\]
+
+Wether Elemental Barrage increases this further (you lose Flame Curse multiplier on half the traps) is left as an excercise for the reader.
+</file>
+
+<file path="_includes/dc.md">
+### DC
+
+As with regular spells, trap saving throws are affected by two kinds of modifiers: bonuses to DC and penalties to enemy saving throws. For a full list, see the [Bonuses (WotR) page](https://pathfinderkingmaker.fandom.com/wiki/Bonuses_(WotR)#Spell_DC) on the wiki.
+
+Penalties include conditions such as shaken or sickened, Dispel Synergy, Ambuscading Spell and similar effects. These work as expected, just as they do for other spells.
+
+#### Why DC Matters
+
+Cave Fangs traps deal half damage on a successful save, so enemies with high Reflex saves already reduce their damage output considerably. The greater concern is evasion. Against an enemy with evasion and a high Reflex save, traps may deal no damage at all. [Geomancy](#geomancy) still damages these enemies, but the loss in damage remains substantial.
+
+??? class-feature "Evasion"
+    {% include '_includes/evasion.md' %}
+
+#### How the DC reaches the traps
+
+All DC bonuses that would normally apply according to their descriptions also apply to the Cave Fangs: Stalactites buff. When the buff is cast, its DC is inherited by the Stalactites Trap ability. These bonuses do not need to apply directly to the trap's DC.
+
+This allows DC and casting-stat items to be equipped for the buff's duration, then replaced with more useful equipment for combat. Heighten, the casting ability score, the Dagger of the Betrayer and the Quarterstaff of the War Mage all work this way.
+
+??? item-weapon "Dagger of the Betrayer"
+    {% include '_includes/dagger_of_the_betrayer.md' %}
+
+??? item-weapon "Quarterstaff of the War Mage"
+    {% include '_includes/quarterstaff_of_the_war_mage.md' %}
+
+#### The double DC bug
+
+!!! bug "Some DC bonuses apply twice"
+    Some DC increases apply to the Cave Fangs buff, as expected, but **also apply directly to the trap itself**.
+
+    - When the buff is cast, the trap inherits its DC. This is normal.
+    - While the bonus remains active, it also increases the trap's DC directly, so it is counted a second time.
+    - Unequipping the item that provides the bonus leaves only the inherited increase, as with other DC bonuses.
+    - Equipping the item after casting means the bonus is not included in the inherited DC, but still increases the trap's DC directly.
+
+The following sources are known to be affected:
+
+??? feat "Spell Focus"
+    {% include '_includes/spell_focus.md' %}
+
+??? feat "Greater Spell Focus"
+    {% include '_includes/greater_spell_focus.md' %}
+
+??? mythic-feature "Mythic Spell Focus"
+    {% include '_includes/mythic_spell_focus.md' %}
+
+??? mythic-feature "Expanded Arsenal"
+    {% include '_includes/expanded_arsenal.md' %}
+
+??? item-weapon "Numerian Greatsword"
+    {% include '_includes/numerian_greatsword.md' %}
+
+??? item "Robe of the Seven Sins"
+    {% include '_includes/robe_of_the_seven_sins.md' %}
+
+??? item "Heartstone of the Night Hag Queen"
+    {% include '_includes/heartstone_of_the_night_hag_queen.md' %}
+
+??? mythic-feature "Hell's Decree"
+    {% include '_includes/hells_decree.md' %}
+
+    === "Decree of Hunt"
+        {% include '_includes/decree_of_hunt.md' %}
+
+    === "Decree of Vengeance"
+        {% include '_includes/decree_of_vengeance.md' %}
+
+    === "Decree of Hell's Fires"
+        {% include '_includes/decree_of_hells_fires.md' %}
+
+    === "Decree of School Magic"
+        {% include '_includes/decree_of_school_magic.md' %}
+
+??? demon-feature "Demonic Rage"
+    {% include '_includes/demonic_rage.md' %}
+
+Hell's Decree comes from the [Devil](#devil-m8) path.
+
+#### Spell Focus and Expanded Arsenal
+
+The Expanded Arsenal exploit can increase the Spell Focus bonuses to **+16 DC** at Mythic Rank 10, at the cost of all five mythic feats. There are two variations, both covered in detail in the Steam guide *DC magic for dummies: the Art of dominant Crowd Control!* by Raven Paradox. I learned a lot from this guide.
+
+Because of the double DC bug, this provides up to **+32 DC** to the traps.
+
+#### Numerian Greatsword
+
+The Numerian Greatsword appears in the list above, but is awkward to use:
+
+- It has a limited number of charges, which are consumed each round.
+- It is a two-handed weapon, so it competes for hand slots with [Plague of Madness](#meta-plague).
+- Unequipping it removes all its charges, which only return after resting. Other weapons can be changed without losing their charges.
+
+Without the last limitation, Plague of Madness could be used to buff Cave Fangs before switching to the Numerian Greatsword for its +2 direct DC bonus. However, equipping Plague of Madness to cast the buff also removes the Greatsword's charges.
+
+Titan Fighter's Giant Weapon Wielder offers a solution. It allows a two-handed weapon to be wielded in one hand, making it possible to use Plague of Madness and the Numerian Greatsword together. This also provides the +2 inherited DC bonus, for a total of +4 DC. After casting the buff, Plague of Madness can be replaced with another weapon; the Greatsword must remain equipped.
+
+??? class-feature "Giant Weapon Wielder"
+    {% include '_includes/giant_weapon_wielder.md' %}
+
+Once the Greatsword's charges are exhausted, the Quarterstaff of the War Mage can be used to cast the buff instead. This staff only affects the DC of Cave Fangs: Stalactites.
+</file>
+
+<file path="_includes/dr_and_incorporeal.md">
+### Damage Reduction
+
+Physical spells have a pretty big downside in WotR: they are affected by DR.
+
+Weapon damage has a huge number of ways to bypass (various levels of) DR. 
+
+For energy spell damage, Ascendant Element and the Vulnerability Hex bypass energy resistances and immunities, see [Resistances and immunities](#resistances-and-immunities).
+
+I only know of three ways to bypass DR for physical damage spells:
+
+- [Smite (and Mark of Justice)](#smites)
+- Conversion to energy, see [Holy Conversion](#holy-conversion) and [Negative Energy Conversion](#negative-energy-conversion)
+- The [Demon's Aspect of Deskari](#demon-m9)
+
+
+#### How much DR matters
+
+DR matters a lot if you only have the base spell. It deals 3d8, so 3 to 24 damage, but 90% of the time it falls between 7 and 20. That is halved on a successful Reflex save.
+
+Even regular late Act 2 enemies like Vrocks have DR 10, which means that on a successful save all the damage is likely to be mitigated.
+
+Once you have the traps [maximized and empowered](#meta-plague), you deal 36 damage every cast without any further buffs, although those further buffs are hard to come by. Enemies with more than 15 DR are pretty rare. It is a significant damage nerf, but it does not invalidate the ability, and you can bring a Paladin with [Mark of Justice](#mark-of-justice) for select enemies.
+
+### Incorporeal
+
+Incorporeal is a much bigger problem.
+
+??? class-feature "Incorporeal"
+    {% include '_includes/trait_incorporeal.md' %}
+
+While the text says weapons, it does in fact include physical damage spells. Incorporeal enemies, for example Shadow Demons, which are relatively common from late Act 3 onwards, are completely immune to the damage of your traps.
+
+I only know of two ways to deal with this:
+
+- The Demon's [Aspect of Deskari](#demon-deskari), which is a mythic rank 9 ability, so just before the end of the game.
+- Conversion to energy: the earliest is mythic rank 3 for the [Lich](#lich-m3), then mythic rank 6 for the [Angel](#angel-m6).
+
+Note that converting to negative energy still means incorporeal enemies take only half damage. For holy damage it is full damage.
+
+Incorporeal also gives immunity to Sneak Attacks which matter for [Surprise Spells](#surprise-spells). It can be bypassed trough holy conversion.
+</file>
+
+<file path="_includes/elemental_barrage.md">
+#### Elemental Barrage
+
+??? mythic-feature "Elemental Barrage"
+    {% include '_includes/elemental_barrage.md' %}
+
+Although the description refers to energy damage, the ability requires elemental damage to function. Two different elements are therefore needed. Fire is available through the Geomancer dip and its bloodline; electricity is the easiest second element to obtain.
+
+??? item "Stormlord's Resolve"
+    {% include '_includes/stormlords_resolve.md' %}
+
+Despite its description, Stormlord's Resolve does not convert all spell damage to electricity. It affects only energy damage, so energy conversion is required before it can work with Cave Fangs.
+
+Toggling between fire and electricity conversion between casts causes affected enemies to take an additional 1d6 damage per mythic rank.
+
+The main drawback is the mythic feat cost. The following selections are required:
+
+- Elemental Barrage
+- Ascendant Element: Fire
+- Ascendant Element: Electricity
+
+Vulnerability Curse can replace the latter two selections. See [Resistances and immunities](#resistances-and-immunities).
+</file>
+
+<file path="_includes/elemental_conversion.md">
+### Elemental Conversion
+
+Once damage has been converted to an energy type, it can be converted again to an elemental type. This affects trap damage, but not Geomancy or its damage to the caster, which remain holy, unholy or negative.
+
+One way to achieve this is through Elemental Bloodline (Fire). Since the build already takes a dip into [Geomancer](#geo-bloodline), access to this bloodline is straightforward.
+
+#### Reasons to convert to fire
+
+- [Flame Curse](#std-hexes), for additional single-target damage.
+- [Items](#fire-items) that trigger on fire damage.
+- [Elemental Barrage](#elemental-barrage).
+
+#### Resistances and immunities
+
+Many demons have elemental resistances and immunities. Ascendant Element is therefore useful when converting damage to an element.
+
+??? mythic-feature "Ascendant Element"
+    {% include '_includes/ascendant_element.md' %}
+
+Ascendant Element is available for acid, cold, electricity, fire, negative energy and sonic damage.
+
+An alternative is the Vulnerability Curse hex. Despite its name, it does not grant vulnerability in the same way as Flame Curse; instead, it bypasses immunities and resistances.
+
+??? hex "Vulnerability Curse"
+    {% include '_includes/vulnerability_curse.md' %}
+
+Vulnerability Curse uses a standard action and affects a single target. The traps already have a small area of effect, so the single-target limitation is relatively minor, particularly because Geomancy provides the main source of area damage.
+</file>
+
+<file path="_includes/enduring_spells.md">
+### Enduring Spells
+
+??? mythic-feature "Enduring Spells"
+    {% include '_includes/enduring_spells.md' %}
+
+Enduring Spells extends the Cave Fangs buff to 24 hours. Since each trap consumes 10 minutes of the buff, this allows **144 traps from a single cast**. 
+
+#### Timing 
+
+The first mythic ability becomes available at the end of Act 1. Solo characters gain more XP, so reaching level 10 by this point is only possible when playing solo (see the [Shared Experience Addendum](../SharedXP/wotr_graphs.md)). Soloing until Gray Garrison, without necessarily soloing the location itself, allows level 9 to be reached before Act 2. Either way, Enduring Spells and Cave Fangs can work together almost immediately.
+
+The drawback is that physical DR remains difficult to overcome, while a single trap deals little damage. Enemies with physical DR therefore require many traps to kill. See [DR and Incorporeal](#dr-and-incorporeal).
+
+Mythic Rank 3, reached at the end of Act 2, is another good opportunity to take it. In Act 3, trap damage can be increased through [Plague of Madness](#meta-plague) and the [mythic choice](#mythic-angel). A Paladin can also provide [Mark of Justice](#mark-of-justice) to help overcome DR on bosses.
+</file>
+
+<file path="_includes/failsafes.md">
+### Fail-safes
+
+In-case initiative is lost. 
+
+??? item "Bane of Flesh"
+    {% include '_includes/bane_of_flesh.md' %}
+
+??? mythic-feature "Last Stand" 
+    {% include '_includes/last_stand.md' %}
+
+??? mythic-feature "Rupture Restraints"
+    {% include '_includes/rupture_restraints.md' %}
+</file>
+
+<file path="_includes/fire_items.md">
+#### Items { #fire-items }
+
+There are many items with descriptions that do something on certain elemental damage. 
+
+However, almost all require the original spell to have an elemental descriptor to work.
+
+I have only found one item that works with converted Stalactites traps:
+
+??? item "Call of the Fiery Things"
+    {% include '_includes/call_of_the_fiery_things.md' %}
+
+Note that the damage it deals will become (un)holy or negative due to the conversion, preventing any further possible fire synergies.
+</file>
+
+<file path="_includes/geomancy_backlash.md">
+#### Geomancy Backlash
+
+Each Geomancy trigger deals 1d8 direct damage to the caster. This becomes problematic when Geomancy is triggered repeatedly through free actions. Direct damage cannot be mitigated by DR or immunity, but several methods can prevent or absorb it.
+
+##### Temporary hit points
+
+This method works with any mythic path.
+
+??? item "Gloves of Enduring Wizard"
+    {% include '_includes/gloves_of_enduring_wizard.md' %}
+
+By Act 4, traps count as spells of level 7 or higher. Each trap placement therefore grants 20 temporary hit points. These do not stack, so 144 placements cannot accumulate 144 × (20 - 1d8) hit points. However, the temporary hit points granted by each cast effectively absorb the damage from the following cast.
+
+##### Angel: Solar Winds
+
+The Angel's Sword of Holy Damage converts all damage to holy damage while Sword of Heaven is active. See [Holy Conversion: Angel](#conversion-angel).
+
+Solar Winds grants resistance to holy damage and becomes available at the same mythic rank as the conversion, rank 6.
+
+Sword of Holy Damage is unlocked automatically, whereas Solar Winds requires an Improved Angelic Halo selection.
+
+??? angel-feature "Sword of Holy Damage"
+    {% include '_includes/sword_of_holy_damage.md' %}
+
+??? angel-feature "Solar Winds"
+    {% include '_includes/solar_winds.md' %}
+
+At mythic rank 6, Solar Winds provides only 6 resistance against 1d8 damage. Consequently, 1 or 2 damage may still be taken occasionally.
+
+##### Broken Trickster
+
+This method requires all direct damage to be converted to a single energy type. Only a few abilities can convert all damage; see [Holy Conversion](#holy-conversion) and [Negative Conversion](#negative-energy-conversion). Once the damage has been converted, protection against the corresponding energy type can prevent it.
+
+??? item "Broken Trickster"
+    {% include '_includes/broken_trickster.md' %}
+
+With this item, the converted damage is taken once. For the remainder of the turn, the wearer is effectively immune to that damage type, as the item grants 20 resistance.
+
+The method works with any energy type, so unholy conversion is just as effective as holy conversion.
+
+##### Death Ward
+
+This is the earliest available solution. The Lich's [Negative Conversion](#negative-energy-conversion), granted by Death of Elements, converts Geomancy's self-damage to negative energy.
+
+Death Ward grants immunity to negative energy, preventing the damage entirely.
+
+??? spell "Death Ward"
+    {% include '_includes/death_ward.md' %}
+
+!!! Warning "Ascendant Element: Negative"
+    Ascendant Element: Negative Energy bypasses the caster's own immunity to negative energy when dealing self-damage.
+</file>
+
+<file path="_includes/geomancy_terrain_by_act.md">
+##### Act 3 { #geomancy-terrain-act-3 }
+
+The Act 3 areas are listed below by terrain. "Unknown" is the terrain the game itself reports in some places, and Geomancy generally does not work there.
+
+| Terrain | Areas | |
+|---|---|---|
+| **Desert** | Baphomet's Shrine<br>Core of the Riddle (outside)<br>Desolate Hovel<br>Extirpator's Camp<br>Heart of Mystery (outside) | Ivory Sanctum (outside)<br>Place of Execution (outside)<br>Ravaged Long House (outside)<br>Temple of the Good Hunt (outside)<br>Terendelev's Lair |
+| **Underground** | Areelu's Lab<br>Blackwater<br>Core of the Riddle<br>Dragon Burial Ground<br>Heart of Mystery<br>Ivory Sanctum | Legacy of the Ancients<br>Molten Scar<br>Place of Execution<br>Pulura's Fall<br>Ravaged Long House<br>Wintersun (both caves) |
+| **Urban** | Artisan's Tower (Greenhouse) | Greengates |
+| **Forest** | Ashen Grotto<br>Grimwood<br>Ruins of Ashberry Hamlet<br>Sacred Lands | Scrubland by a Bend in the River<br>Shrine of Sacrilege (outside)<br>Wintersun |
+| **Highlands** | Artisan's Tower<br>Hellknights Outpost | Legacy of the Ancients (outside) |
+| **Unknown** | Crimson Dust<br>Shrine of Sacrilege (inside) | Temple of the Good Hunt (inside) |
+
+!!! note "Unknown terrain in the Temple of the Good Hunt"
+    One of the Unknown areas, the inside of the Temple of the Good Hunt, did trigger Desert Geomancy.
+
+##### DLC 3 (Treasure of the Midnight Isles)
+
+The Treasure of the Midnight Isles main campaign dungeons can be visited in Act 3, 4 and 5.
+The terrain type of all is Abyss.
+
+##### Act 4 { #geomancy-terrain-act-4 }
+
+Act 4 takes place entirely in the Abyss.
+
+##### Act 5 and 6 { #geomancy-terrain-act-4 }
+
+TODO
+
+##### DLC 1 (Inevitable Excess)
+
+There's no combat in Commander's Court, so it's very suited for Geomancy. 
+
+| Terrain | Areas | |
+|---|---|---|
+| **Desert** | Desolate Hovel<br>Place of Calling | Shamira Ambush Location<br>Threshold |
+| **Underground** | Other Side of Threshold<br>Underground floor of Chief's House | Valmallos's Threshold |
+| **Urban** | Artisan's Tower<br>Iz | Lair of the Spinner of Nightmares<br>Ziggurat |
+| **Forest** | Commander's Court |  |
+</file>
+
+<file path="_includes/geomancy.md">
+### Geomancy
+
+Geomancy deals damage in an area around the caster whenever a spell is cast. It also triggers when placing traps. The ability is granted by the Geomancer, a Sorcerer archetype, at level 1.
+
+!!! class-feature "Geomancy"
+    {% include '_includes/geomancy.md' %}
+
+#### What it does for the traps
+
+Placing a trap counts as casting a spell, so Geomancy triggers with every trap placement. With Enduring Spells, up to 144 traps can be placed, allowing Geomancy to trigger up to 144 times. Its damage is 1d6 per spell level; in this case, the relevant spell level is that of the trap, which equals half the character level, up to a maximum of 9. At the maximum, Geomancy deals **9d6** damage.
+
+The effect covers all enemies within 30 feet of the caster, a considerably larger area than the trap's 5-foot burst. Unlike trap damage, Geomancy damage allows no saving throw. This makes it useful against enemies with high Reflex saves or evasion (see [Why DC Matters](#why-dc-matters)). The additional effects, including corruption, blindness, pinning and stun, do allow saving throws.
+
+!!! bug "Save DC"
+    The description states that the DC of these saves equals the DC of the spell cast. However, the DC calculation is bugged. For Cave Fangs traps, it is 15 (the base DC of a 5th-level spell) plus any universal DC modifiers currently active.
+
+At mythic rank 10, [Gold Dragon's Perfect Soul](#gd-m10) can Empower and Maximise Geomancy. No other method is currently known to me.
+
+Most damage increases that apply to Geomancy also affect the traps, effectively doubling their value. Examples include:
+
+- [Smites](#smites)
+- [Angel](#mythic-angel): additional dice from the sword
+- [Azata](#azata-m4): Incredible Might
+- [Gold Dragon](#mythic-gd): Dragon Might and Smite
+
+Each cast also deals direct damage to the caster; see [Geomancy Backlash](#geomancy-backlash).
+
+#### Terrain
+
+The effect depends on the terrain occupied by the caster.
+
+| Terrain | Damage | Extra effect | Useful here? |
+|---|---|---|---|
+| **Abyss** | 1d6 untyped per spell level | Fortitude save or corrupted: -2 on attack rolls, damage rolls and save DCs (a curse) | Best |
+| **Desert** | 1d6 slashing per spell level | Reflex save or blinded for 1d4 rounds | Yes, but physical damage |
+| **Underground** | 1d6 piercing per spell level | Reflex save or pinned for 1 round | Yes, but physical damage |
+| **Urban** | 1d6 bludgeoning per spell level | Fortitude save or stunned for 1 round | Yes, but physical damage |
+| **Forest** | None, heals the caster and allies | | Practically no |
+| **Highlands** | None, grants DR to the caster and allies | | Practically no |
+
+Desert, Underground and Urban deal physical damage, making physical DR a concern, as with the traps (see [DR and Incorporeal](#dr-and-incorporeal)). Forest and Highlands do not damage enemies, so Geomancy provides no offensive benefit in these terrains.
+
+{% include 'Guides/CaveFangs/_includes/geomancy_terrain_by_act.md'%}
+
+#### Bloodline { #geo-bloodline }
+
+The Geomancer also gains a bloodline at level 1.
+
+**Elemental Bloodline (Fire)** is useful when [Fire Conversion](#elemental-conversion) is part of the build.
+
+??? class-feature "Elemental Bloodline Arcana"
+    {% include '_includes/elemental_bloodline_arcana.md' %}
+
+**Arcane Bloodline** is useful when the build does not already include a familiar.
+
+??? class-feature "Arcane Bloodline Arcana"
+    {% include '_includes/arcane_bloodline_arcana.md' %}
+
+??? class-feature "Arcane Bond"
+    {% include '_includes/arcane_bond.md' %}
+
+The Hare familiar grants +2 Perception and +4 Initiative.
+
+**Undead Bloodline** allows the application of the shaken debuff to undead enemies, reducing their DC by 2.
+
+??? class-feature "Undead Bloodline Arcana"
+    {% include '_includes/undead_bloodline_arcana.md' %}
+
+Skeletal Archers in DLC3 and the Undead Dragon in the Act 4 mines have high Reflex saves.
+</file>
+
+<file path="_includes/getting_the_spell.md">
+## Getting the Spell
+
+### Spellbooks
+
+Cave Fangs is a 5th-level spell in the spellbooks listed. The class level column indicates the earliest class level at which 5th-level spells become available.
+
+| Class | Spell level | Class level |
+|---|---|---|
+| Druid | 5 | 9 |
+| Shaman | 5 | 9 |
+| Witch | 5 | 9 |
+| Stigmatized Witch (spontaneous) | 5 | 10 |
+| Oracle (Nature mystery, spontaneous) | 5 | 10 |
+| Hunter | 5 | 13 |
+
+### Loremaster
+
+Any 9-level or 6-level caster can also get Cave Fangs through a Loremaster dip, by taking the *Druid Spell* option of the Secret class feature. When that becomes available depends on the caster type, so it is not listed here.
+
+{% include '_includes/loremaster.md' %}
+
+??? class-feature "Secret"
+    {% include '_includes/loremaster_secret.md' %}
+
+??? bug "Intensified Spell Loremaster Bug"
+    {% include '_includes/loremaster_intensified_bug.md' %}
+
+??? bug "6-Level Caster Loremaster Bug"
+    {% include '_includes/loremaster_6_level_bug.md' %}
+</file>
+
+<file path="_includes/gold_dragon_mythic_10_damage_potential.md">
+#### Mythic Rank 10 damage potential
+
+The following calculations estimate the damage from a single **Cave Fangs** cast, assuming all 144 traps are cast upon (an infinite hp) target.
+
+Maximised damage is rounded down by the game for each trap. Average damage retains fractional values until the total is calculated.
+
+##### Single-target damage
+
+**Assumptions**
+
+- Dragon Might
+- Dragon Smite, with 80 Charisma
+- 15d6 sneak attack damage from Surprise Spells
+- An allied Paladin's Mark of Justice, adding 20 damage
+- Fire conversion 
+- Flame Curse, applied by an ally
+- Call of the Fiery Things
+
+**Sneak attack dice**
+
+| Source | Sneak attack |
+|---|---:|
+| 1 level of Vivisectionist | 1d6 |
+| Sense Vitals (character level 15+) | 5d6 |
+| Arcane Trickster | 5d6 |
+| Accomplished Sneak Attacker | 1d6 |
+| 1 level of Rogue | 1d6 |
+| 3 levels of Assassin | 2d6 |
+| **Total** | **15d6** |
+
+With Perfect Soul, the sneak attack dice become d10s. Surprise Spells' additional sneak attack damage is not Empowered or Maximised; it is multiplied only by Dragon Might.
+
+**Charisma calculation**
+
+| Source | Charisma |
+|---|---:|
+| Base | 17 |
+| Racial: Kindred-Raised Half-Elf | +4 |
+| Ability increases | +5 |
+| Inherent: Tome of Ancient Perfection | +4 |
+| Enhancement: Many | +8 |
+| Circumstance: Grand Festival Cloak | +2 |
+| Morale: Court Poet and Ring of Triumphant Advance | +12 |
+| Alchemical: Cognatogen | +8 |
+| Profane: Ascension | +6 |
+| Conflagrant Taco | +4 |
+| Perfect Soul | +8 |
+| Vellexia's Magnifying Amulet | +2 |
+| **Total Charisma** | **80** |
+
+The resulting Charisma modifier is:
+
+\[
+\frac{80 - 10}{2} = 35
+\]
+
+Dragon Smite adds half the Charisma modifier to damage, rounded down:
+
+\[
+\left\lfloor \frac{35}{2} \right\rfloor = 17
+\]
+
+**Trap damage**
+
+Trap damage benefits from Dragon Might, Flame Curse, and the Maximise + Empower effect from Perfect Soul. The maximised damage is rounded down per trap:
+
+\[
+\left\lfloor
+(3 \times 10 + 6_{\text{Bolster}} + 17_{\text{Dragon Smite}} + 20_{\text{Mark of Justice}})
+\times 1.5^3
+\right\rfloor
+= 246
+\]
+
+**Sneak attack damage**
+
+The sneak attack damage from Surprise Spells is multiplied only by Dragon Might. Its average damage is:
+
+\[
+15 \times \frac{10 + 1}{2} \times 1.5
+= 123.75
+\]
+
+**Geomancy damage**
+
+Geomancy benefits from Dragon Smite, Mark of Justice, Dragon Might, and the Maximise + Empower effect. The maximised damage is rounded down per trap:
+
+\[
+\left\lfloor
+(9 \times 6 + 17_{\text{Dragon Smite}} + 20_{\text{Mark of Justice}})
+\times 1.5^2
+\right\rfloor
+= 204
+\]
+
+**Call of the Fiery Things**
+
+Benefits from the Maximise + Empower effect.
+
+\[
+4 \times 6 \times 1.5
+= 36 
+\]
+
+
+**Total single-target damage**
+
+Combining the rounded trap and Geomancy damage with the average sneak attack damage gives:
+
+\[
+(246 + 123.75 + 204 + 36) \times 144
+= \boxed{87\,804}
+\]
+
+##### Geomancy AoE
+
+**Assumptions**
+
+- Dragon Might
+- Dragon Smite, with 80 Charisma
+
+Geomancy benefits from Dragon Smite, Dragon Might, and the Empower effect. The maximised damage is rounded down per trap:
+
+\[
+\left\lfloor
+(9 \times 6 + 17_{\text{Dragon Smite}})
+\times 1.5^2
+\right\rfloor
+= 159
+\]
+
+Across 144 traps:
+
+\[
+159 \times 144
+= \boxed{22\,896}
+\]
+
+A single Cave Fangs cast could therefore theoretically deal **87,804 damage to one target**, of which **22,896 damage** is dealt as 30-foot-radius AoE damage through Geomancy.
+
+Elemental Barrage could increase the total further; this is left as an excerice to the reader.
+</file>
+
+<file path="_includes/holy_conversion.md">
+### Holy Conversion
+
+Several abilities in the game can convert **all** damage dealt by a character to holy damage, or to unholy damage for the Gold Dragon if sworn to serve Dahak.
+
+This includes trap damage, Geomancy damage, and even the direct damage Geomancy deals to the caster. All of it becomes holy or unholy damage.
+
+#### Angel { #conversion-angel }
+
+At mythic rank 6, the Angel gains Sword of Holy Damage, which converts all damage to holy damage while Sword of Heaven is active.
+
+??? angel-feature "Sword of Holy Damage"
+    {% include '_includes/sword_of_holy_damage.md' %}
+
+??? angel-feature "Sword of Heaven"
+    {% include '_includes/sword_of_heaven.md' %}
+
+??? angel-feature "Everlasting Flame"
+    {% include '_includes/everlasting_flame.md' %}
+
+Sword of Heaven can be activated a number of times per day equal to 1 plus half the mythic rank. With Everlasting Flame, its duration increases to 1 minute per mythic rank. At mythic rank 6, this provides four uses lasting 6 minutes each. This is sufficient to support a build centred on holy conversion.
+
+#### Azata { #conversion-azata }
+
+??? mythic-feature "Joy of Life"
+    {% include '_includes/joy_of_life.md' %}
+
+Joy of Life is a 6th-level spell gained at mythic rank 8. Its duration is very short, making it suitable mainly for specific encounters.
+
+#### Gold Dragon { #conversion-gd }
+
+??? mythic-feature "Perfect Mind"
+    {% include '_includes/perfect_mind.md' %}
+
+Perfect Mind is a permanent effect, but becomes available only at mythic rank 9.
+
+#### Reasons to convert to (un)holy { #conversion-reasons}
+
+- Bypasses the DR or immunity affecting traps and certain Geomancy terrains. Unlike smites, conversion is not limited to a single target and is less restricted by daily uses. See [DR and Incorporeal](#dr-and-incorporeal).
+- Bypasses Precision damage immunity, relevant for Surprise Spells.
+- Prevents the direct damage from Geomancy with Broken Trickster or Solar Winds. See [Geomancy Backlash](#geomancy-backlash). This is less important with the Gloves of Enduring Wizard.
+- Allows further conversion to fire or another element. See [Elemental Conversion](#elemental-conversion).
+</file>
+
+<file path="_includes/initiative.md">
+### Initiative
+
+The most reliable way to stay alive is to eliminate enemies before they can act. Cave Fangs can kill enemies in a single turn; acting first is therefore essential.
+
+#### Feats
+
+Improved Initiative is the main feat for increasing initiative. Warrior Priest provides a smaller bonus.
+
+??? feat "Improved Initiative"
+    {% include '_includes/improved_initiative.md' %}
+
+??? feat "Warrior Priest"
+    {% include '_includes/warrior_priest.md' %}
+
+#### Mythic Feats and Abilities
+
+??? mythic-feature "Inspirational Leader"
+    {% include '_includes/inspirational_leader.md' %}
+
+??? mythic-feature "Improved Initiative (Mythic)"
+    {% include '_includes/improved_initiative_mythic.md' %}
+
+#### Main classes { #init-full-class }
+
+Some classes that work with Cave Fangs also provide substantial initiative bonuses at higher levels. Earlier bonuses from dips are covered in [Dips](#init-dips).
+
+**Oracle**
+
+An Oracle can gain Cave Fangs through the Nature Mystery or Loremaster and follow the Angel mythic path. A second mystery, Battle, can be obtained through a mythic ability or a Magic Deceiver: Living Deity dip.
+
+??? class-feature "Warsight"
+    {% include '_includes/warsight.md' %}
+
+??? class-feature "Oracle's Curse"
+    {% include '_includes/oracles_curse.md' %}
+
+??? class-feature "Powerless Prophecy"
+    {% include '_includes/powerless_prophecy.md' %}
+
+The level requirements refer to Oracle levels. A single-level Oracle dip grants the ability to roll twice for initiative through Warsight.
+
+**Geomancer**
+
+A Geomancer does not need to be taken as a dip solely for its bloodline; the class can also support a Lich build, for example. Favored Terrain provides initiative bonuses at later levels.
+
+??? class-feature "Favored Terrain (Geomancer)"
+    {% include '_includes/favored_terrain_geomancer.md' %}
+
+**Forester**
+
+Forester also gains access to Favored Terrain.
+
+??? class-feature "Favored Terrain (Forester)"
+    {% include '_includes/favored_terrain_forester.md' %}
+
+??? class-feature "Favored Terrain"
+    {% include '_includes/favored_terrain.md' %}
+
+**Divination Wizard**
+
+Divination Wizard is a strong option for a Lich build focused on save-or-die spells, and can also work well with Cave Fangs.
+
+??? class-feature "Forewarned"
+    {% include '_includes/forewarned.md' %}
+
+**Sword Saint**
+
+Although not an obvious choice for Cave Fangs, Sword Saint combines durability with a substantial initiative bonus.
+
+??? class-feature "Lightning Draw"
+    {% include '_includes/lightning_draw.md' %}
+
+#### Dips { #init-dips }
+
+Several classes can provide a Hare familiar; see [Hare Familiar](#hare-familiar).
+
+**Oracle**
+
+A Battle Mystery Oracle dip provides Warsight and access to Powerless Prophecy.
+
+??? class-feature "Warsight"
+    {% include '_includes/warsight.md' %}
+
+??? class-feature "Oracle's Curse"
+    {% include '_includes/oracles_curse.md' %}
+
+??? class-feature "Powerless Prophecy"
+    {% include '_includes/powerless_prophecy.md' %}
+
+A single Oracle level is sufficient to gain the double initiative roll from Warsight.
+
+**Stigmatized Witch**
+
+A Stigmatized Witch dip provides a [Hare Familiar](#hare-familiar) and access to Powerless Prophecy.
+
+??? class-feature "Powerless Prophecy"
+    {% include '_includes/powerless_prophecy.md' %}
+
+**Inquisitor**
+
+A two-level Inquisitor dip is useful for characters that use Wisdom as their casting or primary ability score.
+
+??? class-feature "Cunning Initiative"
+    {% include '_includes/cunning_initiative.md' %}
+
+??? class-feature "Bit of Luck"
+    {% include '_includes/bit_of_luck.md' %}
+
+Cunning Initiative adds Wisdom to initiative checks, while the Luck domain's Bit of Luck can be used to reroll initiative.
+
+The Luck domain requires worship of Shelyn, so a Good starting alignment is necessary.
+
+**Instinctual Warrior**
+
+An Instinctual Warrior dip is an option for chaotic characters that use Wisdom.
+
+??? class-feature "Fervent Reflexes"
+    {% include '_includes/fervent_reflexes.md' %}
+
+#### Hare Familiar { #hare-familiar }
+
+Several classes and abilities can provide a Hare familiar.
+
+- [Arcane Bloodline](#geo-bloodline), if taking a Geomancer dip.
+- Wizard, through Arcane Bond.
+- Shaman, through Spirit Animal.
+- Witch and Unlettered Arcanist, through Witch Familiar.
+- Rogue, Slayer and Loremaster, through the Rogue Talent: Familiar.
+
+??? class-feature "Arcane Bond"
+    {% include '_includes/arcane_bond.md' %}
+
+??? class-feature "Spirit Animal"
+    {% include '_includes/spirit_animal.md' %}
+
+??? class-feature "Witch Familiar"
+    {% include '_includes/witch_familiar.md' %}
+
+    !!! note
+        Everything after the first sentence is flavour text.
+
+??? class-feature "Rogue Talent: Familiar"
+    {% include '_includes/rogue_talent_familiar.md' %}
+
+#### Items
+
+Some items that provide initiative bonuses can be equipped after Cave Fangs has been cast, since changing equipment does not affect the traps once the buff is active. The opportunity cost of most initiative items is low; they can generally be equipped after buffing if available.
+
+Weapons require more investment and are therefore considered separately. Night Flash and Wrath of the Creator both provide initiative bonuses.
+
+??? item "Night Flash"
+    {% include '_includes/night_flash.md' %}
+
+??? item "Wrath of the Creator"
+    {% include '_includes/wrath_of_the_creator.md' %}
+
+Both weapons require Exotic Weapon Proficiency. Wrath of the Creator is a double weapon, so it cannot be dual-wielded with another weapon, even with Giant Weapon Wielder.
+
+[Initiative bonuses](https://pathfinderkingmaker.fandom.com/wiki/Bonuses_(WotR)#Initiative)
+</file>
+
+<file path="_includes/intro.md">
+## Introduction
+
+Cave Fangs is considered cheesy, mainly because of its interaction with **Enduring Spells**. The Stalactites variant grants a buff that allows traps to be placed as free actions, with each placement consuming 10 minutes of its duration. Extend the buff to 24 hours and a single cast provides up to **144 traps**.
+
+That is a lot of free-action damage from a single spell slot. Thus the ability is already quite strong without any elaborate combinations.
+
+However, some may be surprised by how many things interact with each placement. Every trap counts as a spell cast for Geomancy, works with Surprise Spells, and can benefit from a wide range of damage bonuses. Add metamagic, damage conversion and mythic-path features, and the results can get rather ridiculous.
+
+A Mythic Rank 6 Angel's trap can deal up to [344 damage](#mythic-rank-6-angel-damage-potential). Gold Dragon's Geomancy deals [159 damage](#gd-geo-aoe) to all enemies within 30 feet. Surprise Spells can add 19d6 damage per trap as a Demon, or [15d10](#gd-single) as a Gold Dragon. Across 144 traps, this results in some [extreme theoretical damage figures](#gd-max-dmg).
+
+The guide covers the mechanics, class options, mythic paths and individual interactions in detail. It also discusses potential pitfalls, weaknesses and ways to address them. The table below provides a quick overview, with links to the relevant sections.
+
+### Synergy overview
+
+| Synergy | What it adds |
+|---|---|
+| [Enduring Spells](#enduring-spells) | Extends the buff to 24 hours, allowing up to **144 free-action trap placements** from one cast.  |
+| [Geomancy](#geomancy) | Every trap placement triggers Geomancy. At character level 18 or higher, this can deal 9d6 damage in a 30-foot radius, with no save against the damage. It effectively adds a second area-damage effect to every trap. |
+| [Metamagic](#metamagic), [Plague of Madness](#meta-plague), [Promise of Greatness](#meta-greatness), [Perfect Soul](#gd-m10) | *Plague of Madness* provides Empower and Maximise; *Promise of Greatness* provides Bolster. These effects can be applied to the buff so that the traps inherit them. Gold Dragon eventually gets automatic Empower and Maximise through Perfect Soul. |
+| [Spell DC](#dc) | The traps inherit the DC of the Cave Fangs buff. Some bonuses also apply directly to the traps, resulting in the double DC bug.  |
+| [Surprise Spells](#surprise-spells), [Gold Dragon](#gd-m10) | Arcane Trickster adds sneak attack damage to the spell's damage. This is particularly effective with Gold Dragon; Perfect Soul changes the sneak attack dice to d10s. |
+| [Holy Conversion](#holy-conversion), [Negative Energy Conversion](#negative-energy-conversion), [DR and Incorporeal](#dr-and-incorporeal) | Holy or negative energy conversion helps overcome physical damage reduction and immunity. Holy damage also deals full damage to incorporeal enemies, unlike negative energy, which is halved. Conversion can also enable further elemental synergies. |
+| [Elemental Conversion](#elemental-conversion), [Fire items](#fire-items), [Elemental Barrage](#elemental-barrage), [Hexes](#std-hexes) | Fire conversion enables *Flame Curse*, which multiplies trap damage by 1.5. It can also trigger *Call of the Fiery Things* and, with a second element, *Elemental Barrage*. |
+| [Angel](#mythic-angel), [Lich](#mythic-lich), [Demon](#mythic-demon), [Azata](#mythic-azata), [Devil](#devil-m8), [Gold Dragon](#mythic-gd) | Angel adds damage dice and later converts damage to holy; Lich gets early damage conversion; Demon can reach very high DCs; Azata improves saving throw reliability; Gold Dragon has the highest damage ceiling. |
+| [Standard actions](#your-standard-action) | Since traps are free actions, the standard action can be used for dispels, area debuffs, hexes or Dragon Breath.  |
+
+### Video showcase
+</file>
+
+<file path="_includes/location_terrain_draft.md">
+Act II
+
+Conumdrum Unsolved
+Forest
+
+Act III
+
+Ivory Sanctum 
+Desert (outside)
+Underground
+
+Shrine of Sacrilege
+Forest (outside)
+Unknown 
+
+Artisan's Tower
+Highlands
+Urban (Greenhouse)
+
+Ashen Grotto
+Forest
+
+Areelu's Lab
+Underground
+
+Core of the Riddle
+Desert (outside)
+Underground
+
+Legacy of the Ancients
+Highlands (outside)
+Underground
+
+Place of Execution
+Desert (outside)
+Underground
+
+Desolate Hovel
+Desert
+
+Temple of the Good Hunt
+Desert (outside)
+Unknown (desert)
+
+Scrubland by a Bend in the River
+Forest
+
+Grimwood
+Forest
+
+Crimson Dust
+Unknown
+
+Hellknights Outpost
+Highlands
+
+Heart of Mystery
+Desert (outside)
+Underground
+
+Blackwater
+Underground
+
+Sacred Lands
+Forest
+
+Greengates
+Urban
+
+Dragon Burial Ground
+Underground
+
+Ravaged Long House
+Desert (outside)
+Underground
+
+Extirpator's Camp
+Desert
+
+Molten Scar
+Underground
+
+Wintersun
+Forest
+Underground (both caves)
+
+Baphomet's Shrine
+Desert
+
+Ruins of Ashberry Hamlet
+Forest
+
+Terendelev's Lair
+Desert
+
+Pulura's Fall
+Underground
+
+Act IV
+
+All Abyss
+
+Act V
+
+Final Veil (act 5)
+Desert (Outside)
+Underground
+
+Forgotten Secrets (act 5)
+Desert (outside)
+Underground
+
+
+
+DLC 1 (Inevitable Excess)
+
+Treshold 
+Desert
+
+
+Other Side of Treshold
+Underground
+
+Iz
+Urban
+
+Underground floor of Chief's House
+Underground
+
+Ziggurat
+Urban
+
+Lair of the Spinner of Nightmares
+Urban
+
+Artisan's Tower
+Urban
+
+Commander's Court
+Forest
+
+Valmallos's Threshold
+Underground
+
+Desolate Hovel
+Desert
+
+Place of Calling
+Desert
+
+Shamira Ambush Location
+Desert
+</file>
+
+<file path="_includes/metamagic.md">
+### Metamagic
+
+Metamagic can be applied to Cave Fangs normally, either by taking the relevant feat and adding it to the spellbook, or by using metamagic rods. Quicken and Extend rods can be found throughout the game. The available options are Quicken, Extend, Heighten and Completely Normal (Trickster only).
+
+Only Heighten is useful.
+
+#### Heighten
+
+Heighten increases the DC of the Cave Fangs buff, and the traps inherit that DC. See [DC](#dc).
+
+??? feat "Metamagic (Heighten Spell)"
+    {% include '_includes/meta_heighten.md' %}
+
+#### Quicken
+
+Quicken would technically allow three Cave Fangs buffs in one fight: one cast before combat, one as a standard action, and one quickened. A Demon or Aeon could increase this to four. However, more than one buff is never necessary.
+
+??? feat "Metamagic (Quicken Spell)"
+    {% include '_includes/meta_quicken.md' %}
+
+#### Forbidden Metamagic 
+
+Four other metamagic feats would be useful that are not on the 'allowed' list for Cave Fangs: Persistent for the saving throws, and Bolster, Empower and Maximise for damage.
+
+??? feat "Metamagic (Persistent Spell)"
+    {% include '_includes/meta_persistent.md' %}
+
+??? feat "Metamagic (Bolster Spell)"
+    {% include '_includes/meta_bolster.md' %}
+
+??? feat "Metamagic (Empower Spell)"
+    {% include '_includes/meta_empower.md' %}
+
+??? feat "Metamagic (Maximize Spell)"
+    {% include '_includes/meta_maximize.md' %}
+
+There is no way I know to apply Persistent to Cave Fangs. The other three can be applied through items, Magus Arcana, the Universalist Wizard ability, or [Gold Dragon's Perfect Soul](#gd-m10).
+
+##### Plague of Madness { #meta-plague }
+
+??? item-weapon "Plague of Madness"
+    {% include '_includes/plague_of_madness.md' %}
+
+Cast a cantrip three times, then cast the Cave Fangs buff before switching to a more suitable weapon. The traps will be Empowered and Maximised.
+
+##### Promise of Greatness { #meta-greatness}
+
+??? item "Promise of Greatness"
+    {% include '_includes/promise_of_greatness.md' %}
+
+This requires Cave Fangs to be cast in combat as the first spell of that combat. This costs a standard action and prevents equipment changes during combat. A weaker encounter can instead be used to activate the buff, leaving plenty of Bolstered traps available for the boss.
+
+??? item "Duality of Conjuration and Summoning"
+    {% include '_includes/duality_of_conjuration_and_summoning.md' %}
+
+This book also offers an opportunity. If the 10% chance of the summoned creatures attacking the player occurs, that encounter can be used to cast the buff.
+
+##### Magus Arcana
+
+??? class-feature "Magus Arcana"
+    {% include '_includes/magus_arcana.md' %}
+
+Several Magus Arcana allow metamagic to be applied to the next spell. Activating an Arcana grants a permament buff, which remains active until a suitable spell is cast. Activating the Arcana before Cave Fangs: Stalactites applies the metamagic to the buff and the traps are Empowered and Maximised.
+
+??? class-feature "Empowered Magic"
+    {% include '_includes/magus_arcana_empowered_magic.md' %}
+
+??? class-feature "Maximized Magic"
+    {% include '_includes/magus_arcana_maximized_magic.md' %}
+
+Reach Magic is another useful Metamagic Arcana. It has no effect on the buff itself, but applies to the traps without consuming the charge. Provided no other spells are cast, traps can be placed at a greater distance than normal.
+
+??? class-feature "Reach Magic"
+    {% include '_includes/magus_arcana_reach_magic.md' %}
+
+##### Wizard (Universalist)
+
+Universalist Wizards gain Metamagic Mastery at level 8.
+
+It works in much the same way as the Magus Metamagic Arcana.
+
+??? class-feature "Metamagic Mastery"
+    {% include '_includes/wizard_metamagic_mastery.md' %}
+</file>
+
+<file path="_includes/mobility_stealth.md">
+### Avoiding enemy retaliation
+
+Killing all enemies within range is not always sufficient. In spread-out encounters, or fights with multiple phases, some enemies may remain out of reach. Those enemies can then retaliate on the following turn, particularly with ranged attacks.
+
+Two approaches help prevent this: **mobility** and **stealth**.
+
+#### Mobility
+
+When necessary, both the move action and standard action can be used to reposition. Several spells provide substantial movement bonuses:
+
+??? spell "Expeditious Retreat"
+    {% include '_includes/expeditious_retreat.md' %}
+
+??? spell "Haste"
+    {% include '_includes/haste.md' %}
+
+??? spell "Winds of Vengeance"
+    {% include '_includes/winds_of_vengeance.md' %}
+
+An animal companion provides an additional mobility option. It can use both its move action and standard action to move, while its rider retains both actions for combat. This is particularly effective when combined with the movement buffs above.
+
+Classes that have or can gain an animal companion include:
+
+- **Hunter:** 6th-level caster; has Cave Fangs.
+- **Sacred Huntmaster:** 6th-level caster.
+- **Druid:** 9th-level caster; has Cave Fangs.
+- **Oracle with the Nature Mystery:** 9th-level caster; has Cave Fangs.
+- **Wildland Shaman:** 9th-level caster; has Cave Fangs.
+- **Shaman with the Nature Spirit:** 9th-level caster; has Cave Fangs, but gains the animal companion very late.
+
+Reach Magic can also extend the distance at which traps can be placed.
+
+??? class-feature "Reach Magic"
+    {% include '_includes/magus_arcana_reach_magic.md' %}
+
+#### Stealth
+
+In-combat stealth provides another way to avoid retaliation. Once nearby enemies have been killed, there are no remaining enemies in the area to detect the character. Entering stealth prevents distant enemies from moving in to attack. On the following turn, the character can approach and eliminate them.
+
+Several options provide access to in-combat stealth.
+
+**Spells**
+
+Vanish is a common 1st-level spell available to many classes. By this stage, unused 1st-level spell slots are often readily available.
+
+??? spell "Vanish"
+    {% include '_includes/vanish.md' %}
+
+Only one round of invisibility is required, so Vanish is sufficient; more expensive spells are unnecessary.
+
+**Class features**
+
+Some classes provide abilities that allow stealth during combat:
+
+- **Witch of the Veil:** Swift-action stealth.
+
+    ??? class-feature "Shrouded Step"
+        {% include '_includes/shrouded_step.md' %}
+
+- **Forester and Cult Leader:** Hide in Plain Sight.
+
+    ??? class-feature "Hide in Plain Sight"
+        {% include '_includes/hide_in_plain_sight.md' %}
+
+- **Arcane Trickster:** Limited free-action stealth.
+
+    ??? class-feature "Invisible Thief"
+        {% include '_includes/invisible_thief.md' %}
+</file>
+
+<file path="_includes/mythic_angel.md">
+### Angel { #mythic-angel }
+
+#### Mythic 3
+
+At Mythic Rank 3, the Angel unlocks Sword of Heaven, which gives two extra damage dice to spells and abilities. This affects both the traps and Geomancy.
+
+Its duration is very limited at this stage, with only two uses per rest. This allows for its use in two fights per rest.
+
+??? angel-feature "Sword of Heaven"
+    {% include '_includes/sword_of_heaven.md' %}
+
+#### Mythic 4
+
+At Mythic Rank 4, the Angel gains access to the first Improved Sword of Heaven upgrade.
+
+Everlasting Flame increases Sword of Heaven's duration to one minute per Mythic Rank. This brings it to three uses per rest, each lasting four minutes.
+
+??? angel-feature "Everlasting Flame"
+    {% include '_includes/everlasting_flame.md' %}
+
+#### Mythic 6 { #angel-m6 }
+
+At Mythic Rank 6, the Angel unlocks Sword of Holy Damage, which converts all damage to Holy while Sword of Heaven is active.
+
+Sword of Heaven now has four uses per rest, each lasting six minutes. This is generally sufficient to maintain the effect throughout a dungeon and its encounters.
+
+
+??? angel-feature "Sword of Holy Damage"
+    {% include '_includes/sword_of_holy_damage.md' %}
+
+Around this point, the Storyteller quest also allows the restoration of the Ancient Cloak, rewarding The Bound of Possibility, which increases Sword of Heaven's damage dice by another two.
+
+??? item "The Bound of Possibility"
+    {% include '_includes/the_bound_of_possibility.md' %}
+
+Mythic Rank 6 also grants a second Improved Sword of Heaven selection. I recommend Abolish Guile.  
+
+**Abolish Disease/Guile/Poison/Undeath:** Creatures which apply disease/compulsion/poison effect or are undead take 50% more damage.
+
+??? angel-feature "Abolish Sword of Heaven Improvements"
+    === "Abolish Disease"
+        {%  include '_includes/abolish_disease.md'  %}
+        
+    === "Abolish Guile"
+        {%  include '_includes/abolish_guile.md'  %}
+    
+    === "Abolish Poison"
+        {%  include '_includes/abolish_poison.md'  %}
+    
+    === "Abolish Undeath"
+        {%  include '_includes/abolish_undeath.md'  %}
+
+These bonuses affect all damage, including traps (including the Suprise Spells sneak), Geomancy and Elemental Barrage. 
+
+#### Mythic 7+
+
+Further Improved Sword of Heaven upgrades become available at higher Mythic Ranks.
+
+
+#### Discussion
+
+The Angel has excellent damage potential at Mythic Rank 6. However, Sword of Heaven has a short duration at earlier ranks, and the lack of damage conversion before Mythic Rank 6 can make incorporeal enemies problematic.
+
+A potential approach is to combine Cave Fangs with a conventional Bolt of Justice Angel build.
+
+??? spell "Bolt of Justice"
+    {% include '_includes/bolt_of_justice.md' %}
+
+Bolt of Justice or Storm can handle problematic enemies, while traps deal with the rest. Both easily fit into the same build.
+
+Plague of Madness can also prepare Bolt of Justice, so Bolster is the only essential metamagic feat at the start. (Promise of Greatness, which provides the Bolster effect, is not available until Act 4.)
+
+Once Cave Fangs reaches its full potential, Bolt of Justice can either remain the primary standard-action option, or be replaced by another ability, such as Hymn, a high caster-level Greater Dispel or even a Hex (if conserving resources).
+
+A Wildland Shaman is my prefered class. It can start as a melee-oriented build and then transition into a blaster. Cave Fangs is already on its spell list, and the class provides an animal companion, hexes, and unexpensive access to metamagic feats through the Secret hex choice. Though Flame Curse is not available to this archetype.
+
+??? hex "Secret"
+    {% include '_includes/shaman_secret.md' %}
+
+As a Wisdom-based caster, the Shaman has lower potential trap DC than an equivalent Charisma- or Intelligence-based build. However, Bolt of Justice can help address enemies with high Reflex saves.
+
+A two-level dip into Sacred Huntmaster can also be useful. Cunning Initiative adds Wisdom to initiative checks, while the Luck domain provides Bit of Luck. Both abilities help improve initiative reliability.
+
+??? class-feature "Cunning Initiative"
+    {% include '_includes/cunning_initiative.md' %}
+
+??? class-feature "Bit of Luck"
+    {% include '_includes/bit_of_luck.md' %}
+
+I would not recommend Hell Knight as damage is already high; flexibility, initiative and mobility are more important.
+</file>
+
+<file path="_includes/mythic_azata.md">
+### Azata { #mythic-azata }
+
+#### Mythic Ranks 4 and 6 { #azata-m4 }
+
+The Azata gains a Superpower at Mythic Ranks 4, 6, 8 and 10. Two Superpowers have particular synergy with Cave Fangs.
+
+Favorable Magic makes enemies less likely to succeed on saving throws. Even when they succeed, the ability increases the damage still dealt.
+
+??? azata-feature "Favorable Magic"
+    {% include '_includes/azata_favorable_magic.md' %}
+
+Incredible Might adds damage equal to the Azata's Mythic Rank as a morale bonus. This applies to both Stalactite Traps and Geomancy.
+
+??? azata-feature "Incredible Might" 
+    {% include '_includes/azata_incredible_might.md' %}
+
+!!! bug "Ring of Triumphant Advance"
+    The Ring of Triumphant Advance does not apply its bonus to non-ray spells.
+
+??? item "Ring of Triumphant Advance"
+    {% include '_includes/ring_of_triumphant_advance.md' %}
+
+As a result, the ring does not double the morale damage from Incredible Might.
+
+#### Mythic Rank 8
+
+The Azata gains access to the 6th-level mythic spell Joy of Life at Mythic Rank 8.
+
+??? spell "Joy of Life"
+    {% include '_includes/joy_of_life.md' %}
+
+Joy of Life converts the attacks of the Azata and nearby allies to Holy damage. Its duration is only 1 round per 2 caster levels.
+
+#### Mythic Rank 8: Devil { #devil-m8 }
+
+The Azata can transition into the Devil path at Mythic Rank 8. All significant features are retained, with the main trade-off being the loss of the final three Azata levels. The most notable loss is Joy of Life, which would otherwise become available at Mythic Rank 8.
+
+The Devil gains Hell's Decrees.
+
+??? devil-feature "Hell's Decree"
+    {% include '_includes/hells_decree.md' %}
+
+    === "Decree of Hunt"
+        {% include '_includes/decree_of_hunt.md' %}
+
+    === "Decree of Vengeance"
+        {% include '_includes/decree_of_vengeance.md' %}
+
+    === "Decree of Hell's Fires"
+        {% include '_includes/decree_of_hells_fires.md' %}
+
+    === "Decree of School Magic"
+        {% include '_includes/decree_of_school_magic.md' %}
+
+Decree of Conjuration has synergy with Cave Fangs. 
+
+The decree cannot target the Devil directly. However, it can be reflected back onto the Devil by having an ally wear Razmir's Mask.
+
+??? item "Razmir's Mask"
+    {% include '_includes/razmirs_mask.md' %}
+
+This interaction applies to both the Cave Fangs buff and the Stalactite Trap ability, potentially providing up to **+10 DC** at Mythic Rank 10.
+
+#### Mythic Rank 10: Devil
+
+At Mythic Rank 10, the Devil gains Hell's Authority. 
+
+??? devil-feature "Hell's Authority"
+    {% include '_includes/devil_hells_authority.md' %}
+
+Aspect of Brimorak would be particularly interesting here. Its additional damage per die also applies to the extra dice from Sword of Heaven. However, the bonus only applies to fire spells, limiting its usefulness with Cave Fangs.
+
+??? demon-feature "Aspect of Brimorak"
+    {% include '_includes/aspect_brimorak.md' %}
+
+??? angel-feature "Sword of Heaven"
+    {% include '_includes/sword_of_heaven.md' %}
+
+#### Discussion
+
+The main weakness of the Azata is the lack of damage conversion at Mythic Rank 3. Staying on the Azata path provides no conversion until Mythic Rank 8, and Joy of Life only offers a very short duration per cast. 
+
+Incredible Might provides relatively little additional damage without the Ring of Triumphant Advance interaction.
+</file>
+
+<file path="_includes/mythic_damage_calculations.md">
+## Mythic damage calculations
+
+### Calculations
+
+These calculations compare the damage and DC contributions of the mythic paths to Cave Fangs: Stalactites. The overview table is in the [mythic damage overview](#mythic-damage-overview).
+
+#### Variables and conventions
+
+| Abbreviation | Meaning |
+|---|---|
+| `SD` | Total character sneak-attack dice, including *Sense Vitals*. |
+| `FD` | Other flat damage added to the hit, such as the character's Smite or an allied Paladin's *Mark of Justice*. |
+| `DS` | Flat damage from Gold Dragon's *Dragon Smite*, equal to half the Gold Dragon's Charisma modifier. |
+| `ChL` | Character level. For Mythic Rank 6 and above, the calculations assume character level 20. |
+| `G` | Geomancy dice: `min(9, floor(ChL / 2))`. At character level 20, `G = 9`. |
+| `PoM` | *Plague of Madness*, which Empowers and Maximises the Cave Fangs buff. |
+| `PoG` | *Promise of Greatness*, which Bolsters the Cave Fangs buff. |
+
+Surprise Spells is shown as a dice expression because the number of sneak-attack dice depends on the character build. 
+
+Flat damage is similarly left symbolic because it depends on the character and allied build.
+
+A successful Reflex save normally halves Trap and Surprise Spells damage. *Favorable Magic* changes this to a 25% reduction, so 75% of the damage remains. Evasion still negates damage on a successful Reflex save. 
+
+Energy conversion and physical damage bypass are separate flags, since Demon has a way to achieve the latter without the former. 
+
+Conversion to Energy also enables further conversion to an [Element](#elemental-conversion). This allows the character to benefit from:
+
+- Flame Curse: another 1.5x multiplier on trap damage
+- Call of the Fiery Things: 4d6 damage on each trap cast (36 for Gold Dragon)
+- Elemental Barrage: Mythic Level x d6 damage when procced
+
+These have not been included in the damage table.
+
+??? hex "Flame Curse"
+    {% include '_includes/flame_curse.md' %}
+
+??? item "Call of the Fiery Things"
+    {% include '_includes/call_of_the_fiery_things.md' %}
+
+??? mythic-feature "Elemental Barrage"
+    {% include '_includes/elemental_barrage.md' %}
+
+#### Geomancy and self-damage
+
+Geomancy deals `1d8` direct damage to the geomancer. The overview greys out Geomancy where the character has no way to absorb or avoid that damage. From Mythic Rank 6 onwards, the assumption is that *Gloves of Enduring Wizard* absorb the backlash. 
+
+#### No mythic path
+
+The unmodified damage expressions are:
+
+- Trap: `3d8 + FD`
+- Surprise Spells: `SDd6`
+- Geomancy: `Gd6 + FD`
+
+With *Plague of Madness*, the maximum Trap damage is:
+
+\[
+(3 \times 8) \times 1.5 + 1.5FD = 36 + 1.5FD
+\]
+
+Adding *Promise of Greatness* gives:
+
+\[
+(3 \times 8 + 6) \times 1.5 + 1.5FD = 45 + 1.5FD
+\]
+
+Neither item changes the Surprise Spells or Geomancy expressions in this calculation.
+
+??? item-weapon "Plague of Madness"
+    {% include '_includes/plague_of_madness.md' %}
+
+??? item "Promise of Greatness"
+    {% include '_includes/promise_of_greatness.md' %}
+
+??? class-feature "Surprise Spells"
+    {% include '_includes/surprise_spells.md' %}
+
+??? class-feature "Geomancy"
+    {% include '_includes/geomancy.md' %}
+
+??? item "Gloves of Enduring Wizard"
+    {% include '_includes/gloves_of_enduring_wizard.md' %}
+
+### Mythic Rank 3
+
+#### Angel
+
+The low and medium tiers use the same damage setups as the no-mythic baseline. The high tier adds *Sword of Heaven*, which grants two additional damage dice to spells and abilities used while the Angel holds an imbued weapon. This does not affect the Bolster from *Promise of Greatness*.
+
+**Low**
+
+\[
+T = 3 \times 8 \times 1.5 + 1.5FD = 36 + 1.5FD
+\]
+
+**Medium**
+
+\[
+T = (3 \times 8 + 6) \times 1.5 + 1.5FD = 45 + 1.5FD
+\]
+
+**High, with Sword of Heaven**
+
+\[
+T = ((3 + 2) \times 8 + 6) \times 1.5 + 1.5FD = 69 + 1.5FD
+\]
+
+\[
+G = (G + 2)d6 + FD
+\]
+
+ Sword of Heaven has limited daily uses, which places this setup in the High tier.
+
+??? angel-feature "Sword of Heaven"
+    {% include '_includes/sword_of_heaven.md' %}
+
+#### Lich
+
+*Death of Elements* converts elemental damage to Negative Energy. This also allows use of Geomancy without self-damage at this rank trough Death Ward. See [Negative Energy Conversion](#negative-energy-conversion).
+
+**Low**
+
+\[
+T = 36 + 1.5FD
+\]
+
+**Medium**
+
+\[
+T = 45 + 1.5FD
+\]
+
+For both tiers:
+
+\[
+SS = SDd6, \qquad G = Gd6 + FD
+\]
+
+??? lich-feature "Death of Elements"
+    {% include '_includes/lich_death_of_elements.md' %}
+
+#### Demon
+
+Demonic Rage increases spell and ability DC by `+2`. We seperate a `+2` medium setup from a `+4` high setup, where the buff's inherited DC and the trap's direct DC bonus both apply.
+
+**Low:** `T = 36 + 1.5FD`.
+
+**Medium:** `T = 45 + 1.5FD`; Demonic Rage contributes `+2 DC`.
+
+**High:** `T = 45 + 1.5FD`; the double application contributes `+4 DC`.
+
+For all three tiers, `SS = SDd6`. Geomancy is greyed out because the Demon has way to absorb its self-damage at this stage.
+
+??? demon-feature "Demonic Rage"
+    {% include '_includes/demonic_rage.md' %}
+
+#### Azata
+
+At this rank, there are no damage or DC feature that improves Cave Fangs. The low and medium tiers therefore match the no-mythic baseline:
+
+- Low: `T = 36 + 1.5FD`.
+- Medium: `T = 45 + 1.5FD`.
+- Both: `SS = SDd6`; `G = Gd6 + FD` (greyed out due to Geomancy's self-damage).
+
+### Mythic Rank 6
+
+All paths are treated as able to use Geomancy without backlash through *Gloves of Enduring Wizard*. 
+
+#### Angel
+
+The medium setup combines *Sword of Heaven*, *Everlasting Flame*, *Sword of Holy Damage* and *The Bound of Possibility*. The cloak increases Sword of Heaven's damage bonus from two dice to four; *Everlasting Flame* extends its duration to one minute per Mythic Rank. *Sword of Holy Damage* converts the Angel's damage to Holy.
+
+**Low**
+
+\[
+T = 36 + 1.5FD, \qquad G = 9d6 + FD
+\]
+
+**Medium**
+{: #angel-m6-trap }
+
+\[
+T = ((3 + 4) \times 8 + 6) \times 1.5 + 1.5FD = 93 + 1.5FD
+\]
+
+\[
+G = (9 + 4)d6 + FD = 13d6 + FD
+\]
+
+For DC Piercing Rays add +2 DC at this stage.
+
+Against eligible targets, *Abolish Guile* adds a further 1.5× damage multiplier:
+
+\[
+T = 1.5(93 + 1.5FD) = 139.5 + 2.25FD
+\]
+
+\[
+SS = 1.5 \times SDd6, \qquad G = 1.5(13d6 + FD)
+\]
+
+This is target-dependent, not a general increase against every enemy. The Angel selects the relevant Abolish upgrade for the target category; these are alternatives, not simultaneous bonuses.
+
+??? angel-feature "Sword of Heaven"
+    {% include '_includes/sword_of_heaven.md' %}
+
+??? angel-feature "Everlasting Flame"
+    {% include '_includes/everlasting_flame.md' %}
+
+??? angel-feature "Sword of Holy Damage"
+    {% include '_includes/sword_of_holy_damage.md' %}
+
+??? item "The Bound of Possibility"
+    {% include '_includes/the_bound_of_possibility.md' %}
+
+??? angel-feature "Abolish Guile"
+    {% include '_includes/abolish_guile.md' %}
+
+??? angel-feature "Piercing Rays"
+    {% include '_includes/piercing_rays.md' %}
+
+#### Lich
+
+*Fear Control* adds flat damage equal to Mythic Rank against targets affected by fear or mind-affecting effects. At Mythic Rank 6 this is `+6` damage.
+
+**Low**
+
+\[
+T = (3 \times 8 + 6) \times 1.5 + 1.5FD = 45 + 1.5FD
+\]
+
+**Medium**
+
+\[
+T = (3 \times 8 + 6 + 6) \times 1.5 + 1.5FD = 54 + 1.5FD
+\]
+
+For both tiers:
+
+\[
+SS = SDd6, \qquad G = 9d6 + FD
+\]
+
+??? lich-feature "Fear Control"
+    {% include '_includes/lich_fear_control.md' %}
+
+#### Demon
+
+At Mythic Rank 6, Demonic Rage and the Incubus Aspect improve. The major Aspect (Shadow Demon or Coloxus) supplies the casting-stat increase used in the buff DC. The Vrock Aspect penalises enemy Reflex saves by `2`, which is treated as an effective `+2` against the traps.
+
+**Low**
+
+- Damage: `T = 36 + 1.5FD`; `SS = SDd6`; `G = 9d6 + FD`.
+- DC: `+2` from Shadow Demon or Coloxus.
+
+**Medium**
+
+- Damage: `T = 45 + 1.5FD`; `SS = SDd6`; `G = 9d6 + FD`.
+- Buff DC: `+3` Demonic Rage, `+2` Incubus and `+2` major Aspect, for `+7`.
+
+**High: Babau + Vrock**
+
+The Cave Fangs buff is prepared with Incubus active, then Babau replaces Incubus for the main encounter. This preserves the buff's inherited `+7 DC` while adding Babau's `+3d6` sneak-attack damage. Vrock contributes a further `+2` effective DC against Reflex saves; Demonic Rage adds `+3` directly to the trap.
+
+\[
+SS = (SD + 3)d6, \qquad DC = 7 + 3 + 2 = +12
+\]
+
+**High: Incubus + Vrock**
+
+Keeping Incubus active adds another `+2` to the trap's effective DC, for `+14` total. This configuration does not gain Babau's additional sneak dice:
+
+\[
+SS = SDd6, \qquad DC = 7 + 3 + 2 + 2 = +14
+\]
+
+Both high configurations use the same Bolstered Trap damage as the medium tier: `45 + 1.5FD`.
+
+??? demon-feature "Aspect of Incubus"
+    {% include '_includes/aspect_incubus.md' %}
+
+??? demon-feature "Aspect of Vrock"
+    {% include '_includes/aspect_vrock.md' %}
+
+??? demon-feature "Aspect of Babau"
+    {% include '_includes/aspect_babau.md' %}
+
+??? demon-feature "Aspect of Shadow Demon"
+    {% include '_includes/aspect_shadow_demon.md' %}
+
+??? demon-feature "Aspect of Coloxus"
+    {% include '_includes/aspect_coloxus.md' %}
+
+#### Azata
+
+*Incredible Might* adds a morale damage bonus equal to Mythic Rank, this applies to both traps and Geomancy.
+
+**Low**
+
+\[
+T = (3 \times 8 + 6) \times 1.5 + 1.5FD = 45 + 1.5FD
+\]
+
+**Medium**
+
+\[
+T = (3 \times 8 + 6 + 6) \times 1.5 + 1.5FD = 54 + 1.5FD
+\]
+
+For both tiers:
+
+\[
+SS = SDd6, \qquad G = 9d6 + 6 + FD
+\]
+
+*Favorable Magic* causes enemies to roll twice and take the worse result on saves against the Azata's spells. A successful save against a spell that normally halves damage reduces it by only 25%, leaving 75% damage.
+
+??? azata-feature "Incredible Might"
+    {% include '_includes/azata_incredible_might.md' %}
+
+??? azata-feature "Favorable Magic"
+    {% include '_includes/azata_favorable_magic.md' %}
+
+### Mythic Rank 10
+
+#### Angel
+
+The low tier remains the no-mythic setup. The medium tier retains the Mythic Rank 6 Sword of Heaven configuration, with the same damage formula but `+3 DC` from *Piercing Rays*.
+
+**Low:** `T = 36 + 1.5FD`; `SS = SDd6`; `G = 9d6 + FD`.
+
+**Medium:** `T = 93 + 1.5FD`; `SS = SDd6`; `G = 13d6 + FD`.
+
+Against eligible creatures, the relevant *Abolish* upgrade increases all three damage sources by 1.5×. For the Trap:
+
+\[
+T = 1.5(93 + 1.5FD) = 139.5 + 2.25FD
+\]
+
+??? angel-feature "Sword of Heaven"
+    {% include '_includes/sword_of_heaven.md' %}
+
+??? angel-feature "Everlasting Flame"
+    {% include '_includes/everlasting_flame.md' %}
+
+??? angel-feature "Sword of Holy Damage"
+    {% include '_includes/sword_of_holy_damage.md' %}
+
+??? angel-feature "Abolish Guile"
+    {% include '_includes/abolish_guile.md' %}
+
+??? angel-feature "Abolish Disease"
+    {% include '_includes/abolish_disease.md' %}
+
+??? angel-feature "Abolish Poison"
+    {% include '_includes/abolish_poison.md' %}
+
+??? angel-feature "Abolish Undeath"
+    {% include '_includes/abolish_undeath.md' %}
+
+#### Lich
+
+*Fear Control* contributes `+10` flat damage at Mythic Rank 10.
+
+**Low**
+
+\[
+T = (3 \times 8 + 10) \times 1.5 + 1.5FD = 51 + 1.5FD
+\]
+
+**Medium**
+
+\[
+T = (3 \times 8 + 10 + 6) \times 1.5 + 1.5FD = 60 + 1.5FD
+\]
+
+**High: Eclipse Chill**
+
+The high tier uses *Eclipse Chill*, a limited resource available for three rounds per day. Geomancy is the proc that applies Eclipse Chill (on a failed save), after which the target becomes vulnerable to Negative Energy for the rest of combat. 
+
+\[
+T = (3 \times 8 + 10 + 6) \times 1.5^2 + 2.25FD = 90 + 2.25FD
+\]
+
+\[
+SS = 1.5 \times SDd6
+\]
+
+\[
+G = 1.5(9d6 + FD) + 2d8 + 10
+\]
+
+??? lich-feature "Eclipse Chill"
+    {% include '_includes/lich_eclipse_chill.md' %}
+
+#### Demon
+
+At Mythic Rank 10, Demonic Rage contributes `+4`, Incubus contributes `+3`, and the major Aspect contributes `+3` to the buff DC, for `+10`. Vrock imposes a `–3` penalty on enemy Reflex saves, treated as an effective `+3` against the traps.
+
+**Low**
+
+- Damage: `T = 36 + 1.5FD`; `SS = SDd6`; `G = 9d6 + FD`.
+- DC: `+3` from the major Aspect
+
+**Medium**
+
+- Damage: `T = 45 + 1.5FD`; `SS = SDd6`; `G = 9d6 + FD`.
+- Buff DC: `+4` Demonic Rage, `+3` Incubus and `+3` major Aspect, for `+10`.
+
+**High: Babau + Vrock**
+
+Prepare the Cave Fangs buff with Incubus active, then switch to Babau and Vrock for the main encounter. The inherited buff DC remains `+10`; Demonic Rage and Vrock add a further `+4` and `+3` respectively. Babau adds `+4d6` sneak damage.
+
+\[
+SS = (SD + 4)d6, \qquad DC = 10 + 4 + 3 = +17
+\]
+
+**High: Incubus + Vrock**
+
+Keeping Incubus active adds a further `+3` to the trap's effective DC, for `+20`. This setup does not gain Babau's extra sneak dice:
+
+\[
+SS = SDd6, \qquad DC = 10 + 4 + 3 + 3 = +20
+\]
+
+Both high configurations use `T = 45 + 1.5FD` and `G = 9d6 + FD`. Deskari provides a way to bypass physical damage immunity and damage reduction. 
+
+??? demon-feature "Demonic Rage"
+    {% include '_includes/demonic_rage.md' %}
+
+??? demon-feature "Aspect of Incubus"
+    {% include '_includes/aspect_incubus.md' %}
+
+??? demon-feature "Aspect of Vrock"
+    {% include '_includes/aspect_vrock.md' %}
+
+??? demon-feature "Aspect of Babau"
+    {% include '_includes/aspect_babau.md' %}
+
+??? demon-feature "Aspect of Shadow Demon"
+    {% include '_includes/aspect_shadow_demon.md' %}
+
+??? demon-feature "Aspect of Coloxus"
+    {% include '_includes/aspect_coloxus.md' %}
+
+??? demon-feature "Aspect of Deskari"
+    {% include '_includes/aspect_of_deskari.md' %}
+
+#### Azata
+
+*Incredible Might* contributes `+10` damage at Mythic Rank 10. 
+
+**Low**
+
+\[
+T = (3 \times 8 + 10) \times 1.5 + 1.5FD = 51 + 1.5FD
+\]
+
+**Medium**
+
+\[
+T = (3 \times 8 + 10 + 6) \times 1.5 + 1.5FD = 60 + 1.5FD
+\]
+
+For both tiers:
+
+\[
+SS = SDd6, \qquad G = 9d6 + 10 + FD
+\]
+
+**High: Joy of Life**
+
+The high tier adds *Joy of Life*, which converts attacks to Holy damage for a short duration. The spell is a standard action and lasts one round per two caster levels. The damage expressions remain the same as the medium tier; the benefit is conversion and the ability to deal with incorporeal enemies and physical damage reduction.
+
+??? azata-feature "Joy of Life"
+    {% include '_includes/joy_of_life.md' %}
+
+#### Azata → Devil
+
+The Devil retains the Azata features relevant here, including *Incredible Might* and *Favorable Magic*, but does not gain the later Azata improvements. 
+
+**Low**
+
+\[
+T = (3 \times 8 + 10) \times 1.5 + 1.5FD = 51 + 1.5FD
+\]
+
+Decree of Conjuration add's `+10 DC`; `+5DC` to the buff and 
+`+5DC` to the trap.
+
+??? devil-feature "Hell's Decree"
+    {% include '_includes/hells_decree.md' %}
+
+    === "Decree of Hunt"
+        {% include '_includes/decree_of_hunt.md' %}
+
+    === "Decree of Vengeance"
+        {% include '_includes/decree_of_vengeance.md' %}
+
+    === "Decree of Hell's Fires"
+        {% include '_includes/decree_of_hells_fires.md' %}
+
+    === "Decree of School Magic"
+        {% include '_includes/decree_of_school_magic.md' %}
+
+Decree of Conjuration has synergy with Cave Fangs. 
+
+**Medium**
+
+\[
+T = (3 \times 8 + 6 + 10) \times 1.5 + 1.5FD = 60 + 1.5FD
+\]
+
+Buff DC is `+5` from Hell's Decree, `+4` from Demonic Rage and `+3` from Incubus, for `+12`; the trap then receives another direct `+5`, for `+17`.
+
+**High: Angel's Sword form**
+
+Hell's Authority grants access to an Angel's Sword ability with one improvement. 
+
+\[
+T = (5 \times 8 + 6 + 10) \times 1.5 + 1.5FD = 84 + 1.5FD
+\]
+
+\[
+G = 11d6 + 6 + FD
+\]
+
+The DC calculation is `+5` Hell's Decree, `+4` Demonic Rage, `+3` Incubus, and a further `+5` direct trap bonus, for `+24`. 
+
+Against the target categories covered by the relevant Angel's Sword improvement, we apply a further 1.5× multiplier to Trap, Surprise Spells and Geomancy. This is conditional on the selected Abolish upgrade; it is not a general multiplier against every enemy:
+
+\[
+T = 1.5(84 + 1.5FD) = 126 + 2.25FD
+\]
+
+\[
+SS = 1.5 \times SDd6, \qquad G = 1.5(11d6 + 6 + FD)
+\]
+
+??? devil-feature "Hell's Authority"
+    {% include '_includes/devil_hells_authority.md' %}
+
+??? angel-feature "Abolish Guile"
+    {% include '_includes/abolish_guile.md' %}
+
+??? devil-feature "Hell's Decree"
+    {% include '_includes/hells_decree.md' %}
+
+??? devil-feature "Decree of Conjuration"
+    {% include '_includes/decree_of_school_magic.md' %}
+
+#### Gold Dragon
+
+Gold Dragon has *Perfect Mind* for Holy or Unholy conversion and *Perfect Soul* for automatic Empower and Maximise, with damage dice of traps (including Suprise Spells) are now d10s.
+
+**Low: Perfect Soul**
+
+\[
+T = 3 \times 10 \times 1.5 + 1.5FD = 45 + 1.5FD
+\]
+
+\[
+SS = SDd10, \qquad G = 9 \times 6 \times 1.5 + 1.5FD = 81 + 1.5FD
+\]
+
+**Medium: add Promise of Greatness**
+
+\[
+T = (3 \times 10 + 6) \times 1.5 + 1.5FD = 54 + 1.5FD
+\]
+
+Surprise Spells and Geomancy remain as in the low tier.
+
+**High: add Dragon Might and Dragon Smite**
+
+Dragon Might adds a further 1.5× multiplier for one round. Dragon Smite contributes `DS`, equal to half the Gold Dragon's Charisma modifier.
+
+\[
+T = (3 \times 10 + 6 + FD + DS) \times 1.5^2
+  = 81 + 2.25(FD + DS)
+\]
+
+\[
+SS = 1.5 \times SDd10
+\]
+
+\[
+G = (9 \times 6 + FD + DS) \times 1.5^2
+  = 121 + 2.25(FD + DS)
+\]
+
+The DC setup uses Dragon Breath with *Dispel Synergy*. Both infilict penalties that are counted as effective DC. 
+This is `+1` when the enemy saves and the dispel fails, `+3` when the enemy saves and the dispel succeeds, and `+4` when the enemy does not save and the dispel succeeds. The high tier is shown as `0 to +4` because of a action economy conflict with Dragon Smite. 
+
+??? gd-feature "Perfect Mind"
+    {% include '_includes/gold_dragon_perfect_mind.md' %}
+
+??? gd-feature "Perfect Soul"
+    {% include '_includes/gold_dragon_perfect_soul.md' %}
+
+??? gd-feature "Dragon Might"
+    {% include '_includes/gold_dragon_dragon_might.md' %}
+
+??? gd-feature "Dragon Smite"
+    {% include '_includes/gold_dragon_dragon_smite.md' %}
+
+??? gd-feature "Dragon Breath"
+    {% include '_includes/gold_dragon_gold_dragon_breath.md' %}
+
+??? feat "Dispel Synergy"
+    {% include '_includes/dispel_synergy.md' %}
+</file>
+
+<file path="_includes/mythic_damage_overview_rev2.md">
+## Mythic damage overview
+
+The tables compare Cave Fangs damage at Mythic Ranks 3, 6 and 10. The tiers describe the additional setup and resource cost, not the damage level: 
+
+- **Low** uses only the Cave Fangs buff and effects that are effectively free or persistent; 
+- **Medium** adds a modest setup cost, such as preparing the buff in a separate encounter or relying on a shorter-duration effect; 
+- **High** uses a limited resource or a short-duration ability reserved for difficult encounters.
+
+The figures are per trap (of which we have up to **144** per Cave Fangs cast). 
+
+`SD` is the character's total sneak-attack dice. 
+
+Geomancy uses `G = min(9, floor(ChL / 2))`; Mythic Rank 6 and above assumes `ChL 20`, so `G = 9`.
+
+A successful Reflex save normally leaves **50%** of Trap and Surprise Spells damage. With Azata's *Favorable Magic*, it leaves **75%**. Evasion still negates Trap and Surprise Spells damage on a successful Reflex save. 
+
+Geomancy is shown in grey where its 1d8 self-damage is not prevented.
+
+The earliest mythic rank at which each path gains damage conversion or a physical-damage bypass is summarised below. The first four paths gain an energy conversion; the Demon instead gains a way to bypass physical damage reduction and immunity. 
+
+[See the full calculations, assumptions and feature descriptions](#mythic-damage-calculations).
+
+### Conversion and physical damage bypass
+
+| Mythic path | Available at | What it provides | Source feature |
+|---|---:|---|---|
+| Lich | Mythic Rank 3 | [Negative Energy conversion](#negative-energy-conversion) | [Death of Elements](#lich-m3) |
+| Angel | Mythic Rank 6 | [Holy conversion](#conversion-angel) | [Sword of Holy Damage](#angel-m6) |
+| Azata | Mythic Rank 8 | [Holy conversion](#conversion-azata) | [Joy of Life](#mythic-azata) |
+| Gold Dragon | Mythic Rank 9 | [Holy or Unholy conversion](#conversion-gd) | [Perfect Mind](#mythic-gd) |
+| Demon | Mythic Rank 9 | [Physical damage reduction and immunity bypass](#dr-and-incorporeal) | [Aspect of Deskari](#demon-m9) |
+
+Conversion to Energy also enables further conversion to an [Element](#elemental-conversion). This allows the character to benefit from:
+
+- Flame Curse: another 1.5x multiplier on trap damage
+- Call of the Fiery Things: 4d6 damage on each trap cast (36 for Gold Dragon)
+- Elemental Barrage: Mythic Level x d6 damage when procced
+
+These are not included for the damage numbers below.
+
+### No mythic path
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| No mythic path | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness | — |
+| No mythic path | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness; Promise of Greatness | — |
+
+</div>
+
+### Mythic Rank 3
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| Angel | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness | — |
+| Angel | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness; Promise of Greatness | — |
+| Angel | High | `69 + 1.5FD` | `SDd6` | <span class="cf-dim">`(G + 2)d6 + FD`</span> | — | Plague of Madness; Promise of Greatness; Sword of Heaven | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Lich | Low | `36 + 1.5FD` | `SDd6` | `Gd6 + FD` | — | Plague of Madness; Death of Elements | — |
+| Lich | Medium | `45 + 1.5FD` | `SDd6` | `Gd6 + FD` | — | Plague of Madness; Promise of Greatness; Death of Elements | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness | — |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | `+2` | Plague of Madness; Promise of Greatness | Demonic Rage |
+| Demon | High | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | `+4` | Plague of Madness; Promise of Greatness | Demonic Rage; double application to buff and trap |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Azata | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness | — |
+| Azata | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | Plague of Madness; Promise of Greatness | — |
+
+</div>
+
+### Mythic Rank 6
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| Angel | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+2` | Plague of Madness | — |
+| Angel | Medium | `93 + 1.5FD` | `SDd6` | `13d6 + FD` | `+2` | Plague of Madness; Promise of Greatness; Sword of Heaven; Bound of Possibility | Piercing Rays |
+| Angel | Medium, eligible targets | `139.5 + 2.25FD` | `1.5 × SDd6` | `1.5 × (13d6 + FD)` | `+2` | As above; Abolish Guile | Piercing Rays |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Lich | Low | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | — | Plague of Madness; Death of Elements; Fear Control | — |
+| Lich | Medium | `54 + 1.5FD` | `SDd6` | `9d6 + FD` | — | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+2` | Plague of Madness | Shadow Demon or Coloxus |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+7` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Shadow Demon or Coloxus |
+| Demon | High, Babau + Vrock | `45 + 1.5FD` | `(SD + 3)d6` | `9d6 + FD` | `+12` | Plague of Madness; Promise of Greatness; buff prepared with Incubus, then Babau + Vrock | Incubus buff; Demonic Rage; Vrock; Major Aspect |
+| Demon | High, Incubus + Vrock | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+14` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus buff; Vrock; Major Aspect |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Azata | Low | `45 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | Favorable Magic | Plague of Madness; Incredible Might | Favorable Magic |
+| Azata | Medium | `54 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | Favorable Magic | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic |
+
+</div>
+
+### Mythic Rank 10
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| Angel | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+3` | Plague of Madness | — |
+| Angel | Medium | `93 + 1.5FD` | `SDd6` | `13d6 + FD` | `+3` | Plague of Madness; Promise of Greatness; Sword of Heaven; Bound of Possibility | Piercing Rays |
+| Angel | Medium, eligible targets | `139.5 + 2.25FD` | `1.5 × SDd6` | `1.5 × (13d6 + FD)` | `+3` | As above; choose the relevant Abolish upgrade | Piercing Rays |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Lich | Low | `51 + 1.5FD` | `SDd6` | `9d6 + FD` | — | Plague of Madness; Death of Elements; Fear Control | — |
+| Lich | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + FD` | — | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control | — |
+| Lich | High | `90 + 2.25FD` | `1.5 × SDd6` | `1.5 × (9d6 + FD) + 2d8 + 10` | — | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control; Eclipse Chill | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+3` | Plague of Madness | Shadow Demon or Coloxus |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+10` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Shadow Demon or Coloxus |
+| Demon | High, Babau + Vrock | `45 + 1.5FD` | `(SD + 4)d6` | `9d6 + FD` | `+17` | Plague of Madness; Promise of Greatness; buff prepared with Incubus, then Babau + Vrock | Incubus buff; Demonic Rage; Vrock; Major Aspect |
+| Demon | High, Incubus + Vrock | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+20` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Vrock; Major Aspect |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Azata | Low | `51 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | Favorable Magic | Plague of Madness; Incredible Might | Favorable Magic |
+| Azata | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | Favorable Magic | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic |
+| Azata | High | `60 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | Favorable Magic | As above; Joy of Life | Favorable Magic |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Azata → Devil | Low | `51 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | `+10` | Plague of Madness; Incredible Might | Favorable Magic; Hell's Decree |
+| Azata → Devil | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | `+17` | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic; Hell's Decree; Hell's Authority |
+| Azata → Devil | High | `84 + 1.5FD` | `SDd6` | `11d6 + 6 + FD` | `+24` | As above; Hell's Authority, Angel's Sword form | Favorable Magic; Hell's Decree; Hell's Authority |
+| Azata → Devil | High, eligible targets | `126 + 2.25FD` | `1.5 × SDd6` | `1.5 × (11d6 + 6 + FD)` | `+24` | As above; target-specific 1.5× damage effect | Favorable Magic; Hell's Decree; Hell's Authority |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |
+| Gold Dragon | Low | `45 + 1.5FD` | `SDd10` | `81 + 1.5FD` | `+1 to +4` | Perfect Soul | Dragon Breath; Dispel Synergy |
+| Gold Dragon | Medium | `54 + 1.5FD` | `SDd10` | `81 + 1.5FD` | `+1 to +4` | Perfect Soul; Promise of Greatness | Dragon Breath; Dispel Synergy |
+| Gold Dragon | High | `81 + 2.25(FD + DS)` | `1.5 × SDd10` | `121 + 2.25(FD + DS)` | `0 to +4` | Perfect Soul; Promise of Greatness; Dragon Might; Dragon Smite | Dragon Breath; Dispel Synergy |
+
+</div>
+</file>
+
+<file path="_includes/mythic_damage_overview_revised.md">
+## Mythic damage overview
+
+The tables compare Cave Fangs damage at Mythic Ranks 3, 6 and 10. The tiers describe the additional setup and resource cost, not the damage level: 
+
+- **Low** uses only the Cave Fangs buff and effects that are effectively free or persistent; 
+- **Medium** adds a modest setup cost, such as preparing the buff in a separate encounter or relying on a shorter-duration effect; 
+- **High** uses a limited resource or a short-duration ability reserved for difficult encounters.
+
+The figures are per trap (of which we have up to **144** per Cave Fangs cast). 
+
+`SD` is the character's total sneak-attack dice. 
+
+Geomancy uses `G = min(9, floor(ChL / 2))`; Mythic Rank 6 and above assumes `ChL 20`, so `G = 9`.
+
+A successful Reflex save normally leaves **50%** of Trap and Surprise Spells damage. With Azata's *Favorable Magic*, it leaves **75%**. Evasion still negates Trap and Surprise Spells damage on a successful Reflex save. 
+
+Geomancy is shown in grey where its 1d8 self-damage is not prevented.
+
+Energy conversion and physical damage bypass are separate flags; energy conversion also covers incorporeal targets, while Demon can bypass physical damage reduction without energy conversion. Green ticks indicate availability; red crosses indicate that the feature is unavailable. 
+
+Conversion to Energy also enables further conversion to an [Element](#elemental-conversion). This allows the character to benefit from:
+
+- Flame Curse: another 1.5x multiplier on trap damage
+- Call of the Fiery Things: 4d6 damage on each trap cast (36 for Gold Dragon)
+- Elemental Barrage: Mythic Level x d6 damage when procced
+
+
+[See the full calculations, assumptions and feature descriptions](#mythic-damage-calculations).
+
+### No mythic path
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Energy conversion | DR / Incorporeal | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | ---: | ---: | --- | --- |
+| No mythic path | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | — |
+| No mythic path | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | — |
+
+</div>
+
+### Mythic Rank 3
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Energy conversion | DR / Incorporeal | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | ---: | ---: | --- | --- |
+| Angel | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | — |
+| Angel | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | — |
+| Angel | High | `69 + 1.5FD` | `SDd6` | <span class="cf-dim">`(G + 2)d6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness; Sword of Heaven | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Lich | Low | `36 + 1.5FD` | `SDd6` | `Gd6 + FD` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Death of Elements | — |
+| Lich | Medium | `45 + 1.5FD` | `SDd6` | `Gd6 + FD` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; Death of Elements | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | — |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | `+2` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | Demonic Rage |
+| Demon | High | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | `+4` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | Demonic Rage; double application to buff and trap |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Azata | Low | `36 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | — |
+| Azata | Medium | `45 + 1.5FD` | `SDd6` | <span class="cf-dim">`Gd6 + FD`</span> | — | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | — |
+
+</div>
+
+### Mythic Rank 6
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Energy conversion | DR / Incorporeal | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | ---: | ---: | --- | --- |
+| Angel | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+2` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | — |
+| Angel | Medium | `93 + 1.5FD` | `SDd6` | `13d6 + FD` | `+2` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; Sword of Heaven; Bound of Possibility | Piercing Rays |
+| Angel | Medium, eligible targets | `139.5 + 2.25FD` | `1.5 × SDd6` | `1.5 × (13d6 + FD)` | `+2` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | As above; Abolish Guile | Piercing Rays |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Lich | Low | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Death of Elements; Fear Control | — |
+| Lich | Medium | `54 + 1.5FD` | `SDd6` | `9d6 + FD` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+2` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | Shadow Demon or Coloxus |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+7` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Shadow Demon or Coloxus |
+| Demon | High, Babau + Vrock | `45 + 1.5FD` | `(SD + 3)d6` | `9d6 + FD` | `+12` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness; buff prepared with Incubus, then Babau + Vrock | Incubus buff; Demonic Rage; Vrock; Major Aspect |
+| Demon | High, Incubus + Vrock | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+14` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus buff; Vrock; Major Aspect |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Azata | Low | `45 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | Favorable Magic | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Incredible Might | Favorable Magic |
+| Azata | Medium | `54 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | Favorable Magic | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic |
+
+</div>
+
+### Mythic Rank 10
+
+<div class="cf-table" markdown>
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Mythic DC | Energy conversion | DR / Incorporeal | Damage setup | DC setup |
+| --- | --- | ---: | ---: | ---: | --- | ---: | ---: | --- | --- |
+| Angel | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+3` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | — |
+| Angel | Medium | `93 + 1.5FD` | `SDd6` | `13d6 + FD` | `+3` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; Sword of Heaven; Bound of Possibility | Piercing Rays |
+| Angel | Medium, eligible targets | `139.5 + 2.25FD` | `1.5 × SDd6` | `1.5 × (13d6 + FD)` | `+3` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | As above; choose the relevant Abolish upgrade | Piercing Rays |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Lich | Low | `51 + 1.5FD` | `SDd6` | `9d6 + FD` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Death of Elements; Fear Control | — |
+| Lich | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + FD` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control | — |
+| Lich | High | `90 + 2.25FD` | `1.5 × SDd6` | `1.5 × (9d6 + FD) + 2d8 + 10` | — | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control; Eclipse Chill | — |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | `+3` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness | Shadow Demon or Coloxus |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+10` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Shadow Demon or Coloxus |
+| Demon | High, Babau + Vrock | `45 + 1.5FD` | `(SD + 4)d6` | `9d6 + FD` | `+17` | <span class="cf-no">✗</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness; buff prepared with Incubus, then Babau + Vrock | Incubus buff; Demonic Rage; Vrock; Major Aspect |
+| Demon | High, Incubus + Vrock | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | `+20` | <span class="cf-no">✗</span> | <span class="cf-yes">✓</span> | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Vrock; Major Aspect |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Azata | Low | `51 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | Favorable Magic | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Incredible Might | Favorable Magic |
+| Azata | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | Favorable Magic | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic |
+| Azata | High | `60 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | Favorable Magic | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | As above; Joy of Life | Favorable Magic |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Azata → Devil | Low | `51 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | `+10` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Incredible Might | Favorable Magic; Hell's Decree |
+| Azata → Devil | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | `+17` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic; Hell's Decree; Hell's Authority |
+| Azata → Devil | High | `84 + 1.5FD` | `SDd6` | `11d6 + 6 + FD` | `+24` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | As above; Hell's Authority, Angel's Sword form | Favorable Magic; Hell's Decree; Hell's Authority |
+| Azata → Devil | High, eligible targets | `126 + 2.25FD` | `1.5 × SDd6` | `1.5 × (11d6 + 6 + FD)` | `+24` | <span class="cf-no">✗</span> | <span class="cf-no">✗</span> | As above; target-specific 1.5× damage effect | Favorable Magic; Hell's Decree; Hell's Authority |
+| <span class="cf-gap"></span> |  |  |  |  |  |  |  |  |  |
+| Gold Dragon | Low | `45 + 1.5FD` | `SDd10` | `81 + 1.5FD` | `+1 to +4` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Perfect Soul | Dragon Breath; Dispel Synergy |
+| Gold Dragon | Medium | `54 + 1.5FD` | `SDd10` | `81 + 1.5FD` | `+1 to +4` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Perfect Soul; Promise of Greatness | Dragon Breath; Dispel Synergy |
+| Gold Dragon | High | `81 + 2.25(FD + DS)` | `1.5 × SDd10` | `121 + 2.25(FD + DS)` | `0 to +4` | <span class="cf-yes">✓</span> | <span class="cf-yes">✓</span> | Perfect Soul; Promise of Greatness; Dragon Might; Dragon Smite | Dragon Breath; Dispel Synergy |
+
+</div>
+</file>
+
+<file path="_includes/mythic_damage_overview.md">
+## Mythic damage overview
+
+The tables compare Cave Fangs damage at Mythic Ranks 3, 6 and 10. The tiers describe the additional setup and resource cost, not the damage level: 
+
+- **Low** uses only the Cave Fangs buff and effects that are effectively free or persistent; 
+- **Medium** adds a modest setup cost, such as preparing the buff in a separate encounter or relying on a shorter-duration effect; 
+- **High** uses a limited resource or a short-duration ability reserved for difficult encounters.
+
+The figures are per trap (of which we have up to **144** per Cave Fangs cast). 
+
+`SD` is the character's total sneak-attack dice. 
+
+Geomancy uses `G = min(9, floor(ChL / 2))`; Mythic Rank 6 and above assumes `ChL 20`, so `G = 9`.
+
+A successful Reflex save normally leaves **50%** of Trap and Surprise Spells damage. With Azata's *Favorable Magic*, it leaves **75%**. Evasion still negates Trap and Surprise Spells damage on a successful Reflex save. 
+
+Geomancy is shown in grey where its 1d8 self-damage is not prevented.
+
+Energy conversion and physical damage bypass are separate flags, since Demon has a way to achieve the latter without the former. 
+
+Conversion to Energy also enables further conversion to an [Element](elemental-conversion). This allows the character to benefit from:
+
+- Flame Curse: another 1.5x multiplier on trap damage
+- Call of the Fiery Things: 4d6 damage on each trap cast (36 for Gold Dragon)
+- Elemental Barrage: Mythic Level x d6 damage when procced
+
+
+[See the full calculations, assumptions and feature descriptions](#mythic-damage-calculations).
+
+### No mythic path
+
+| Tier | Trap | Surprise Spells | Geomancy | Reflex save | Mythic DC | Damage setup | DC setup | Energy conversion | Incorporeal / DR |
+|---|---:|---:|---:|---:|---|---|---|---|---|
+| Low | `36 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness | — | No | No |
+| Medium | `45 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness; Promise of Greatness | — | No | No |
+
+### Mythic Rank 3
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Reflex save | Mythic DC | Damage setup | DC setup | Energy conversion | Incorporeal / DR |
+|---|---|---:|---:|---:|---:|---|---|---|---|---|
+| Angel | Low | `36 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness | — | No | No |
+| Angel | Medium | `45 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness; Promise of Greatness | — | No | No |
+| Angel | High | `69 + 1.5FD` | `SDd6` | <span style="color: #999;">`(G + 2)d6 + FD`</span> | 50% taken | — | Plague of Madness; Promise of Greatness; Sword of Heaven | — | No | No |
+| Lich | Low | `36 + 1.5FD` | `SDd6` | `Gd6 + FD` | 50% taken | — | Plague of Madness; Death of Elements | — | Yes | No |
+| Lich | Medium | `45 + 1.5FD` | `SDd6` | `Gd6 + FD` | 50% taken | — | Plague of Madness; Promise of Greatness; Death of Elements | — | Yes | No |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness | — | No | No |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | `+2` | Plague of Madness; Promise of Greatness | Demonic Rage | No | No |
+| Demon | High | `45 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | `+4` | Plague of Madness; Promise of Greatness | Demonic Rage; double application to buff and trap | No | No |
+| Azata | Low | `36 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness | — | No | No |
+| Azata | Medium | `45 + 1.5FD` | `SDd6` | <span style="color: #999;">`Gd6 + FD`</span> | 50% taken | — | Plague of Madness; Promise of Greatness | — | No | No |
+
+### Mythic Rank 6
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Reflex save | Mythic DC / save effect | Damage setup | DC setup | Energy conversion | Incorporeal / DR |
+|---|---|---:|---:|---:|---:|---|---|---|---|---|
+| Angel | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+2` | Plague of Madness | — | No | No |
+| Angel | Medium | `93 + 1.5FD` | `SDd6` | `13d6 + FD` | 50% taken | `+2` | Plague of Madness; Promise of Greatness; Sword of Heaven; Bound of Possibility | Piercing Rays | Yes | Yes |
+| Angel | Medium, eligible targets | `139.5 + 2.25FD` | `1.5 × SDd6` | `1.5 × (13d6 + FD)` | 50% taken | `+2` | As above; Abolish Guile | Piercing Rays | Yes | Yes |
+| Lich | Low | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | — | Plague of Madness; Death of Elements; Fear Control | — | Yes | No |
+| Lich | Medium | `54 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | — | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control | — | Yes | No |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+2` | Plague of Madness | Shadow Demon or Coloxus | No | No |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+7` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Shadow Demon or Coloxus | No | No |
+| Demon | High, Babau + Vrock | `45 + 1.5FD` | `(SD + 3)d6` | `9d6 + FD` | 50% taken | `+12` | Plague of Madness; Promise of Greatness; buff prepared with Incubus, then Babau + Vrock | Incubus buff; Demonic Rage; Vrock; Major Aspect | No | No |
+| Demon | High, Incubus + Vrock | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+14` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus buff; Vrock; Major Aspect | No | No |
+| Azata | Low | `45 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | 75% taken | Favorable Magic | Plague of Madness; Incredible Might | Favorable Magic | No | No |
+| Azata | Medium | `54 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | 75% taken | Favorable Magic | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic | No | No |
+
+### Mythic Rank 10
+
+| Path | Tier | Trap | Surprise Spells | Geomancy | Reflex save | Mythic DC / save effect | Damage setup | DC setup | Energy conversion | Incorporeal / DR |
+|---|---|---:|---:|---:|---:|---|---|---|---|---|
+| Angel | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+3` | Plague of Madness | — | No | No |
+| Angel | Medium | `93 + 1.5FD` | `SDd6` | `13d6 + FD` | 50% taken | `+3` | Plague of Madness; Promise of Greatness; Sword of Heaven; Bound of Possibility | Piercing Rays | Yes | Yes |
+| Angel | Medium, eligible targets | `139.5 + 2.25FD` | `1.5 × SDd6` | `1.5 × (13d6 + FD)` | 50% taken | `+3` | As above; choose the relevant Abolish upgrade | Piercing Rays | Yes | Yes |
+| Lich | Low | `51 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | — | Plague of Madness; Death of Elements; Fear Control | — | Yes | No |
+| Lich | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | — | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control | — | Yes | No |
+| Lich | High | `90 + 2.25FD` | `1.5 × SDd6` | `1.5 × (9d6 + FD) + 2d8 + 10` | 50% taken | — | Plague of Madness; Promise of Greatness; Death of Elements; Fear Control; Eclipse Chill | — | Yes | No |
+| Demon | Low | `36 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+3` | Plague of Madness | Shadow Demon or Coloxus | No | No |
+| Demon | Medium | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+10` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Shadow Demon or Coloxus | No | No |
+| Demon | High, Babau + Vrock | `45 + 1.5FD` | `(SD + 4)d6` | `9d6 + FD` | 50% taken | `+17` | Plague of Madness; Promise of Greatness; buff prepared with Incubus, then Babau + Vrock | Incubus buff; Demonic Rage; Vrock; Major Aspect | No | Yes |
+| Demon | High, Incubus + Vrock | `45 + 1.5FD` | `SDd6` | `9d6 + FD` | 50% taken | `+20` | Plague of Madness; Promise of Greatness | Demonic Rage; Incubus; Vrock; Major Aspect | No | Yes |
+| Azata | Low | `51 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | 75% taken | Favorable Magic | Plague of Madness; Incredible Might | Favorable Magic | No | No |
+| Azata | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | 75% taken | Favorable Magic | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic | No | No |
+| Azata | High | `60 + 1.5FD` | `SDd6` | `9d6 + 10 + FD` | 75% taken | Favorable Magic | As above; Joy of Life | Favorable Magic | Yes | Yes |
+| Azata → Devil | Low | `51 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | 75% taken | `+10` | Plague of Madness; Incredible Might | Favorable Magic; Hell's Decree | No | No |
+| Azata → Devil | Medium | `60 + 1.5FD` | `SDd6` | `9d6 + 6 + FD` | 75% taken | `+17` | Plague of Madness; Promise of Greatness; Incredible Might | Favorable Magic; Hell's Decree; Hell's Authority | No | No |
+| Azata → Devil | High | `84 + 1.5FD` | `SDd6` | `11d6 + 6 + FD` | 75% taken | `+24` | As above; Hell's Authority, Angel's Sword form | Favorable Magic; Hell's Decree; Hell's Authority | No | No |
+| Azata → Devil | High, eligible targets | `126 + 2.25FD` | `1.5 × SDd6` | `1.5 × (11d6 + 6 + FD)` | 75% taken | `+24` | As above; target-specific 1.5× damage effect | Favorable Magic; Hell's Decree; Hell's Authority | No | No |
+| Gold Dragon | Low | `45 + 1.5FD` | `SDd10` | `81 + 1.5FD` | 50% taken | `+1 to +5` | Perfect Soul | Dragon Breath; Dispel Synergy | Yes | Yes |
+| Gold Dragon | Medium | `54 + 1.5FD` | `SDd10` | `81 + 1.5FD` | 50% taken | `+1 to +5` | Perfect Soul; Promise of Greatness | Dragon Breath; Dispel Synergy | Yes | Yes |
+| Gold Dragon | High | `81 + 2.25(FD + DS)` | `1.5 × SDd10` | `121 + 2.25(FD + DS)` | 50% taken | `0 to +5` | Perfect Soul; Promise of Greatness; Dragon Might; Dragon Smite | Dragon Breath; Dispel Synergy | Yes | Yes |
+</file>
+
+<file path="_includes/mythic_damage_potential.md">
+### Maximum damage potential
+
+The following examples apply the formulae and variables defined in the preceding mythic damage calculations. Both assume that all 144 trap placements from one Cave Fangs buff hit the same target.
+
+#### Mythic Rank 6: Angel damage potential
+
+This estimate uses the MR6 Angel high-damage setup: *Sword of Heaven* with *The Bound of Possibility*, *Plague of Madness*, *Promise of Greatness* and *Abolish Guile*. The target is a Guile Demon affected by Fire conversion and *Flame Curse*.
+
+The flat damage is `FD = 40`: +20 from a Hellknight 10 main character and +20 from a level-20 allied Paladin's *Mark of Justice*.
+
+**Trap damage**
+
+The [MR6 Angel formula](#angel-m6-trap), with *Flame Curse* applied as an additional multiplier, gives:
+
+\[
+T = \left\lfloor 1.5 \times 1.5(93 + 1.5 \times 40) \right\rfloor = 344
+\]
+
+Maximised damage is rounded down for each trap.
+
+**Geomancy damage**
+
+Using the MR6 formula `G = 1.5(13d6 + FD)` and average die results:
+
+\[
+G_{\text{avg}} = 1.5(13 \times 3.5 + 40) = 128.25
+\]
+
+*Flame Curse* does not multiply Geomancy damage due to it remaining holy.
+
+**Total across 144 traps**
+
+\[
+(344 + 128.25) \times 144 = \boxed{68\,004 \text{ average damage}}
+\]
+
+This total combines maximised trap damage with average Geomancy damage. 
+
+Wether Elemental Barrage would raise or hurt this total is left as an exercise to the reader.
+
+
+#### Mythic Rank 10: Gold Dragon damage potential
+
+This estimate uses the MR10 Gold Dragon high-damage setup, with *Perfect Soul*, *Promise of Greatness* and *Dragon Might*. The target is affected by Fire conversion and *Flame Curse*; an allied Paladin provides *Mark of Justice*.
+
+##### Single Target { #gd-single }
+
+**Sneak attack dice**
+
+| Source | Sneak attack |
+|---|---:|
+| 1 level of Vivisectionist | 1d6 |
+| Sense Vitals (character level 15+) | 5d6 |
+| Arcane Trickster | 5d6 |
+| Accomplished Sneak Attacker | 1d6 |
+| 1 level of Rogue | 1d6 |
+| 3 levels of Assassin | 2d6 |
+| **Total** | **15d6** |
+
+With Perfect Soul, the sneak attack dice become d10s. Surprise Spells' additional sneak attack damage is not Empowered or Maximised; it is multiplied only by Dragon Might.
+
+**Charisma calculation**
+
+| Source | Charisma |
+|---|---:|
+| Base | 17 |
+| Racial: Kindred-Raised Half-Elf | +4 |
+| Ability increases | +5 |
+| Inherent: Tome of Ancient Perfection | +4 |
+| Enhancement: Many | +8 |
+| Circumstance: Grand Festival Cloak | +2 |
+| Morale: Court Poet and Ring of Triumphant Advance | +12 |
+| Alchemical: Cognatogen | +8 |
+| Profane: Ascension | +6 |
+| Conflagrant Taco | +4 |
+| Perfect Soul | +8 |
+| Vellexia's Magnifying Amulet | +2 |
+| **Total Charisma** | **80** |
+
+The resulting Charisma modifier is:
+
+\[
+\frac{80 - 10}{2} = 35
+\]
+
+Dragon Smite adds half the Charisma modifier to damage, rounded down:
+
+\[
+\left\lfloor \frac{35}{2} \right\rfloor = 17
+\]
+
+**Final variables**
+
+The formula variables are `FD = 20` (*Mark of Justice*), `DS = 17` (*Dragon Smite* at 80 Charisma), `SD = 15`, and `G = 9` at character level 20. *Perfect Soul* changes the damage dice to d10s and automatically applies Empower and Maximise.
+
+**Trap damage**
+
+The MR10 Gold Dragon formula, with the additional *Flame Curse* multiplier, gives:
+
+\[
+T = \left\lfloor 1.5 \times (3 \times 10 + 6 + 20 + 17) \times 1.5^2 \right\rfloor = 246
+\]
+
+**Surprise Spells**
+
+*Perfect Soul* changes the sneak-attack dice to d10s. This damage is not Empowered or Maximised; only *Dragon Might* multiplies it. Using average die results:
+
+\[
+SS_{\text{avg}} = 1.5 \times 15 \times 5.5 = 123.75
+\]
+
+**Geomancy damage**
+
+Using the MR10 formula with `G = 9`.
+
+\[
+G = \left\lfloor (9 \times 6 + 20 + 17) \times 1.5^2 \right\rfloor = 204
+\]
+
+**Call of the Fiery Things**
+
+\[
+C = 4 \times 6 \times 1.5 = 36
+\]
+
+**Total single-target damage across 144 traps**
+{: #gd-max-dmg }
+
+
+\[
+(246 + 123.75 + 204 + 36) \times 144
+= \boxed{87\,804}
+\]
+
+##### Geomancy AoE damage { #gd-geo-aoe }
+
+Geomancy (on other targets) benefits from Dragon Smite, Dragon Might, and the Empower effect. The maximised damage is rounded down per trap:
+
+\[
+\left\lfloor
+(9 \times 6 + 17_{\text{Dragon Smite}})
+\times 1.5^2
+\right\rfloor
+= 159
+\]
+
+\[
+159 \times 144
+= \boxed{22\,896}
+\]
+
+The AoE figure is part of, not additional to, the single-target total.
+</file>
+
+<file path="_includes/mythic_demon.md">
+### Demon { #mythic-demon }
+
+#### Mythic Rank 3 { #demon-m3 }
+
+The Demon gains Demonic Rage, initially usable three times per day, with each use lasting for one combat.
+
+For Cave Fangs, Demonic Rage provides +2 DC to both the Cave Fangs buff and the traps themselves. One use can be spent in a minor encounter to cast the buff, retaining the +2 DC bonus for the rest of the dungeon. This leaves two uses available for important encounters, where another +2 DC can be gained, for a total of +4 DC during Rage.
+
+??? demon-feature "Demonic Rage"
+    {% include '_includes/demonic_rage.md' %}
+
+#### Mythic Rank 4 { #demon-m4 }
+
+The Demon gains a minor Demon Aspect.
+
+**Brimorak** appears to offer additional damage, but its bonus only applies to Fire spells and therefore does not benefit Stalactite Traps.
+
+??? demon-feature "Aspect of Brimorak"
+    {% include '_includes/aspect_brimorak.md' %}
+
+**Incubus** provides another +1 DC during Demonic Rage.
+
+??? demon-feature "Aspect of Incubus"
+    {% include '_includes/aspect_incubus.md' %}
+
+**Babau**, the alternative, provides additional sneak attack damage, which benefits Surprise Spells.
+
+??? demon-feature "Aspect of Babau"
+    {% include '_includes/aspect_babau.md' %}
+
+#### Mythic Rank 5 {demon-m5}
+
+At Mythic Rank 5, the Demon gains another minor Aspect and two major Aspects. Two minor Aspects can now be active simultaneously.
+
+??? demon-feature "Extra Minor Aspect"
+    {% include '_includes/demon_extra_minor_aspect.md' %}
+
+**Vrock** imposes a –1 penalty to enemy Reflex saves. 
+
+??? demon-feature "Aspect of Vrock"
+    {% include '_includes/aspect_vrock.md' %}
+
+Two major Aspects provide bonuses to the casting ability score, and therefore to DC:
+
+- **Shadow Demon** increases Wisdom.
+- **Coloxus** increases Intelligence.
+
+These ability score bonuses are passive.
+
+??? demon-feature "Aspect of Shadow Demon"
+    {% include '_includes/aspect_shadow_demon.md' %}
+
+??? demon-feature "Aspect of Coloxus"
+    {% include '_includes/aspect_coloxus.md' %}
+
+At this stage, the additional benefit is +1 DC (or +2 DC with uneven casting ability score).
+
+No other major Aspects provide relevant synergy with Cave Fangs.
+
+#### Mythic Rank 6 { #demon-m6 }
+
+Demonic Rage increases to four uses per day. Most Aspect benefits also improve.
+
+The additional minor Aspects provide no further benefits relevant to Cave Fangs.
+
+Incubus is always used for the buffing encounter. 
+
+For major encounters, the choice is between Incubus and Vrock for higher DC, or Babau and Vrock for additional sneak attack damage if using Suprise Spells.
+
+| Configuration | Buff DC | Effective Trap DC | Suprise Spells |
+|---|---:|---:| ---- :|
+| Incubus + Any -> Incubus + Vrock | +7 | +14 | |
+| Incubus + Any -> Babau + Vrock | +7 | +12 | +3d6|
+
+#### Mythic Rank 9 { #demon-m9 }
+
+Demonic Rage increases to five uses per day. Most Aspect benefits improve again.
+
+| Configuration | Buff DC | Effective Trap DC | Suprise Spells |
+|---|---:|---:| ---- :|
+| Incubus + Any -> Incubus + Vrock | +9 | +19 | |
+| Incubus + Any -> Babau + Vrock | +9 | +16 | +4d6|
+
+The Demon also gains access to a Demon Lord Aspect.
+{: #demon-deskari }
+
+**Deskari** allows the Demon to bypass physical damage immunity.
+
+??? demon-feature "Aspect of Deskari"
+    {% include '_includes/aspect_of_deskari.md' %}
+
+#### Mythic Rank 10
+
++1 DC from Coloxus or Shadow Demon.
+
+
+#### Discussion
+
+The Demon offers the highest trap DC of the mythic paths discussed here, alongside additional sneak attack damage for Surprise Spells builds.
+
+The main limitation is the lack of damage conversion. Deskari provides a way to bypass physical damage immunity, but only at Mythic Rank 9.
+</file>
+
+<file path="_includes/mythic_gold_dragon.md">
+### Gold Dragon { #mythic-gd }
+
+The Gold Dragon loses all mythic features belonging to the previous path.
+
+The exception is a merged spellbook (Angel and Lich). An unmerged mythic spellbook is lost.
+
+#### Mythic 8 
+
+Perfect Body's additional damage applies to Stalactite Traps and the sneak attack damage from Surprise Spells (link to be added).
+
+??? gd-feature "Perfect Body"
+    {% include '_includes/gold_dragon_perfect_body.md' %}
+
+The Gold Dragon gains Dragon Breath, a useful standard-action option for use alongside the free-action traps. By itself it gives a -1 DC debuff on a save and -3 DC on a fail.
+
+??? gd-feature "Dragon Breath"
+    {% include '_includes/gold_dragon_gold_dragon_breath.md' %}
+
+The Mind-Clearing Breath upgrade can be combined with Dispel Synergy for another -2 DC.
+
+??? feat "Dispel Synergy"
+    {% include '_includes/dispel_synergy.md' %}
+
+??? gd-feature "Mind-Clearing Breath"
+    {% include '_includes/gold_dragon_mind_clearing_breath.md' %}
+
+The Gold Dragon also gains two strong spells at Mythic Rank 8.
+
+Dragon Might increases all damage dealt by 50%. This applies to traps, Geomancy, and the sneak attack damage from Surprise Spells.
+    
+??? spell "Dragon Might"
+    {% include '_includes/gold_dragon_dragon_might.md' %}
+
+Dragon Smite's flat damage bonus applies to Geomancy and traps.
+
+??? spell "Dragon Smite"
+    {% include '_includes/gold_dragon_dragon_smite.md' %}
+
+#### Mythic 9
+
+Perfect Mind increases damage slightly compared with Perfect Body. More importantly, it provides unlimited Holy damage conversion.
+
+??? gd-feature "Perfect Mind"
+    {% include '_includes/gold_dragon_perfect_mind.md' %}
+
+This leaves a gap in damage conversion between Mythic Ranks 8 and 9. However, Mythic Rank 9 may be reachable with very little combat, if the information I read is correct.
+
+The Gold Dragon also gains another Dragon Breath upgrade.
+
+Overwhelming Breath to increase the chance enemies fail their reflex save is a good choice.
+Both for damage and the extra -2 DC debuff.
+
+??? gd-feature "Overwhelming Breath"
+    {% include '_includes/gold_dragon_overwhelming_breath.md' %}
+    
+
+#### Mythic 10 { #gd-m10 }
+
+With Perfect Soul, damage dice become d10s. This applies to both the regular trap damage and Surprise Spells. In addition, spells (and abilities) are automatically Empowered and Maximised, this includes the traps (but not the sneak attack), Geomancy and even [Call of the Fiery Things](#fire-items) procs.
+
+For traps, this removes the need to use Plague of Madness. The greater benefit is to Geomancy, which is also Empowered and Maximised. A standard Geomancy proc now deals:
+
+9 × 6 × 1.5 = 81 damage
+
+The Empower effect also applies to additional flat damage riders on Geomancy, such as Dragon Smite or an allied Paladin's Mark of Justice.
+
+??? gd-feature "Perfect Soul"
+    {% include '_includes/gold_dragon_perfect_soul.md' %}
+
+The Gold dragon also gets three Dragon Feats.
+
+??? gd-feature "Dragon Feat"
+    {% include '_includes/gold_dragon_dragon_feat.md' %}
+
+Some recommendations:
+
+Grand Cognatogen provides a +8 bonus to one mental ability score, +6 to another and +4 to a third. It is particularly useful with Dragon Smite. If the casting ability is not Charisma, Charisma can be selected as the second ability score for a +6 bonus.
+
+??? class-feature "Grand Cognatogen"
+    {% include '_includes/grand_cognatogen.md' %}
+
+At least one level of Alchemist or Mutation Warrior is required to use the ability. Vivisectionist may also provide the prerequisite Sneak Dice for the Arcane Trickster prestige class (link to be added), making it a potential choice for builds focused on Surprise Spells.
+
+Extra Magus Arcana: Reach Magic is a useful for extending trap placement range, particularly against spread-out enemies.
+
+??? class-feature "Reach Magic"
+    {% include '_includes/magus_arcana_reach_magic.md' %}
+
+Flame Curse is not recommended. Dragon Breath already provides a strong standard-action option.
+
+Flame Curse is only better in a theoretical scenario with a single enemy with a higher HP value then any enemy in the game has. 
+
+Otherwise Flame Curse requires a substantial amount of additional flat damage on traps to be worthwhile compared with Dragon Breath. This means having Hellknight levels, an allied Paladin's Mark of Justice and Dragon Smite.
+
+However quickening Dragon Smite through Boots of Arcane Persistence conflicts with Dragon Might, as both spells require a swift action. 
+
+??? item "Boots of Arcane Persistence"
+    {% include '_includes/boots_of_arcane_persistence.md' %}
+
+Flame Curse can also be cast by an ally.
+
+The Gold Dragon also gains two further Dragon Breath upgrades.
+
+#### Discussion
+
+The Gold Dragon has the highest damage ceiling for a Cave Fangs build.
+
+Perfect Soul also changes the sneak attack dice from Surprise Spells to d10s, making the Gold Dragon particularly effective for an Arcane Trickster build.
+
+It is arguably the strongest continuation for an Arcane Trickster Lich build, as the Lich offers fewer options for increasing Cave Fangs damage at higher Mythic Ranks.
+
+The Angel already has very high damage potential, so switching to the Gold Dragon offers less of an advantage.
+
+Dragon Smite is not essential to the build and competes with Dragon Might for spell slots. This also means that the build does not need to be Charisma-based.
+</file>
+
+<file path="_includes/mythic_lich.md">
+### Lich { #mythic-lich }
+
+#### Mythic 3 { #lich-m3 }
+
+At Mythic Rank 3, the Lich can select its first power. For a dedicated Cave Fangs build, the strongest choice is Death of Elements.
+
+??? lich-feature "Death of Elements"
+    {% include '_includes/lich_death_of_elements.md' %}
+
+Allowing for immediate geomancy use and bypassing of DR. See [Negative Energy Conversion](#negative-energy-conversion).
+
+Another interesting option is Withering Life.
+
+??? lich-feature "Withering Life"
+    {% include '_includes/lich_withering_life.md' %}
+
+This is more relevant to a Primal Regression Lich, where it can act as a free-action enabler, rather than to a dedicated Cave Fangs build. You would still want another option available, for example Stone Call with a Lesser Quicken Rod, against enemies with high Reflex saves.
+
+??? spell "Primal Regression"
+    {% include '_includes/primal_regression.md' %}
+
+#### Mythic 5
+
+The Lich gains no specific benefits for Cave Fangs at this rank. However, the [Gloves of Enduring Wizard](#temporary-hit-points) can be found in Act 4, allowing you to take Ascendant Element: Negative without risking self-damage from Geomancy.
+
+#### Mythic 6+
+
+The Lich gains additional powers at Mythic Ranks 6, 8 and 10. None are particularly strong for Cave Fangs.
+
+Fear Control can potentially add some damage to both traps and Geomancy.
+
+??? lich-feature "Fear Control"
+    {% include '_includes/lich_fear_control.md' %}
+
+Eclipse Chill only affects Geomancy directly, but its effects can also benefit trap damage. However, it relies on a saving throw that enemies are likely to pass.
+
+??? lich-feature "Eclipse Chill"
+    {% include '_includes/lich_eclipse_chill.md' %}
+
+#### Discussion 
+
+The Lich is arguably the best choice for an early, dedicated Cave Fangs build because damage conversion becomes available early. 
+
+The merged spellbook also makes the Lich a natural fit for a full Arcane caster. Since the path has relatively few options for increasing Cave Fangs damage directly, an Arcane Trickster build is an obvious choice. Surprise Spells provides the missing additional damage.
+
+This makes the Lich more specialised around Cave Fangs than the suggested Angel build, which retains Bolt of Justice as an alternative damage option.
+
+The good old solo cheese build: Rowdy Rogue Witch of the Veil, is an obvious candidate, but the playstyle can become extremely tedious. Low BAB and the Witch's limited self-buffing options can make fights, particularly in Act 2, lengthy.
+
+Vivisectionist is a better source of the initial sneak attack dice to meet the Arcane Trickster prerequisite if going for highest cap; see the [Gold Dragon](#mythic-gd)
+
+An Eldritch Scoundrel is another an option I'm exploring. However, its six-level spell progression means an unmerged spellbook and it's got anti-synergy with Arcane Trickster due to it as well.
+</file>
+
+<file path="_includes/negative_energy_conversion.md">
+### Negative Energy Conversion
+
+The Lich mythic path provides an ability that converts all damage dealt to negative energy.
+
+#### Death of Elements
+
+??? mythic-feature "Death of Elements"
+    {% include '_includes/death_of_elements.md' %}
+
+Although the description specifies elemental damage, the ability appears to convert all damage. As with holy conversion, this includes both Geomancy's direct self-damage and its area damage.
+
+The ability becomes available as early as mythic rank 3, considerably earlier than the Angel's equivalent at rank 6.
+
+Since Death Ward grants immunity to negative energy, the Geomancy combination can be used as soon as mythic rank 3. Alternatively Dhampir's have Negative Energy Affinity.
+
+??? spell "Death Ward"
+    {% include '_includes/death_ward.md' %}
+
+??? class-feature "Negative Energy Affinity"
+    {% include '_includes/racial/trait_negative_energy_affinity.md' %}
+
+#### Downsides compared to (un)holy { #neg-downsides }
+
+- Some enemies, notably undead, are immune to negative energy.
+- Damage against incorporeal enemies is still halved, whereas holy damage deals full damage. See [DR and Incorporeal](#dr-and-incorporeal).
+- Does not bypass Precision Immunity to Surprise Spells sneak damage.
+
+The first issue can be addressed with Ascendant Element: Negative Energy or the Vulnerability Curse hex. See [Resistances and immunities](#resistances-and-immunities).
+
+The last only by Ascendant Element: Negative Energy.
+
+!!! Warning "Ascendant Element: Negative Energy"
+    Ascendant Element: Negative Energy bypasses the caster's own immunity to negative energy, leaving the caster vulnerable to Geomancy self-damage. It is therefore inadvisable before obtaining the [Gloves of Enduring Wizard](#temporary-hit-points).
+
+The following item provides a solution to the first two issues, but only for trap damage.
+
+??? item "Devouring Lust"
+    {% include '_includes/devouring_lust.md' %}
+
+The Maximise effect does not work with Cave Fangs, as intended. However, the item also converts negative energy damage to unholy damage without consuming its charges, making this conversion effectively free.
+
+??? note "Conversion from Holy"
+    The item also works with damage converted to holy in the previous section, although there is no practical reason to use it for that purpose.
+
+This conversion affects only trap damage, not Geomancy's direct self-damage or area damage. Nor does it affect the Sneak damage from Surprise Spells.
+
+Since Ascendant Element: Negative Energy is inadvisable because of the self-damage, Death of Elements can be toggled off when fighting groups of undead. Vulnerability Curse can then be used against undead bosses with high DR.
+</file>
+
+<file path="_includes/smites.md">
+### Smites
+
+A smite adds flat damage to the damage rolls of the character using it and bypasses the target's DR. This makes smites a useful, although resource-limited, means of overcoming physical DR. The bonus damage also applies to Geomancy, creating a synergy between the two abilities.
+
+#### The smites
+
+Several smites are available. Apart from the Paladin's Smite Evil, they differ in damage per class level, the level at which they become available, and the number of daily uses.
+
+| Smite | Damage per level | Gained at | Uses per day |
+|---|---|---|---|
+| **Smite Evil** (Paladin) | 1 | 1 | 1, +1 at level 4 and every 3 levels after (7 at level 19) |
+| **Smite Chaos** (Hellknight) | 2 | 1 | 1, +1 at level 4 and every 3 levels after (4 at level 10) |
+| **All Is Darkness** (Tortured Crusader) | 1 | 1 | 1, +1 every 5 levels (5 at level 20, not counting 3 more from Unbroken Paragon) |
+| **Sworn Enemy - Smite** (Faith Hunter) | 0.5 | 6 | 1, +1 at level 10 and every 4 levels after (4 at level 18) |
+| **Smite** (Champion of the Faith) | 1 | 4 | 1, +1 every 4 levels beyond 4th (5 at level 20); consumes 2 uses of Fervor |
+
+??? class-feature "Smites"
+    === "Smite Evil"
+        {% include '_includes/smite_evil.md' %}
+
+    === "Smite Chaos"
+        {% include '_includes/smite_chaos.md' %}
+
+    === "All Is Darkness"
+        {% include '_includes/all_is_darkness.md' %}
+
+    === "Sworn Enemy - Smite"
+        {% include '_includes/sworn_enemy_smite.md' %}
+
+    === "Smite (Champion of the Faith)"
+        {% include '_includes/champion_of_the_faith_smite.md' %}
+
+Two aspects of the descriptions require clarification. The phrase "all damage rolls" refers to damage rolls made by the character who activated the smite. The DR bypass also applies to damage dealt by that character's spells.
+
+#### Synergy with the traps and Geomancy
+
+- Smite bypasses DR for the traps, and for Geomancy when it deals physical damage (Desert, Underground and Urban). See [DR and Incorporeal](#dr-and-incorporeal).
+- The bonus damage applies to both the traps and Geomancy.
+- When added to trap damage, the bonus is maximised and empowered.
+- Other spell damage multipliers also apply to the smite bonus.
+
+#### Extra smites
+
+In addition to the uses gained from class levels, extra uses of Smite Evil are available from:
+
+- The Scroll of Resourceful Smite, from the [Duality of Conjuration and Summoning](#meta-greatness) book.
+- The Righteous Crusader's Ring:
+
+??? item "Righteous Crusader's Ring"
+    {% include '_includes/righteous_crusaders_ring.md' %}
+
+Both the Paladin and the Hellknight can also gain extra smite uses from mythic abilities:
+
+??? mythic-feature "Abundant Smite"
+    {% include '_includes/abundant_smite.md' %}
+
+??? mythic-feature "Abundant Smite Chaos"
+    {% include '_includes/abundant_smite_chaos.md' %}
+
+#### Class considerations
+
+The Hellknight is the most level-efficient source of additional damage, making further investment in the class the stronger option for damage scaling.
+
+A single Paladin level can instead provide DR bypass. Combined with the scroll and the ring, this grants three daily uses of Smite Evil: one from the first Paladin level and one from each item.
+
+#### Mark of Justice
+
+The Paladin also gains Mark of Justice, which grants all allies the ability to smite evil for 1 minute, using the Paladin's bonuses. An allied Paladin can therefore provide these bonuses without requiring any Paladin levels in the main build.
+
+??? class-feature "Mark of Justice"
+    {% include '_includes/mark_of_justice.md' %}
+</file>
+
+<file path="_includes/standard_action.md">
+Cave Fangs traps are placed as a free action, leaving the standard action available for other abilities. The following options are not exhaustive.
+
+### Dispels
+
+In addition to removing buffs that might increase saving throws or reduce damage, dispels can lower enemy saving throws through the following effects:
+
+- **Dispel Synergy:** A successful dispel applies a –2 penalty to the target's saving throws.
+- **Destructive Dispel:** A successful targeted dispel can leave the target stunned or sickened. The sickened condition applies a further –2 penalty to saving throws.
+
+??? feat "Dispel Synergy"
+    {% include '_includes/dispel_synergy.md' %}
+
+??? feat "Destructive Dispel"
+    {% include '_includes/destructive_dispel.md' %}
+
+Greater Dispel Magic is the readily available spell. 
+
+ It's especially effective with mostly mono-class Angel or Lich builds, which can reach high caster levels through their merged spellbooks.
+
+??? spell "Dispel Magic, Greater"
+    {% include '_includes/greater_dispel_magic.md' %}
+
+Lich also has a particularly powerful dispel that can severely reduce the saving throws of heavily buffed enemies, making it an effective boss-killing tool.
+
+??? spell "Corrupt Magic"
+    {% include '_includes/corrupt_magic.md' %}
+
+The Gold Dragon can also dispel effects through an upgrade to Dragon Breath. 
+
+??? gd-feature "Mind-Clearing Breath"
+    {% include '_includes/gold_dragon_mind_clearing_breath.md' %}
+
+### Area debuffs
+
+Angel and Demon each have a mythic spell that applies an area-wide saving throw penalty without allowing a saving throw.
+
+??? spell "Profane Hymn"
+    {% include '_includes/profane_hymn.md' %}
+
+??? spell "Holy Hymn"
+    {% include '_includes/holy_hymn.md' %}
+
+The Gold Dragon has the aforementioned Dragon Breath ability.
+
+??? gd-feature "Dragon Breath"
+    {% include '_includes/gold_dragon_gold_dragon_breath.md' %}
+
+### Hexes { #std-hexes }
+
+Hexes are free standard actions and therefore pair well with Cave Fangs.
+
+Evil Eye reduces enemy saving throws.
+
+??? hex "Evil Eye"
+    {% include '_includes/evil_eye.md' %}
+
+Flame Curse multiplies trap damage by 1.5 when fire conversion is active.
+
+??? hex "Flame Curse"
+    {% include '_includes/flame_curse.md' %}
+
+Vulnerability Curse allows elemental and negative energy immunities to be bypassed on a single target. This can enable Elemental Barrage without substantial mythic investment, or allow Death of Elements plus Geomancy to be used without the risk of [self-sabotage](#neg-downsides).
+
+??? hex "Vulnerability Curse"
+    {% include '_includes/vulnerability_curse.md' %}
+</file>
+
+<file path="_includes/surprise_spells.md">
+### Surprise Spells
+
+??? class-feature "Surprise Spells"
+    {% include '_includes/surprise_spells.md' %}
+
+Surprise Spells adds sneak attack damage to all your traps, which is a very significant damage boost.
+
+There are some limits:
+
+- The damage is of the same type as the spell, but it is still sneak (precision) damage. Enemies that are immune to precision damage are immune to it. Can be bypassed by [holy conversion](#holy-conversion) or [negative energy conversion](#negative-energy-conversion) *with* Ascendant Element: Negative.
+- The damage is not maximized or empowered along with the traps.
+- With double conversion, for example holy or negative energy converted on to fire, the sneak damage stays as the first type, while the damage of the traps is converted onwards to fire.
+- Geomancy does not get the sneak attack damage.
+- The usual sneak attack synergy (such as Petrifying Strike) require an attack roll to work. 
+
+#### Uncanny Dodge
+
+Enemies with Uncanny Dodge cannot be caught flat-footed. The Arcane Trickster's Impromptu Sneak Attack helps with this, as the target loses its Dexterity bonus to AC against the attacks.
+
+Alter Ego will do the same but much more economically, but requires three level of Assassin.
+
+??? class-feature "Uncanny Dodge"
+    {% include '_includes/uncanny_dodge.md' %}
+
+??? class-feature "Impromptu Sneak Attack"
+    {% include '_includes/impromptu_sneak_attack.md' %}
+
+??? class-feature "Alter Ego"
+    {% include '_includes/alter_ego.md' %}
+
+
+#### Arcane Trickster 
+
+Surprise Spells comes from the Arcane Trickster prestige class. The prerequisites are:
+
+| Requirement | |
+|---|---|
+| Skills | Mobility 4, Trickery 4, Knowledge (Arcana) 4 |
+| Sneak attack | 2d6 |
+| Spells | Arcane spells of 2nd level |
+
+The recommended route is 1 level of Rowdy, then 3 levels of Wizard or Witch (taking the Accomplished Sneak Attacker feat at character level 3), then 10 levels of Arcane Trickster.
+
+??? feat "Accomplished Sneak Attacker"
+    {% include '_includes/accomplished_sneak_attacker.md' %}
+</file>
+
+<file path="cave_fangs.md">
+<!--
+  Disabled includes are written as an HTML comment: open-angle, bang, two
+  dashes, include 'path', two dashes, close-angle. The include plugin only
+  reacts to the percent-sign form, and a comment is not rendered on the page.
+  To enable one: create the file, then replace the comment opening with
+  curly-percent and the comment closing with percent-curly.
+
+  Planned layout of the section files (headings live inside the include files):
+    ability.md              ## The Ability
+    overview.md             ## Where the Boosts Come From (summary table, written last)
+    enduring_spells.md      ## Core Scaling / ### Enduring Spells
+    metamagic.md            ### Metamagic
+    dc.md                   ### DC
+    dr_and_immunity.md      ## Damage Conversion / ### DR and Physical Immunity
+    holy_conversion.md      ### Holy Conversion (lists the mythic features; links to their path sections)
+    fire_conversion.md      ### Fire Conversion (links to Flame Curse in Your Standard Action)
+    elemental_barrage.md    #### Elemental Barrage
+    fire_items.md           #### Items that need fire damage
+    geomancy.md             ## Synergies / ### Geomancy
+    geomancy_backlash.md    #### Geomancy Backlash (self-damage and how to negate it)
+    smites.md               ### Smites (also a DR answer and flat damage that survives conversion)
+    mythic_*.md             ### one per path (devil.md is a late-game subsection of azata)
+    dispel.md ...           ### options for the standard action
+    initiative.md ...       ### survivability topics
+    build_considerations.md ## Build Considerations
+-->
+
+{% include 'Guides/CaveFangs/_includes/intro.md' %}
+
+{% include 'Guides/CaveFangs/_includes/ability.md' %}
+{% include 'Guides/CaveFangs/_includes/getting_the_spell.md' %} 
+<!-- include 'Guides/CaveFangs/_includes/overview.md' -->
+
+## Core Scaling
+
+{% include 'Guides/CaveFangs/_includes/enduring_spells.md' %} 
+{% include 'Guides/CaveFangs/_includes/metamagic.md' %}
+{% include 'Guides/CaveFangs/_includes/dc.md' %}
+
+## DR and Incorporeal
+
+{% include 'Guides/CaveFangs/_includes/dr_and_incorporeal.md' %}
+
+## Synergies
+
+{% include 'Guides/CaveFangs/_includes/geomancy.md' %}
+{% include 'Guides/CaveFangs/_includes/geomancy_backlash.md' %}
+{% include 'Guides/CaveFangs/_includes/smites.md' %}
+{% include 'Guides/CaveFangs/_includes/surprise_spells.md' %}
+
+
+## Damage Conversion
+
+{% include 'Guides/CaveFangs/_includes/holy_conversion.md' %}
+{% include 'Guides/CaveFangs/_includes/negative_energy_conversion.md' %}
+{% include 'Guides/CaveFangs/_includes/elemental_conversion.md' %}
+{% include 'Guides/CaveFangs/_includes/elemental_barrage.md' %}
+{% include 'Guides/CaveFangs/_includes/fire_items.md' %}
+
+
+{% include 'Guides/CaveFangs/_includes/mythic_damage_overview_rev2.md' %}
+
+## Mythic Paths
+
+{% include 'Guides/CaveFangs/_includes/mythic_angel.md' %}
+{% include 'Guides/CaveFangs/_includes/mythic_lich.md' %}
+{% include 'Guides/CaveFangs/_includes/mythic_gold_dragon.md' %}
+{% include 'Guides/CaveFangs/_includes/mythic_demon.md' %}
+{% include 'Guides/CaveFangs/_includes/mythic_azata.md' %}
+
+{% include 'Guides/CaveFangs/_includes/mythic_damage_calculations.md' %}
+
+
+{% include 'Guides/CaveFangs/_includes/mythic_damage_potential.md' %}
+
+## Your Standard Action
+
+{% include 'Guides/CaveFangs/_includes/standard_action.md' %}
+
+
+## Survivability
+
+{% include 'Guides/CaveFangs/_includes/initiative.md' %}
+{% include 'Guides/CaveFangs/_includes/mobility_stealth.md' %}
+{% include 'Guides/CaveFangs/_includes/failsafes.md' %}
+
+
+<!-- include 'Guides/CaveFangs/_includes/build_considerations.md' -->
+</file>
+
+</files>

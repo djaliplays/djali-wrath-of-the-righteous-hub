@@ -12,6 +12,7 @@ nav:
           - Shared Experience: Guides/SharedXP/active_xp.md
           - Shared Experience Addendum: Guides/SharedXP/wotr_graphs.md
           - Feud of the Faithful: Guides/Feud/feud.md
+          - Cave Fangs: Guides/CaveFangs/cave_fangs.md
 #          - Unfair Prolgue: Guides/Prologue/prologue.md
     - Youtube:
           - Playtrough: Youtube/playtrough.md
@@ -43,6 +44,7 @@ markdown_extensions:
 extra_css:
     - stylesheets/pathfinder.css
     - stylesheets/admonition.css
+    - stylesheets/damage_tables.css
     - stylesheets/extra.css
     - stylesheets/youtube.css
 

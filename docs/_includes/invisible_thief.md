@@ -1,0 +1,1 @@
+At 9th level, an arcane trickster can become invisible, as if under the effects of greater invisibility, as a free action. She can remain invisible for a number of rounds per day equal to her arcane trickster level. These rounds need not be consecutive.

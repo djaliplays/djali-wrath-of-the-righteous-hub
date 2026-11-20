@@ -66,3 +66,21 @@ This part of the playthrough centres on the *Feud of the Faithful* and *Starward
 "
 )
 }}
+
+{{
+youtube("https://youtu.be/vemlKHngXAA",
+"Gwerm's Mansion",
+)
+}}
+
+{{
+youtube("https://youtu.be/njE-AcOcGSo",
+"Stay of Execution",
+)
+}}
+
+{{
+youtube("https://youtu.be/jqoZLtWmiVw",
+"Return to Market Square (Nabasu)",
+)
+}}

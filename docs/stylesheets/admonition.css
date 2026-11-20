@@ -26,6 +26,10 @@
     --mythicgold: #b8860b; /* mythic-feature */
     --angelgold: #e0b43d; /* angel-feature — brighter/lighter than mythicgold and titlegold so the three golds stay distinguishable */
     --pewter: #6b6f73; /* item family: item, item-scroll, item-potion, item-weapon */
+    --lichgray: #5b5a60;
+    --gdgold: #9a6813; /* gold dragon — deeper and more antique than angel gold */
+
+
 
     --olivegreen-bg: rgba(91, 122, 79, 0.12);
     --ochre-bg: rgba(156, 107, 31, 0.12);
@@ -37,6 +41,9 @@
     --pewter-bg: rgba(107, 111, 115, 0.12);
     --titlered-bg: rgba(88, 24, 13, 0.12);
     --rulered-bg: rgba(156, 43, 27, 0.12);
+    --lichgray-bg: #e5e1da;
+    --gdgold-bg: #f0e2be;
+
 }
 
 /* --------------------------------------------------------------------------
@@ -256,6 +263,8 @@
     --md-admonition-icon--item-scroll: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 112c0-41.5 31.6-75.6 72-79.6V32h280c53 0 96 43 96 96v176H272c-39.8 0-72 32.2-72 72v60c0 24.3-19.7 44-44 44s-44-19.7-44-44V208H48c-26.5 0-48-21.5-48-48zm236.8 368c7.1-13.1 11.2-28.1 11.2-44v-60c0-13.3 10.7-24 24-24h248c13.3 0 24 10.7 24 24v24c0 44.2-35.8 80-80 80zM80 80c-17.7 0-32 14.3-32 32v48h64v-48c0-17.7-14.3-32-32-32"/></svg>');
     --md-admonition-icon--item-potion: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.79 1.64-5.2 4-6.33V5c0-.55.45-1 1-1h.5l-1-2h5l-1 2h.5c.55 0 1 .45 1 1v3.67c2.36 1.13 4 3.54 4 6.33m-8-9v4.1A5 5 0 0 0 7 15l.08.91L9 13.93 13.07 18l3.86-3.86A5.01 5.01 0 0 0 13 10.1V6zm2.07 6c.55 0 1 .45 1 1s-.45 1-1 1c-.57 0-1-.45-1-1s.43-1 1-1"/></svg>');
     --md-admonition-icon--item-weapon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42"/></svg>');
+    --md-admonition-icon--lich-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 16C132 16 32 112 32 232c0 76 38 142 96 182v50c0 18 14 32 32 32h192c18 0 32-14 32-32v-50c58-40 96-106 96-182C480 112 380 16 256 16zm-80 224a40 40 0 1 1 0-80 40 40 0 0 1 0 80zm160 0a40 40 0 1 1 0-80 40 40 0 0 1 0 80zM208 352l48-80 48 80h-96zm-48 80v-32h32v32h-32zm80 0v-32h32v32h-32zm80 0v-32h32v32h-32z"/></svg>');
+    --md-admonition-icon--gd-feature: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M8 3v6l-5 1.5L6.5 14 4 19h5v10h2v-9.152c1.297.562 2.66 1.14 5.004 2.074 0 .027-.004.05-.004.078 0 2.23.7 4.047 1.98 5.25C19.258 28.457 21.04 29 23 29v-2c-1.602 0-2.82-.426-3.652-1.203-.711-.672-1.192-1.645-1.317-3.063 1.317.496 2.5.914 3.32 1.137.286.074.579.113.868.113 1.82 0 3.582-1.453 3.914-3.297L27 16l-3 2c-4.688 0-5.8-3-5.8-3 .35-.844 1.077-1.441 1.921-1.879L21 14v-1.262c.188-.066.375-.12.563-.175L23 14v-1.781c.059-.012.125-.028.184-.035L25 14v-2l3 2V9.152c0-1.476-1-2.836-2.45-3.101A3 3 0 0 0 25 6c-.8 0-1.516.336-2.055.852L21.5 3 20 7h-6zm2 3.734 2.89 1.93.505.336h10.277l.594-.656a1 1 0 0 1 .922-.328c.457.086.812.582.812 1.136V10h-.395l-.015-.008L25 10h-.031c-.707.012-6.938.23-8.614 4.227l-.304.726.273.738C16.918 17.293 19.2 20 24 20h.227l-.063.34c-.156.875-1.066 1.644-1.945 1.644a1.2 1.2 0 0 1-.348-.047c-3.082-.828-11.976-4.73-12.066-4.769L9.422 17H7.234l1.055-2.105.645-1.29-2.153-2.152 1.797-.535 1.422-.43zM13 10s.23 2 2 2 3-2 3-2z"/></svg>');
 }
 
 /* spell: general-purpose spell reference card. Icon: wand (auto-fix) */
@@ -338,6 +347,22 @@
     mask-image: var(--md-admonition-icon--mythic-feature);
 }
 
+/* devil-feature: Icon: crown */
+.md-typeset .admonition.mythic-feature,
+.md-typeset details.devil-feature {
+    border-color: var(--rulered);
+}
+.md-typeset .devil-feature > .admonition-title,
+.md-typeset .devil-feature > summary {
+    background-color: var(--rulered-bg);
+}
+.md-typeset .devil-feature > .admonition-title::before,
+.md-typeset .devil-feature > summary::before {
+    background-color: var(--rulered);
+    -webkit-mask-image: var(--md-admonition-icon--mythic-feature);
+    mask-image: var(--md-admonition-icon--mythic-feature);
+}
+
 /* demon-feature: demon mythic path / aspects. Icon: pitchfork */
 .md-typeset .admonition.demon-feature,
 .md-typeset details.demon-feature {
@@ -386,6 +411,58 @@
     mask-image: var(--md-admonition-icon--angel-feature);
 }
 
+/* azata-feature: angel mythic path. Icon: feather */
+.md-typeset .admonition.azata-feature,
+.md-typeset details.azata-feature {
+    border-color: var(--olivegreen);
+}
+.md-typeset .azata-feature > .admonition-title,
+.md-typeset .azata-feature > summary {
+    background-color: var(--olivegreen-bg);
+}
+.md-typeset .azata-feature > .admonition-title::before,
+.md-typeset .azata-feature > summary::before {
+    background-color: var(--olivegreen);
+    -webkit-mask-image: var(--md-admonition-icon--angel-feature);
+    mask-image: var(--md-admonition-icon--angel-feature);
+}
+
+
+/* lich-feature: lich mythic path. Icon: skull */
+.md-typeset .admonition.lich-feature,
+.md-typeset details.lich-feature {
+    border-color: var(--lichgray);
+}
+
+.md-typeset .lich-feature > .admonition-title,
+.md-typeset .lich-feature > summary {
+    background-color: var(--lichgray-bg);
+}
+
+.md-typeset .lich-feature > .admonition-title::before,
+.md-typeset .lich-feature > summary::before {
+    background-color: var(--lichgray);
+    -webkit-mask-image: var(--md-admonition-icon--lich-feature);
+    mask-image: var(--md-admonition-icon--lich-feature);
+}
+
+/* gd-feature: gold dragon. Icon: dragon head */
+.md-typeset .admonition.gd-feature,
+.md-typeset details.gd-feature {
+    border-color: var(--gdgold);
+}
+
+.md-typeset .gd-feature > .admonition-title,
+.md-typeset .gd-feature > summary {
+    background-color: var(--gdgold-bg);
+}
+
+.md-typeset .gd-feature > .admonition-title::before,
+.md-typeset .gd-feature > summary::before {
+    background-color: var(--gdgold);
+    -webkit-mask-image: var(--md-admonition-icon--gd-feature);
+    mask-image: var(--md-admonition-icon--gd-feature);
+}
 /* ==========================================================================
    Item admonitions
    All four share the same pewter accent — they're one visual family,

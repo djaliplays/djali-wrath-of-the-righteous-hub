@@ -1,0 +1,1 @@
+You grant one ally the ability to mark an enemy as the target for the hunt. You lose control of this ally immediately, and they try to attack the prey, gaining a bonus to attack and damage rolls equal to your mythic rank. This effect lasts until the end of combat, or until the target is dead.

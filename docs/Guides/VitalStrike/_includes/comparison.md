@@ -53,20 +53,20 @@ To provide additional context, each section includes commentary on the typical m
             === "Weapon"
             
                 ??? item-weapon "Masterwork Weapon Trait"
-                    {% inlcude '_includes/masterwork_trait.md' %}
+                    {% include '_includes/masterwork_trait.md' %}
                     
             === "Camellia"
             
                 ??? class-feature "Battle Spirit"
-                    {% inlcude '_includes/battle_spirit_1.md' %}
+                    {% include '_includes/battle_spirit_1.md' %}
                     
                 ??? spell "Magic Weapon"
-                    {% inlcude '_includes/magic_weapon.md' %}
+                    {% include '_includes/magic_weapon.md' %}
                     
             === "Personal" 
             
                 ??? spell "Divine Favor"
-                    {% inlcude '_includes/divine_favor.md' %}
+                    {% include '_includes/divine_favor.md' %}
 
                 ??? feat "Power Attack"
                     {% include '_includes/power_attack.md' %}
@@ -685,7 +685,7 @@ For a build making relatively few attacks, **Flawless Attacks** is a very poor M
         It scales very well into the lategame.
 
         ??? class-feature "For the King"
-            { % include '_includes/ftk.md' %}
+            {% include '_includes/ftk.md' %}
 
         As flat damage continues to scale while base weapon damage changes relatively little, Mythic Greater Vital Strike becomes increasingly important. It allows Vital Strike builds to multiply these growing flat damage bonuses, preventing them from falling behind full attacks. At least for now. 
 

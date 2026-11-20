@@ -35,6 +35,15 @@ youtube("https://youtu.be/2TJ-VEO-3Z0?si=JPvKQct40sC7q512",
 )
 }}
 
+## Spells
+
+{{
+youtube("https://youtu.be/KfNt9Z-UP_I",
+"Mechanics and Synergies of Cave Fangs",
+"An in-depth look at the spell Cave Fangs, exploring its mechanics, interactions, synergies and damage potential. Includes experimental character setups demonstrating what is possible with the Angel, Lich and Gold Dragon mythic paths."
+)
+}}
+
 ## Quests
 ### Feud of the Faithful Series
 

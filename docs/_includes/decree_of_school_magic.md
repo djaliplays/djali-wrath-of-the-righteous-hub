@@ -1,0 +1,1 @@
+One ally is ordered to only use one school of magic, but the potency of their spells increases considerably. Caster level and DC of saving throws against this ally's spells is increased by half your mythic rank.

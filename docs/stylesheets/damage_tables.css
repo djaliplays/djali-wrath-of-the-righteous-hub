@@ -1,0 +1,66 @@
+/* Cave Fangs mythic damage tables
+   Wrap each table in <div class="cf-table" markdown> ... </div>
+   Classes:
+     cf-dim  : muted value (wrap the `code` value in a span with this class)
+     cf-yes  : muted green tick
+     cf-no   : terracotta cross
+     cf-gap  : spacer row between paths                                   */
+
+:root,
+[data-md-color-scheme="default"] {
+  --cf-yes: #58734f;
+  --cf-no: #a65349;
+  --cf-dim: #a3a3a3;
+}
+
+[data-md-color-scheme="slate"] {
+  --cf-yes: #86a97c;
+  --cf-no: #cf8b81;
+  --cf-dim: #6e6e6e;
+}
+
+/* Table text a little smaller, since the tables are wide */
+.md-typeset .cf-table table:not([class]) {
+  font-size: 0.5rem;
+}
+
+/* Damage values: monospaced, aligned digits, never wrapped */
+.md-typeset .cf-table code {
+  font-family: var(--md-code-font-family);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Muted values (the theme sets its own colour on <code>, so target it directly) */
+.md-typeset .cf-table .cf-dim code {
+  color: var(--cf-dim);
+}
+
+/* Ticks and crosses */
+.md-typeset .cf-table .cf-yes,
+.md-typeset .cf-table .cf-no {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.md-typeset .cf-table .cf-yes {
+  color: var(--cf-yes);
+}
+
+.md-typeset .cf-table .cf-no {
+  color: var(--cf-no);
+}
+
+/* Spacer row between paths */
+.md-typeset .cf-table .cf-gap {
+  display: block;
+  height: 5px;
+}
+
+.md-typeset .cf-table tr:has(.cf-gap) > td {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}

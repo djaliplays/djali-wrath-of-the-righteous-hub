@@ -1,0 +1,1 @@
+All enemies in a 50 feet radius are dealt 2d10 damage per your mythic rank (half fire, half unholy). If after this damage their HP is lower than ten times your mythic rank, they must make a Fortitude saving throw. If they fail that saving throw, they die.
