@@ -14,13 +14,31 @@ This conversion alone does not bypass immunity to precision damage. However, com
 ??? mythic-feature "Ascendant Element"
     {% include '_includes/ascendant_element.md' %}
 
+??? note "Screenshots off attacks versus a Fiendish Water Elemental"
+    Fiendish Water Elemental has precision damage immunity.
+
+    Below are screenshots of Vital Strike (+Vital Force) attack versus it.
+    
+    === "Regular"
+        ![Regular FWE](png/Reg_vs_WE.png)
+    
+    === "Negative Energy"
+        ![Negative Energy FWE](png/Neg_vs_WE.png)
+    
+    === "Negative Energy + Ascedant Element"
+        ![Negatvie Energy AE FWE](png/NE_AE_vs_WE.png)
+    
+    === "Holy (using Perfect Mind)"
+        ![Holy FWE](png/Holy_vs_WE.png)
+
+
 ### Other Synergies
 
 ??? lich-feature "Fear Control"
     {% include '_includes/lich/fear_control.md' %}
 
-??? lich-feature "Power from Death"
+??? spell "Power from Death"
     {% include '_includes/lich/power_from_death.md' %}
 
-??? lich-feature "Vampiric Blade"
+??? spell "Vampiric Blade"
     {% include '_includes/lich/vampiric_blade.md' %}
