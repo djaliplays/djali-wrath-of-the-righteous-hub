@@ -17,6 +17,7 @@ Demon used to be the king of Vital Strike before the Coloxus nerf.
 
 {% include 'Guides/VitalStrike/_includes/demon_features.md' %}
 {% include 'Guides/VitalStrike/_includes/demon_shadow_shaman_evercold.md' %}
+{% include 'Guides/VitalStrike/_includes/lich.md' %}
 {% include 'Guides/VitalStrike/_includes/support_and_damage_trickster.md' %}
 {% include 'Guides/VitalStrike/_includes/sneak_rays.md' %}
 {% include 'Guides/VitalStrike/_includes/hellfire_ray.md' %}
