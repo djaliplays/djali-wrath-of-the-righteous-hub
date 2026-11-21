@@ -14,6 +14,9 @@ This conversion alone does not bypass immunity to precision damage. However, com
 ??? mythic-feature "Ascendant Element"
     {% include '_includes/ascendant_element.md' %}
 
+!!! warning "Vital Strike damage multiplier"
+    The Vital Strike damage multiplier on weapon dice (and flat damage bonuses with Mythic Vital Strike) don't apply after conversion.
+
 ??? note "Screenshots off attacks versus a Fiendish Water Elemental"
     Fiendish Water Elemental has precision damage immunity.
 
@@ -42,3 +45,5 @@ This conversion alone does not bypass immunity to precision damage. However, com
 
 ??? spell "Vampiric Blade"
     {% include '_includes/lich/vampiric_blade.md' %}
+
+Vampiric Blade can be empower and maximised through Plague of Madness, Magus Arcana or Universalist Wizard's Metamagic Mastery.
