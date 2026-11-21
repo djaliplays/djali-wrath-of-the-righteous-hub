@@ -36,6 +36,7 @@ Perfect Mind is a permanent effect, but becomes available only at mythic rank 9.
 #### Reasons to convert to (un)holy { #conversion-reasons}
 
 - Bypasses the DR or immunity affecting traps and certain Geomancy terrains. Unlike smites, conversion is not limited to a single target and is less restricted by daily uses. See [DR and Incorporeal](#dr-and-incorporeal).
-- Bypasses Precision damage immunity, relevant for Surprise Spells.
+- Full damage versus Incorporeal Enemies. 
+- Bypasses Precision damage immunity of Incorporeal Enemies; relevant for Surprise Spells. 
 - Prevents the direct damage from Geomancy with Broken Trickster or Solar Winds. See [Geomancy Backlash](#geomancy-backlash). This is less important with the Gloves of Enduring Wizard.
 - Allows further conversion to fire or another element. See [Elemental Conversion](#elemental-conversion).

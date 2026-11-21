@@ -27,7 +27,7 @@ Since Death Ward grants immunity to negative energy, the Geomancy combination ca
 
 The first issue can be addressed with Ascendant Element: Negative Energy or the Vulnerability Curse hex. See [Resistances and immunities](#resistances-and-immunities).
 
-The last only by Ascendant Element: Negative Energy.
+The last only by Ascendant Element: Negative Energy. 
 
 !!! Warning "Ascendant Element: Negative Energy"
     Ascendant Element: Negative Energy bypasses the caster's own immunity to negative energy, leaving the caster vulnerable to Geomancy self-damage. It is therefore inadvisable before obtaining the [Gloves of Enduring Wizard](#temporary-hit-points).

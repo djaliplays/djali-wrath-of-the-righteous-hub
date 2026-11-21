@@ -37,4 +37,6 @@ I only know of two ways to deal with this:
 
 Note that converting to negative energy still means incorporeal enemies take only half damage. For holy damage it is full damage.
 
-Incorporeal also gives immunity to Sneak Attacks which matter for [Surprise Spells](#surprise-spells). It can be bypassed trough holy conversion.
+Incorporeal also gives immunity to Sneak Attacks which matter for [Surprise Spells](#surprise-spells). It can be bypassed trough holy conversion or negative conversion in combination with ascendant element.
+
+Precision damage immunity from other enemies, such as Elementals, can only be bypassed by the latter.

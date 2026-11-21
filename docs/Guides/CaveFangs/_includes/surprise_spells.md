@@ -7,7 +7,7 @@ Surprise Spells adds sneak attack damage to all your traps, which is a very sign
 
 There are some limits:
 
-- The damage is of the same type as the spell, but it is still sneak (precision) damage. Enemies that are immune to precision damage are immune to it. Can be bypassed by [holy conversion](#holy-conversion) or [negative energy conversion](#negative-energy-conversion) *with* Ascendant Element: Negative.
+- The damage is of the same type as the spell, but it is still sneak (precision) damage. Enemies that are immune to precision damage are immune to it. Can be bypassed by [holy conversion](#holy-conversion) for Incorporeal Enemies and with [negative energy conversion](#negative-energy-conversion) *with* Ascendant Element: Negative for all.
 - The damage is not maximized or empowered along with the traps.
 - With double conversion, for example holy or negative energy converted on to fire, the sneak damage stays as the first type, while the damage of the traps is converted onwards to fire.
 - Geomancy does not get the sneak attack damage.
