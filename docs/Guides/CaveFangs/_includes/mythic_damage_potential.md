@@ -95,10 +95,10 @@ The formula variables are `FD = 20` (*Mark of Justice*), `DS = 17` (*Dragon Smit
 
 **Trap damage**
 
-The MR10 Gold Dragon formula, with the additional *Flame Curse* multiplier, gives:
+The MR10 Gold Dragon formula (disregarding bolster due to counting sneak), with the additional *Flame Curse* multiplier, gives:
 
 \[
-T = \left\lfloor 1.5 \times (3 \times 10 + 6 + 20 + 17) \times 1.5^2 \right\rfloor = 246
+T = \left\lfloor 1.5 \times (3 \times 10 + 20 + 17) \times 1.5^2 \right\rfloor = 226
 \]
 
 **Surprise Spells**
@@ -128,8 +128,8 @@ C = 4 \times 6 \times 1.5 = 36
 
 
 \[
-(246 + 123.75 + 204 + 36) \times 144
-= \boxed{87\,804}
+(226 + 123.75 + 204 + 36) \times 144
+= \boxed{84\,924}
 \]
 
 ##### Geomancy AoE damage { #gd-geo-aoe }
